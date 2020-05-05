@@ -30,7 +30,6 @@
           else
             echo "Nope!"; exit 1
           fi
- # Under the workflows: map, we can coordinate our two jobs, defined above.
  workflows:
    version: 2
    one_and_two: # this is the name of our workflow
