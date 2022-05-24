@@ -17,5 +17,9 @@
 		<members>*</members>
 		<name>Role</name>
 	</types>
+	<types>
+		<members>Case.VF CS</members>
+		<name>BusinessProcess</name>
+	</types>
 	<version>53.0</version>
 </Package>
