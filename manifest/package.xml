@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
 		<members>Case-ケース フィードのページレイアウト</members>
@@ -16,6 +15,10 @@
 	<types>
 		<members>*</members>
 		<name>Role</name>
+	</types>
+	<types>
+		<members>Case.VF CS</members>
+		<name>BusinessProcess</name>
 	</types>
 	<version>53.0</version>
 </Package>
