@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Case-ケース フィードのページレイアウト</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>TBL Integration User</members>
+		<members>TBL Japan Customer Service</members>
+		<members>Timberland JP Profile</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>Case</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Role</name>
+	</types>
+	<types>
+		<members>Case</members>
+		<name>SharingRules</name>
+	</types>
+	<version>53.0</version>
+</Package>
