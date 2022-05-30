@@ -37,7 +37,7 @@ public class Chatbot_GetSetTranscriptValues {
         caseObject.RecordTypeId = caseRecordTypeId;
         caseObject.Description = String.isNotBlank(transcriptInput.userMessage) ? transcriptInput.userMessage : '';
         caseObject.Subject = subject;
-        caseObject.Origin = Label.WEB;
+        caseObject.Origin = Label.CASE_ORIGIN_WEB;
 
         insert caseObject;
         transcriptRecord.CaseId = caseObject.ID;
