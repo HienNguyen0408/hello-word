@@ -51,5 +51,10 @@
 		<members>Case.MyOpenCases</members>
 		<name>ListView</name>
 	</types>
+	<types>
+		<members>UpdateCaseByEmail</members>
+		<members>UpdateCaseForChat</members>
+		<name>Flow</name>
+	</types>
 	<version>53.0</version>
 </Package>

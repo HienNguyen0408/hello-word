@@ -99,7 +99,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>BUSINESS_HOUR_TBL_JP</shortDescription>
-        <value>Timberland JP</value>
+        <value>Timberland JP,Timberland JP Without Business AM,Timberland JP Without Business PM</value>
     </labels>
     <labels>
         <fullName>TECH_TBL_JP_SiteId</fullName>
@@ -149,5 +149,26 @@
         <protected>false</protected>
         <shortDescription>WEB</shortDescription>
         <value>Web</value>
+    </labels>
+    <labels>
+        <fullName>CASE_ORIGIN_WEB</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CASE ORIGIN WEB</shortDescription>
+        <value>Web</value>
+    </labels>
+    <labels>
+        <fullName>TECH_RAKUTEN_EMAIL_ADDRESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_RAKUTEN_EMAIL_ADDRESS</shortDescription>
+        <value>hienthi.nguyen@yopmail.com</value>
+    </labels>
+    <labels>
+        <fullName>TECH_TIMBERLAND_EMAIL_ADDRESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_TIMBERLAND_EMAIL_ADDRESS</shortDescription>
+        <value>duyhuynhsf2@gmail.com</value>
     </labels>
 </CustomLabels>
