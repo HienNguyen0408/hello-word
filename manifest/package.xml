@@ -26,6 +26,11 @@
 		<members>Chatbot_GetSetTranscriptValues</members>
 		<members>Chatbot_Helper</members>
 		<members>LiveChatTranscriptSelector</members>
+		<members>Chatbot_CheckWithinBusinessHours_Test</members>
+		<members>Chatbot_GetSetTranscriptValues_Test</members>
+		<members>Chatbot_Helper_Test</members>
+		<members>DataFactory_Test</members>
+		<members>LiveChatTranscriptSelector_Test</members>
 		<name>ApexClass</name>
 	</types>
 	<version>53.0</version>
