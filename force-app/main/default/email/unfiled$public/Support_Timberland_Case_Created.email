@@ -1,9 +1,14 @@
-Dear {!Case.SuppliedName},
+{!Case.SuppliedName} 様
 
-Thank you for submitting your question to us online. Case #{!Case.CaseNumber}: "{!Case.Subject}" has been created and a Timberland Customer Advocate will get back to you within the next 24 hours.
 
-Thank you,
 
-Customer Advocate Team
+この度は、ティンバーランド公式オンラインショップにお問い合わせいただき誠にありがとうございます。
 
-Timberland
+
+お問い合わせ番号：# {!Case.CaseNumber}
+お問い合わせ内容：
+
+
+
+上記の内容で承りました。
+カスタマーサービスよりご連絡いたしますので今しばらくお待ちくださいませ。
