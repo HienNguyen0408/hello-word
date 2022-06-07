@@ -1,0 +1,24 @@
+public class Chatbot_Helper {
+    public static Map<String, List<BusinessHours>> getMapBusinessHour() {
+        Map<String, List<BusinessHours>> mapBH = new Map<String, List<BusinessHours>>();
+        List<String> lstBusinessHourTBLJP = Label.BUSINESS_HOUR_TBL_JP.split(',');
+        
+        List<BusinessHours> lstBH = [SELECT Id, Name, MondayStartTime, MondayEndTime, IsActive FROM BusinessHours WHERE IsActive = true];
+
+        if(!lstBH.isEmpty()) {
+            for(BusinessHours bh : lstBH) {
+                if(!mapBH.containsKey(Label.TECH_TBL_JP_EXTERNAL_SITE_ID)) {
+                    mapBH.put(Label.TECH_TBL_JP_EXTERNAL_SITE_ID, new List<BusinessHours>());
+                }
+                mapBH.get(Label.TECH_TBL_JP_EXTERNAL_SITE_ID).Add(bh);
+            }
+        }
+
+        return mapBH;
+    }
+
+    public static LiveChatTranscript getTranscriptRecord(Id routableID) {
+        LiveChatTranscript transcriptRecord = LiveChatTranscriptSelector.GetLiveChatTranscriptById(routableID);
+        return transcriptRecord;
+    }
+}
