@@ -3,19 +3,23 @@
     <fullName>VF CS</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>エスカレーション済み</fullName>
+        <fullName>Closed</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>保留中</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>完了済み</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>新規</fullName>
+        <fullName>New</fullName>
         <default>true</default>
+    </values>
+    <values>
+        <fullName>Pending</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Solved</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Working</fullName>
+        <default>false</default>
     </values>
 </BusinessProcess>

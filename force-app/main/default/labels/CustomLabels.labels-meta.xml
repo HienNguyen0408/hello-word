@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>TECH_EmailCase_RecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_EmailCase_RecordType</shortDescription>
+        <value>Email Case</value>
+    </labels>
+    <labels>
+        <fullName>TECH_LiveAgent_RecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_LiveAgent_RecordType</shortDescription>
+        <value>Live Agent</value>
+    </labels>
+    <labels>
+        <fullName>BUSINESS_HOUR_TBL_JP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BUSINESS_HOUR_TBL_JP</shortDescription>
+        <value>Timberland JP,Timberland JP Without Business AM,Timberland JP Without Business PM</value>
+    </labels>
+    <labels>
+        <fullName>TECH_TBL_JP_SiteId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_TBL_JP_SiteId</shortDescription>
+        <value>tbl-jp</value>
+    </labels>
+    <labels>
+        <fullName>TIMEBERLAND_JP_LABEL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TIMEBERLAND JP LABEL</shortDescription>
+        <value>Timberland JP</value>
+    </labels>
+    <labels>
+        <fullName>TECH_EMAIL_CASE_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH EMAIL CASE RECORD TYPE</shortDescription>
+        <value>Email Case</value>
+    </labels>
+    <labels>
+        <fullName>TECH_LIVE_AGENT_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH LIVE AGENT RECORD TYPE</shortDescription>
+        <value>Live Agent</value>
+    </labels>
+    <labels>
+        <fullName>TECH_TBL_JP_EXTERNAL_SITE_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH TBL JP EXTERNAL SITE ID</shortDescription>
+        <value>tbl-jp</value>
+    </labels>
+    <labels>
+        <fullName>TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH TIMBERLAND JP BUSINESS HOUR NAME</shortDescription>
+        <value>Timberland JP</value>
+    </labels>
+    <labels>
+        <fullName>CASE_ORIGIN_WEB</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CASE ORIGIN WEB</shortDescription>
+        <value>Web</value>
+    </labels>
+    <labels>
+        <fullName>TECH_RAKUTEN_EMAIL_ADDRESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_RAKUTEN_EMAIL_ADDRESS</shortDescription>
+        <value>hienthi.nguyen@yopmail.com</value>
+    </labels>
+    <labels>
+        <fullName>TECH_TIMBERLAND_EMAIL_ADDRESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_TIMBERLAND_EMAIL_ADDRESS</shortDescription>
+        <value>duyhuynhsf2@gmail.com</value>
+    </labels>
+</CustomLabels>

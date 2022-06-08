@@ -5,6 +5,7 @@
 		<name>Layout</name>
 	</types>
 	<types>
+		<members>Admin</members>
 		<members>TBL Integration User</members>
 		<members>TBL Japan Customer Service</members>
 		<name>Profile</name>
@@ -22,6 +23,46 @@
 		<name>BusinessProcess</name>
 	</types>
 	<types>
+		<members>Case.External_Site_Id__c</members>
+		<members>LiveChatTranscript.Email_Address__c</members>
+		<members>LiveChatTranscript.External_Site_Id__c</members>
+		<members>LiveChatTranscript.First_Name__c</members>
+		<members>LiveChatTranscript.Last_Name__c</members>
+		<members>LiveChatTranscript.Subject__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>unfiled$public/Support_Timberland_Case_Created</members>
+		<name>EmailTemplate</name>
+	</types>
+	<types>
+		<members>Case.Timberland Send Email When Case Is Created</members>
+		<name>WorkflowRule</name>
+	</types>
+	<types>
+		<members>Case.サンプル割り当てルール</members>
+		<name>AssignmentRule</name>
+	</types>
+	<types>
+		<members>Case_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Case.AllOpenCases</members>
+		<members>Case.MyCases</members>
+		<members>Case.MyOpenCases</members>
+		<name>ListView</name>
+	</types>
+	<types>
+		<members>UpdateCaseByEmail</members>
+		<members>UpdateCaseForChat</members>
+		<name>Flow</name>
+	</types>
+	<types>
 		<members>Chatbot_CheckWithinBusinessHours</members>
 		<members>Chatbot_GetSetTranscriptValues</members>
 		<members>Chatbot_Helper</members>
@@ -32,6 +73,10 @@
 		<members>DataFactory_Test</members>
 		<members>LiveChatTranscriptSelector_Test</members>
 		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>chatMessageStyle</members>
+		<name>StaticResource</name>
 	</types>
 	<version>53.0</version>
 </Package>
