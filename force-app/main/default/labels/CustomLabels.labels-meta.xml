@@ -1,86 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
-        <fullName>LA_PreChat_Base_LiveChat_04I9D0000004CSF_2670501</fullName>
-        <categories>Snap-ins</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LA_PreChat_Base_LiveChat_04I9D0000004CSF_2670501</shortDescription>
-        <value>How we can help?</value>
-    </labels>
-    <labels>
-        <fullName>LA_PreChat_Base_LiveChat_04I9D0000004CSK_5429522</fullName>
-        <categories>Snap-ins</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LA_PreChat_Base_LiveChat_04I9D0000004CSK_5429522</shortDescription>
-        <value>How we can help?</value>
-    </labels>
-    <labels>
-        <fullName>LA_PreChat_Base_LiveChat_04I9D0000004CSe_4523354</fullName>
-        <categories>Snap-ins</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LA_PreChat_Base_LiveChat_04I9D0000004CSe_4523354</shortDescription>
-        <value>How we can help?</value>
-    </labels>
-    <labels>
-        <fullName>LA_PreChat_Base_LiveChat_04I9D0000004CSt_2810552</fullName>
-        <categories>Snap-ins</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LA_PreChat_Base_LiveChat_04I9D0000004CSt_2810552</shortDescription>
-        <value>How we can help?</value>
-    </labels>
-    <labels>
-        <fullName>LA_PreChat_Base_LiveChat_04I9D0000004CSy_7155954</fullName>
-        <categories>Snap-ins</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LA_PreChat_Base_LiveChat_04I9D0000004CSy_7155954</shortDescription>
-        <value>How we can help?</value>
-    </labels>
-    <labels>
-        <fullName>LA_PreChat_Base_StartChat_04I9D0000004CSF_3433548</fullName>
-        <categories>Snap-ins</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LA_PreChat_Base_StartChat_04I9D0000004CSF_3433548</shortDescription>
-        <value>Chat Now</value>
-    </labels>
-    <labels>
-        <fullName>LA_PreChat_Base_StartChat_04I9D0000004CSK_7643021</fullName>
-        <categories>Snap-ins</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LA_PreChat_Base_StartChat_04I9D0000004CSK_7643021</shortDescription>
-        <value>Chat Now</value>
-    </labels>
-    <labels>
-        <fullName>LA_PreChat_Base_StartChat_04I9D0000004CSe_9375896</fullName>
-        <categories>Snap-ins</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LA_PreChat_Base_StartChat_04I9D0000004CSe_9375896</shortDescription>
-        <value>Chat Now</value>
-    </labels>
-    <labels>
-        <fullName>LA_PreChat_Base_StartChat_04I9D0000004CSt_5912795</fullName>
-        <categories>Snap-ins</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LA_PreChat_Base_StartChat_04I9D0000004CSt_5912795</shortDescription>
-        <value>Chat Now</value>
-    </labels>
-    <labels>
-        <fullName>LA_PreChat_Base_StartChat_04I9D0000004CSy_7528294</fullName>
-        <categories>Snap-ins</categories>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LA_PreChat_Base_StartChat_04I9D0000004CSy_7528294</shortDescription>
-        <value>Chat Now</value>
-    </labels>
-    <labels>
         <fullName>TECH_EmailCase_RecordType</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -142,13 +62,6 @@
         <protected>false</protected>
         <shortDescription>TECH TIMBERLAND JP BUSINESS HOUR NAME</shortDescription>
         <value>Timberland JP</value>
-    </labels>
-    <labels>
-        <fullName>WEB</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>WEB</shortDescription>
-        <value>Web</value>
     </labels>
     <labels>
         <fullName>CASE_ORIGIN_WEB</fullName>

@@ -3,30 +3,29 @@
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.External_Site_Id__c</field>
+        <field>LiveChatTranscript.Email_Address__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <layoutAssignments>
-        <layout>Case-ケース フィードのページレイアウト</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-ケース フィードのページレイアウト</layout>
-        <recordType>Case.Email_Case</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-ケース フィードのページレイアウト</layout>
-        <recordType>Case.Live_Agent</recordType>
-    </layoutAssignments>
-    <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Case.Email_Case</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Live_Agent</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LiveChatTranscript.External_Site_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LiveChatTranscript.First_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LiveChatTranscript.Last_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LiveChatTranscript.Subject__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>
