@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <botMlDomain>
+        <label>Timberland Virtual Assistant</label>
+        <mlIntents>
+            <developerName>Delivery</developerName>
+            <label>Delivery</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Please_insert_your_email_address</developerName>
+            <label>Please insert your email address</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Where_is_my_order_Have_you_received_email_confirmation</developerName>
+            <label>Have you received email confirmation that your order has shipped?</label>
+        </mlIntents>
+        <mlIntents>
+            <description>Deliveries can take 5-7 working days, not including weekends. It can take 3-5 working days for the carrier to update their tracking information, not including weekends.
+
+So if your order has only just shipped don&apos;t worry, it&apos;s totally normal to not see any tracking info.</description>
+            <developerName>Yes_Delivers_can_take_5_7_working_days</developerName>
+            <label>Deliveries can take 5-7 working days, not including weekends. It can take 3-5 wo</label>
+        </mlIntents>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Re_input_email_address</developerName>
+            <extractionType>Value</extractionType>
+            <label>Re-input email address</label>
+        </mlSlotClasses>
+        <name>Timberland_Virtual_Assistant</name>
+    </botMlDomain>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.ChatKey</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Text</dataType>
+        <developerName>ChatKey</developerName>
+        <label>Chat Key</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.ContactId</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>ContactId</developerName>
+        <label>Contact Id</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.LiveChatVisitorId</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>EndUserId</developerName>
+        <label>End User Id</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>LiveChatTranscript</SObjectType>
+            <fieldName>LiveChatTranscript.Id</fieldName>
+            <messageType>WebChat</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>RoutableId</developerName>
+        <label>Routable Id</label>
+    </contextVariables>
+    <conversationChannelProviders>
+        <agentRequired>false</agentRequired>
+        <chatButtonName>Chat_Agents_Offline</chatButtonName>
+    </conversationChannelProviders>
+    <description>A bot from scratch.</description>
+    <label>ティンバーランドバーチャルアシスタント</label>
+    <logPrivateConversationData>false</logPrivateConversationData>
+    <richContentEnabled>false</richContentEnabled>
+</Bot>
