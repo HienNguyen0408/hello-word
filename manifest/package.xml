@@ -78,5 +78,9 @@
 		<members>chatMessageStyle</members>
 		<name>StaticResource</name>
 	</types>
+	<types>
+		<members>Timberland_Virtual_Assistant</members>
+		<name>Bot</name>
+	</types>
 	<version>53.0</version>
 </Package>
