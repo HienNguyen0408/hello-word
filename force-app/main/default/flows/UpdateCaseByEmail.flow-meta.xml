@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Rakuten_Case_Creation_Response_Email</name>
+        <label>Send Rakuten Case Creation Response Email</label>
+        <locationX>314</locationX>
+        <locationY>935</locationY>
+        <actionName>Case.Send_Rakuten_Case_Creation_Response_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>GetCaseRakuten.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_TBL_Case_Creation_Response_Email</name>
+        <label>Send TBL Case Creation Response Email</label>
+        <locationX>50</locationX>
+        <locationY>815</locationY>
+        <actionName>Case.Send_TBL_Case_Creation_Response_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>getCase.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
     <apiVersion>55.0</apiVersion>
     <assignments>
         <name>AssignCaseSubjectForRakuten</name>
@@ -190,6 +220,9 @@
         <label>UpdateCase</label>
         <locationX>50</locationX>
         <locationY>695</locationY>
+        <connector>
+            <targetReference>Send_TBL_Case_Creation_Response_Email</targetReference>
+        </connector>
         <inputReference>getCase</inputReference>
     </recordUpdates>
     <recordUpdates>
@@ -197,6 +230,9 @@
         <label>UpdateCaseRakuten</label>
         <locationX>314</locationX>
         <locationY>815</locationY>
+        <connector>
+            <targetReference>Send_Rakuten_Case_Creation_Response_Email</targetReference>
+        </connector>
         <inputReference>GetCaseRakuten</inputReference>
     </recordUpdates>
     <start>

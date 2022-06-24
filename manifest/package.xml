@@ -82,5 +82,10 @@
 		<members>Timberland_Virtual_Assistant</members>
 		<name>Bot</name>
 	</types>
+	<types>
+		<members>Case.Send_Rakuten_Case_Creation_Response_Email</members>
+		<members>Case.Send_TBL_Case_Creation_Response_Email</members>
+		<name>WorkflowAlert</name>
+	</types>
 	<version>53.0</version>
 </Package>
