@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Send_Rakuten_Case_Creation_Response_Email</fullName>
+        <description>Send Rakuten Case Creation Response Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>hienthi.nguyen@isobar.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Support_Timberland_Case_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_TBL_Case_Creation_Response_Email</fullName>
+        <description>Send TBL Case Creation Response Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>duyhuynhsf@gmail.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Support_Timberland_Case_Created</template>
+    </alerts>
     <rules>
         <fullName>Timberland Send Email When Case Is Created</fullName>
         <actions>
-            <name>Email_Case_Creation</name>
+            <name>Send_TBL_Case_Creation_Response_Email</name>
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Email Case</value>
-        </criteriaItems>
+        <booleanFilter>1</booleanFilter>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
             <operation>equals</operation>
             <value>Live Agent</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.External_Site_Id__c</field>
-            <operation>equals</operation>
-            <value>tbl-jp</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
     </rules>
