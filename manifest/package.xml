@@ -41,7 +41,6 @@
 		<members>LiveChatTranscript.Product_Laces_SeeThem_Url__c</members>
 		<members>LiveChatTranscript.Product_TBLBoots_Guide_Url__c</members>
 		<members>LiveChatTranscript.Product_WaterProof_Range_Url__c</members>
-		<members>LiveChatTranscript.Returns_DeliverItem_PolicyUrl__c</members>
 		<members>LiveChatTranscript.Returns_DeliverItem_Policy_Url__c</members>
 		<members>LiveChatTranscript.Returns_ExchangeMyItem_ExchangePolicy__c</members>
 		<members>LiveChatTranscript.Returns_ReturnPolicy_ReturnPolicy_Url__c</members>
