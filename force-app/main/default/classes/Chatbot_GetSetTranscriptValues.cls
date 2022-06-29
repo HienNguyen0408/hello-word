@@ -20,7 +20,7 @@ public class Chatbot_GetSetTranscriptValues {
         String firstName = String.isNotBlank(transcriptRecord.First_Name__c) ? transcriptRecord.First_Name__c : '';
         String lastName = String.isNotBlank(transcriptRecord.Last_Name__c) ? transcriptRecord.Last_Name__c : '';
         String webEmail = String.isNotBlank(transcriptInput.emailAddress) ? transcriptInput.emailAddress : transcriptRecord.Email_Address__c;
-        String webName = lastName + ' ' + firstName;
+        String webName = firstName + ' ' + lastName;
         String subject = String.isNotBlank(transcriptRecord.Subject__c) ? transcriptRecord.Subject__c : '';
         String caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get(Label.TECH_LIVE_AGENT_RECORD_TYPE).getRecordTypeId();
 

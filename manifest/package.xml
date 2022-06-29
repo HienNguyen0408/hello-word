@@ -29,6 +29,22 @@
 		<members>LiveChatTranscript.First_Name__c</members>
 		<members>LiveChatTranscript.Last_Name__c</members>
 		<members>LiveChatTranscript.Subject__c</members>
+		<members>LiveChatTranscript.Contact_Chat_With_Us_Url__c</members>
+		<members>LiveChatTranscript.Delivery_DeliveryOption_DeliveryPage_Url__c</members>
+		<members>LiveChatTranscript.Delivery_MyOrder_No_Url__c</members>
+		<members>LiveChatTranscript.Delivery_TBLStore_StoreLocator_Url__c</members>
+		<members>LiveChatTranscript.Delivery_TrackMyOrder_Click_Url__c</members>
+		<members>LiveChatTranscript.MyAccount_HowToCA_Clicking__c</members>
+		<members>LiveChatTranscript.MyAccount_SignUpNewsLetter_Clicking_Url__c</members>
+		<members>LiveChatTranscript.Other_AboutUs_Doing_Url__c</members>
+		<members>LiveChatTranscript.Other_Sustainability_Click_Url__c</members>
+		<members>LiveChatTranscript.Product_Laces_SeeThem_Url__c</members>
+		<members>LiveChatTranscript.Product_TBLBoots_Guide_Url__c</members>
+		<members>LiveChatTranscript.Product_WaterProof_Range_Url__c</members>
+		<members>LiveChatTranscript.Returns_DeliverItem_PolicyUrl__c</members>
+		<members>LiveChatTranscript.Returns_DeliverItem_Policy_Url__c</members>
+		<members>LiveChatTranscript.Returns_ExchangeMyItem_ExchangePolicy__c</members>
+		<members>LiveChatTranscript.Returns_ReturnPolicy_ReturnPolicy_Url__c</members>
 		<name>CustomField</name>
 	</types>
 	<types>
@@ -86,6 +102,10 @@
 		<members>Case.Send_Rakuten_Case_Creation_Response_Email</members>
 		<members>Case.Send_TBL_Case_Creation_Response_Email</members>
 		<name>WorkflowAlert</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomMetadata</name>
 	</types>
 	<version>53.0</version>
 </Package>
