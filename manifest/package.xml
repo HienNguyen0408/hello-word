@@ -55,10 +55,6 @@
 		<name>EmailTemplate</name>
 	</types>
 	<types>
-		<members>Case.Timberland Send Email When Case Is Created</members>
-		<name>WorkflowRule</name>
-	</types>
-	<types>
 		<members>Case.サンプル割り当てルール</members>
 		<name>AssignmentRule</name>
 	</types>
