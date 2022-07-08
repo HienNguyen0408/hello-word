@@ -75,6 +75,7 @@
 	<types>
 		<members>UpdateCaseByEmail</members>
 		<members>UpdateCaseForChat</members>
+		<members>Send_Email_Response_For_Case_Created_By_Live_Chat</members>
 		<name>Flow</name>
 	</types>
 	<types>
