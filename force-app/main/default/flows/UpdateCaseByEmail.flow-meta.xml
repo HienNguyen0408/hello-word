@@ -3,10 +3,13 @@
     <actionCalls>
         <name>Send_Rakuten_Case_Creation_Response_Email</name>
         <label>Send Rakuten Case Creation Response Email</label>
-        <locationX>314</locationX>
+        <locationX>578</locationX>
         <locationY>935</locationY>
         <actionName>Case.Send_Rakuten_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Rakuten_Update_the_flag_to_track_send_email_response</targetReference>
+        </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>SObjectRowId</name>
@@ -22,6 +25,9 @@
         <locationY>815</locationY>
         <actionName>Case.Send_TBL_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Update_the_flag_to_track_send_email_response</targetReference>
+        </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>SObjectRowId</name>
@@ -34,7 +40,7 @@
     <assignments>
         <name>AssignCaseSubjectForRakuten</name>
         <label>AssignCaseSubjectForRakuten</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>695</locationY>
         <assignmentItems>
             <assignToReference>GetCaseRakuten.Subject</assignToReference>
@@ -58,13 +64,13 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>UpdateCaseRakuten</targetReference>
+            <targetReference>Raukten_Does_receive_the_first_email_from_sender</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>AssignSubject</name>
         <label>AssignSubject</label>
-        <locationX>50</locationX>
+        <locationX>182</locationX>
         <locationY>575</locationY>
         <assignmentItems>
             <assignToReference>getCase.Subject</assignToReference>
@@ -88,13 +94,45 @@
             </value>
         </assignmentItems>
         <connector>
+            <targetReference>Does_receive_the_first_email_from_sender</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Rakuten_Update_the_flag_to_track_send_email_response</name>
+        <label>Update the flag to track send email response</label>
+        <locationX>578</locationX>
+        <locationY>1055</locationY>
+        <assignmentItems>
+            <assignToReference>getCase.Is_Email_To_Case__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UpdateCaseRakuten</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_the_flag_to_track_send_email_response</name>
+        <label>Update the flag to track send email response</label>
+        <locationX>50</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>getCase.Is_Email_To_Case__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
             <targetReference>UpdateCase</targetReference>
         </connector>
     </assignments>
     <decisions>
         <name>CheckEmailMessage</name>
         <label>CheckEmailMessage</label>
-        <locationX>248</locationX>
+        <locationX>545</locationX>
         <locationY>335</locationY>
         <defaultConnector>
             <targetReference>isRakutenEmail</targetReference>
@@ -124,9 +162,31 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Does_receive_the_first_email_from_sender</name>
+        <label>Does receive the first email from sender?</label>
+        <locationX>182</locationX>
+        <locationY>695</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>TBL_New_Email</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>getCase.Is_Email_To_Case__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_TBL_Case_Creation_Response_Email</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>isRakutenEmail</name>
         <label>isRakutenEmail</label>
-        <locationX>446</locationX>
+        <locationX>908</locationX>
         <locationY>455</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -150,6 +210,28 @@
                 <targetReference>GetCaseRakuten</targetReference>
             </connector>
             <label>RakutenEmailAddress</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Raukten_Does_receive_the_first_email_from_sender</name>
+        <label>Does receive the first email from sender</label>
+        <locationX>710</locationX>
+        <locationY>815</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetCaseRakuten.Is_Email_To_Case__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Rakuten_Case_Creation_Response_Email</targetReference>
+            </connector>
+            <label>Yes</label>
         </rules>
     </decisions>
     <interviewLabel>UpdateCaseByEmail {!$Flow.CurrentDateTime}</interviewLabel>
@@ -176,7 +258,7 @@
     <recordLookups>
         <name>getCase</name>
         <label>getCase</label>
-        <locationX>50</locationX>
+        <locationX>182</locationX>
         <locationY>455</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -197,7 +279,7 @@
     <recordLookups>
         <name>GetCaseRakuten</name>
         <label>GetCaseRakuten</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>575</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -219,24 +301,18 @@
         <name>UpdateCase</name>
         <label>UpdateCase</label>
         <locationX>50</locationX>
-        <locationY>695</locationY>
-        <connector>
-            <targetReference>Send_TBL_Case_Creation_Response_Email</targetReference>
-        </connector>
+        <locationY>1055</locationY>
         <inputReference>getCase</inputReference>
     </recordUpdates>
     <recordUpdates>
         <name>UpdateCaseRakuten</name>
         <label>UpdateCaseRakuten</label>
-        <locationX>314</locationX>
-        <locationY>815</locationY>
-        <connector>
-            <targetReference>Send_Rakuten_Case_Creation_Response_Email</targetReference>
-        </connector>
+        <locationX>578</locationX>
+        <locationY>1175</locationY>
         <inputReference>GetCaseRakuten</inputReference>
     </recordUpdates>
     <start>
-        <locationX>122</locationX>
+        <locationX>419</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>CheckEmailMessage</targetReference>
