@@ -2,7 +2,6 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
 		<members>DKS_Customer_Service</members>
-		<members>TBL_Customer_Service</members>
 		<name>CustomApplication</name>
 	</types>
 	<types>
