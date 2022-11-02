@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingCriteriaRules>
+        <fullName>DKS_JP_Customer_Service</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>DKS JP Customer Service</label>
+        <sharedTo>
+            <roleAndSubordinates>DKS_Japan_Team</roleAndSubordinates>
+        </sharedTo>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>External_Site_Id__c</field>
+            <operation>equals</operation>
+            <value>dks-jp</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>DKS - Email Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>DKS - Live Agent</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
         <fullName>TBL_JP_Customer_Service</fullName>
         <accessLevel>Read</accessLevel>
         <label>TBL JP Customer Service</label>
@@ -34,6 +59,17 @@
         </sharedTo>
         <sharedFrom>
             <role>TBL_Japan_Team</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Cases_Sharing_DKS_Team_Role</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Cases Sharing DKS Team Role</label>
+        <sharedTo>
+            <role>DKS_Japan_Team</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>DKS_Japan_Team</role>
         </sharedFrom>
     </sharingOwnerRules>
 </SharingRules>

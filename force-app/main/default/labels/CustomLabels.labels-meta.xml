@@ -84,4 +84,25 @@
         <shortDescription>TECH_TIMBERLAND_EMAIL_ADDRESS</shortDescription>
         <value>duyhuynhsf2@gmail.com</value>
     </labels>
+    <labels>
+        <fullName>TECH_DKS_EMAIL_CASE_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DKS_EMAIL_CASE_RECORD_TYPE</shortDescription>
+        <value>DKS_Email_Case</value>
+    </labels>
+    <labels>
+        <fullName>TECH_DKS_LIVE_AGENT_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DKS_LIVE_AGENT_RECORD_TYPE</shortDescription>
+        <value>DKS_Live_Agent</value>
+    </labels>
+    <labels>
+        <fullName>DKS_JP_EXTERNAL_SITE_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DKS_JP_EXTERNAL_SITE_ID</shortDescription>
+        <value>dks-jp</value>
+    </labels>
 </CustomLabels>
