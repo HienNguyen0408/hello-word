@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Customer_Service</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>BUSINESS_HOUR_TBL_JP</members>
+		<members>CASE_ORIGIN_WEB</members>
+		<members>CASE_WEB_EMAIL_ERROR_MESSAGE</members>
+		<members>DKS_JP_EXTERNAL_SITE_ID</members>
+		<members>LA_PreChat_Base_LiveChat_04I0p000000CaUp_5440439</members>
+		<members>LA_PreChat_Base_StartChat_04I0p000000CaUp_2459871</members>
+		<members>TECH_DKS_EMAIL_CASE_RECORD_TYPE</members>
+		<members>TECH_DKS_LIVE_AGENT_RECORD_TYPE</members>
+		<members>TECH_LIVE_AGENT_RECORD_TYPE</members>
+		<members>TECH_RAKUTEN_EMAIL_ADDRESS</members>
+		<members>TECH_TBL_JP_EXTERNAL_SITE_ID</members>
+		<members>TECH_TIMBERLAND_EMAIL_ADDRESS</members>
+		<members>TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME</members>
+		<members>WEB</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>Set_DKS_External_Site_Id</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Case-ケース フィードのページレイアウト</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>Case.All_Open_Cases_For_DKS_Admin</members>
+		<members>Case.All_Open_Cases_For_TBL_Admin</members>
+		<name>ListView</name>
+	</types>
+	<types>
+		<members>DKS Integration User</members>
+		<members>DKS Japan Customer Service</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>Case.DKS_Email_Case</members>
+		<members>Case.DKS_Live_Agent</members>
+		<name>RecordType</name>
+	</types>
+	<types>
+		<members>Case.DKS_JP_Customer_Service</members>
+		<name>SharingCriteriaRule</name>
+	</types>
+	<types>
+		<members>Case.Cases_Sharing_DKS_Team_Role</members>
+		<name>SharingOwnerRule</name>
+	</types>
+	<version>55.0</version>
+</Package>
