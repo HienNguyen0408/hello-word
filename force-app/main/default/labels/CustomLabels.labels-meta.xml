@@ -67,7 +67,7 @@
         <fullName>CASE_ORIGIN_WEB</fullName>
         <language>en_US</language>
         <protected>false</protected>
-        <shortDescription>CASE ORIGIN WEB</shortDescription>
+        <shortDescription>CASE_ORIGIN_WEB</shortDescription>
         <value>Web</value>
     </labels>
     <labels>
@@ -99,10 +99,31 @@
         <value>DKS_Live_Agent</value>
     </labels>
     <labels>
+        <fullName>CASE_WEB_EMAIL_ERROR_MESSAGE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CASE_WEB_EMAIL_ERROR_MESSAGE</shortDescription>
+        <value>This field can&apos;t be blank.</value>
+    </labels>
+    <labels>
         <fullName>DKS_JP_EXTERNAL_SITE_ID</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>DKS_JP_EXTERNAL_SITE_ID</shortDescription>
         <value>dks-jp</value>
+    </labels>
+    <labels>
+        <fullName>TECH_DKS_RAKUTEN_EMAIL_ADDRESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DKS_RAKUTEN_EMAIL_ADDRESS</shortDescription>
+        <value>rakuten.dks.vfsit@gmail.com</value>
+    </labels>
+    <labels>
+        <fullName>TECH_DKS_SFCC_EMAIL_ADDRESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DKS_SFCC_EMAIL_ADDRESS</shortDescription>
+        <value>duyhuynhdks@gmail.com</value>
     </labels>
 </CustomLabels>
