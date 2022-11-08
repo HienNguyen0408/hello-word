@@ -1,6 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
+        <fullName>LA_PreChat_Base_LiveChat_04I9D0000004CSF_2670501</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_LiveChat_04I9D0000004CSF_2670501</shortDescription>
+        <value>How we can help?</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_LiveChat_04I9D0000004CSK_5429522</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_LiveChat_04I9D0000004CSK_5429522</shortDescription>
+        <value>How we can help?</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_LiveChat_04I9D0000004CSe_4523354</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_LiveChat_04I9D0000004CSe_4523354</shortDescription>
+        <value>How we can help?</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_LiveChat_04I9D0000004CSt_2810552</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_LiveChat_04I9D0000004CSt_2810552</shortDescription>
+        <value>How we can help?</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_LiveChat_04I9D0000004CSy_7155954</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_LiveChat_04I9D0000004CSy_7155954</shortDescription>
+        <value>How we can help?</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_StartChat_04I9D0000004CSF_3433548</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_StartChat_04I9D0000004CSF_3433548</shortDescription>
+        <value>Chat Now</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_StartChat_04I9D0000004CSK_7643021</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_StartChat_04I9D0000004CSK_7643021</shortDescription>
+        <value>Chat Now</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_StartChat_04I9D0000004CSe_9375896</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_StartChat_04I9D0000004CSe_9375896</shortDescription>
+        <value>Chat Now</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_StartChat_04I9D0000004CSt_5912795</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_StartChat_04I9D0000004CSt_5912795</shortDescription>
+        <value>Chat Now</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_StartChat_04I9D0000004CSy_7528294</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_StartChat_04I9D0000004CSy_7528294</shortDescription>
+        <value>Chat Now</value>
+    </labels>
+    <labels>
         <fullName>TECH_EmailCase_RecordType</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -67,7 +147,7 @@
         <fullName>CASE_ORIGIN_WEB</fullName>
         <language>en_US</language>
         <protected>false</protected>
-        <shortDescription>CASE ORIGIN WEB</shortDescription>
+        <shortDescription>CASE_ORIGIN_WEB</shortDescription>
         <value>Web</value>
     </labels>
     <labels>
@@ -99,10 +179,47 @@
         <value>DKS_Live_Agent</value>
     </labels>
     <labels>
+        <fullName>CASE_WEB_EMAIL_ERROR_MESSAGE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CASE_WEB_EMAIL_ERROR_MESSAGE</shortDescription>
+        <value>This field can&apos;t be blank.</value>
+    </labels>
+    <labels>
         <fullName>DKS_JP_EXTERNAL_SITE_ID</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>DKS_JP_EXTERNAL_SITE_ID</shortDescription>
         <value>dks-jp</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_LiveChat_04I0p000000CaUp_5440439</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_LiveChat_04I0p000000CaUp_5440439</shortDescription>
+        <value>How we can help?</value>
+    </labels>
+    <labels>
+        <fullName>LA_PreChat_Base_StartChat_04I0p000000CaUp_2459871</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_PreChat_Base_StartChat_04I0p000000CaUp_2459871</shortDescription>
+        <value>Chat Now</value>
+    </labels>
+    <labels>
+        <fullName>TECH_DKS_RAKUTEN_EMAIL_ADDRESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DKS_RAKUTEN_EMAIL_ADDRESS</shortDescription>
+        <value>rakuten.dks.vfsit@gmail.com</value>
+    </labels>
+    <labels>
+        <fullName>TECH_DKS_SFCC_EMAIL_ADDRESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DKS_SFCC_EMAIL_ADDRESS</shortDescription>
+        <value>duyhuynhdks@gmail.com</value>
     </labels>
 </CustomLabels>
