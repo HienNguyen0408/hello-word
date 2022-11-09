@@ -8,7 +8,6 @@
 		<members>DKS_JP_EXTERNAL_SITE_ID</members>
 		<members>TECH_DKS_EMAIL_CASE_RECORD_TYPE</members>
 		<members>TECH_DKS_LIVE_AGENT_RECORD_TYPE</members>
-		<members>TECH_DKS_RAKUTEN_EMAIL_ADDRESS</members>
 		<members>TECH_DKS_SFCC_EMAIL_ADDRESS</members>
 		<name>CustomLabel</name>
 	</types>
@@ -25,7 +24,6 @@
 		<name>ListView</name>
 	</types>
 	<types>
-		<members>Case.Send_DKS_Rakuten_Case_Creation_Response_Email</members>
 		<members>Case.Send_DKS_SFCC_Case_Creation_Response_Email</members>
 		<name>WorkflowAlert</name>
 	</types>
