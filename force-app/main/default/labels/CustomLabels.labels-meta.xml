@@ -113,13 +113,6 @@
         <value>dks-jp</value>
     </labels>
     <labels>
-        <fullName>TECH_DKS_RAKUTEN_EMAIL_ADDRESS</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>TECH_DKS_RAKUTEN_EMAIL_ADDRESS</shortDescription>
-        <value>rakuten.dks.vfsit@gmail.com</value>
-    </labels>
-    <labels>
         <fullName>TECH_DKS_SFCC_EMAIL_ADDRESS</fullName>
         <language>en_US</language>
         <protected>false</protected>
