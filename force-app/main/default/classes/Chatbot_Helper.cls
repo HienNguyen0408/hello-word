@@ -7,10 +7,17 @@ public class Chatbot_Helper {
 
         if(!lstBH.isEmpty()) {
             for(BusinessHours bh : lstBH) {
-                if(!mapBH.containsKey(Label.TECH_TBL_JP_EXTERNAL_SITE_ID)) {
-                    mapBH.put(Label.TECH_TBL_JP_EXTERNAL_SITE_ID, new List<BusinessHours>());
+                if(bh.Name == Label.TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME) {
+                    if(!mapBH.containsKey(Label.TECH_TBL_JP_EXTERNAL_SITE_ID)) {
+                        mapBH.put(Label.TECH_TBL_JP_EXTERNAL_SITE_ID, new List<BusinessHours>());
+                    }
+                    mapBH.get(Label.TECH_TBL_JP_EXTERNAL_SITE_ID).Add(bh);
+                }else {
+                    if(!mapBH.containsKey(Label.DKS_JP_EXTERNAL_SITE_ID)) {
+                        mapBH.put(Label.DKS_JP_EXTERNAL_SITE_ID, new List<BusinessHours>());
+                    }
+                    mapBH.get(Label.DKS_JP_EXTERNAL_SITE_ID).Add(bh);
                 }
-                mapBH.get(Label.TECH_TBL_JP_EXTERNAL_SITE_ID).Add(bh);
             }
         }
 

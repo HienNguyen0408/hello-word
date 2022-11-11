@@ -16,6 +16,8 @@ public class Chatbot_GetSetTranscriptValues {
         TranscriptInput transcriptInput = transcripts[0];
         Case caseObject = new Case();
         LiveChatTranscript transcriptRecord = LiveChatTranscriptSelector.GetLiveChatTranscriptById(transcriptInput.routableID);
+
+
         String transcriptSiteId = String.isNotBlank(transcriptRecord.External_Site_Id__c) ? transcriptRecord.External_Site_Id__c : '';
         String firstName = String.isNotBlank(transcriptRecord.First_Name__c) ? transcriptRecord.First_Name__c : '';
         String lastName = String.isNotBlank(transcriptRecord.Last_Name__c) ? transcriptRecord.Last_Name__c : '';
@@ -24,9 +26,14 @@ public class Chatbot_GetSetTranscriptValues {
         String subject = String.isNotBlank(transcriptRecord.Subject__c) ? transcriptRecord.Subject__c : '';
         String caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get(Label.TECH_LIVE_AGENT_RECORD_TYPE).getRecordTypeId();
 
+        if(transcriptRecord.LiveChatButton.DeveloperName == Label.TECH_DKS_CHAT_BUTTON) {
+            transcriptSiteId = Label.DKS_JP_EXTERNAL_SITE_ID;
+            caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(Label.TECH_DKS_LIVE_AGENT_RECORD_TYPE).getRecordTypeId();
+        }
+
         if(mBusinessHour.containsKey(transcriptSiteId)) {
             for(BusinessHours tmpBH : mBusinessHour.get(transcriptSiteId)) {
-                if(tmpBH.Name == Label.TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME) {
+                if(tmpBH.Name == Label.TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME || tmpBH.Name == Label.TECH_DKS_JP_BUSINESS_HOUR_NAME) {
                     caseObject.BusinessHoursId = tmpBH.Id;
                 }
             }
