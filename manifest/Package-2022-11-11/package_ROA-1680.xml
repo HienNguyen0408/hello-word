@@ -4,12 +4,17 @@
 		<members>Chatbot_CheckWithinBusinessHours</members>
 		<members>Chatbot_GetSetTranscriptValues</members>
 		<members>Chatbot_Helper</members>
+		<members>LiveChatTranscriptSelector</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
 		<members>TECH_DKS_CHAT_BUTTON</members>
 		<members>TECH_DKS_JP_BUSINESS_HOUR_NAME</members>
 		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>Send_Email_Response_For_Case_Created_By_Live_Chat</members>
+		<name>Flow</name>
 	</types>
 	<version>55.0</version>
 </Package>
