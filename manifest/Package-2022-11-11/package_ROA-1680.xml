@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Chatbot_CheckWithinBusinessHours</members>
+		<members>Chatbot_GetSetTranscriptValues</members>
+		<members>Chatbot_Helper</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>TECH_DKS_CHAT_BUTTON</members>
+		<members>TECH_DKS_JP_BUSINESS_HOUR_NAME</members>
+		<name>CustomLabel</name>
+	</types>
+	<version>55.0</version>
+</Package>
