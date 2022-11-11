@@ -119,4 +119,18 @@
         <shortDescription>TECH_DKS_SFCC_EMAIL_ADDRESS</shortDescription>
         <value>duyhuynhdks@gmail.com</value>
     </labels>
+    <labels>
+        <fullName>TECH_DKS_JP_BUSINESS_HOUR_NAME</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DKS_JP_BUSINESS_HOUR_NAME</shortDescription>
+        <value>DKS JP</value>
+    </labels>
+    <labels>
+        <fullName>TECH_DKS_CHAT_BUTTON</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DKS_CHAT_BUTTON</shortDescription>
+        <value>DKS_Chat_Button</value>
+    </labels>
 </CustomLabels>
