@@ -4,12 +4,12 @@
     <active>true</active>
     <businessProcess>VF CS</businessProcess>
     <compactLayoutAssignment>Compact_Layout_Custom</compactLayoutAssignment>
-    <label>Live Agent</label>
+    <label>TBL Live Agent</label>
     <picklistValues>
         <picklist>Origin</picklist>
         <values>
             <fullName>Web</fullName>
-            <default>false</default>
+            <default>true</default>
         </values>
         <values>
             <fullName>メール</fullName>
@@ -17,7 +17,7 @@
         </values>
         <values>
             <fullName>電話</fullName>
-            <default>true</default>
+            <default>false</default>
         </values>
     </picklistValues>
     <picklistValues>
