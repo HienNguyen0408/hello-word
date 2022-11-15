@@ -4,7 +4,7 @@
     <active>true</active>
     <businessProcess>VF CS</businessProcess>
     <compactLayoutAssignment>Compact_Layout_Custom</compactLayoutAssignment>
-    <label>Email Case</label>
+    <label>TBL Email Case</label>
     <picklistValues>
         <picklist>Origin</picklist>
         <values>
@@ -13,11 +13,11 @@
         </values>
         <values>
             <fullName>メール</fullName>
-            <default>false</default>
+            <default>true</default>
         </values>
         <values>
             <fullName>電話</fullName>
-            <default>true</default>
+            <default>false</default>
         </values>
     </picklistValues>
     <picklistValues>
