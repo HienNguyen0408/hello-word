@@ -1,3 +1,13 @@
+/*------------------------------------------------------------
+Author:        Duy Huynh
+Company:       Merkle
+Description:   
+Test Class:   
+History
+<Date>         <Authors Name>     <Brief Description of Change>
+2022/05/12      Duy Huynh     		Init
+2022/05/15      Duy Huynh           Update styling the background color and border of message box which include hyperlink "here"
+------------------------------------------------------------*/
 .chatMessage {
     font-size: 0.875em;
     max-width: 70%;
@@ -8,7 +18,7 @@
 
 .chasitor {
     color: #FFF;
-    background: #005290;
+    background: #0074bd;
     margin-left: auto;
     border-radius: 10px 10px 0;
     float: right;
@@ -27,6 +37,11 @@
 
 .richText {
     border: 1px solid #AAA;
+}
+
+.richText ol li {
+    display: list-item !important;
+    list-style: circle inside !important;
 }
 
 .youtube, .image, .url {
@@ -61,19 +76,19 @@
     object-fit: cover;
 }
 
-.url .ogpInfo {
+.url {
     padding: 5px;
     color: #333;
 }
 
-.url .ogpInfo .title {
+.url .title {
     word-break: break-all;
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 1;
 }
 
-.url .ogpInfo .description {
+.url .description {
     margin-top: 10px;
     font-size: 0.8rem;
     color: #3e3e3c;
@@ -83,8 +98,19 @@
     -webkit-line-clamp: 3;
 }
 
-.url .ogpInfo .site_name {
+.url {
     margin-top: 10px;
     font-size: .75rem;
-    color: #3e3e3c;
+    color: #3e3e3d;
+}
+
+/*------------------------------------------------------------
+Author:        Duy Huynh
+History
+<Date>         <Authors Name>     <Brief Description of Change>
+2022/05/15      Duy Huynh           Update styling the background color and border of message box which include hyperlink "here"
+------------------------------------------------------------*/
+.richText {
+    background: #f4f4f4;
+    border: none
 }
