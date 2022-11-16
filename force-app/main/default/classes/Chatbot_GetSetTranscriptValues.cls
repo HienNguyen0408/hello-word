@@ -14,6 +14,7 @@ public class Chatbot_GetSetTranscriptValues {
     public static void getUserInformation(List<TranscriptInput> transcripts) {
         Map<String, List<BusinessHours>> mBusinessHour = Chatbot_Helper.getMapBusinessHour(); //Map<SiteId, List<BusinessHours>>
         TranscriptInput transcriptInput = transcripts[0];
+        System.debug('transcriptInput: ' + transcriptInput);
         Case caseObject = new Case();
         LiveChatTranscript transcriptRecord = LiveChatTranscriptSelector.GetLiveChatTranscriptById(transcriptInput.routableID);
 
@@ -24,11 +25,13 @@ public class Chatbot_GetSetTranscriptValues {
         String webEmail = String.isNotBlank(transcriptInput.emailAddress) ? transcriptInput.emailAddress : transcriptRecord.Email_Address__c;
         String webName = firstName + ' ' + lastName;
         String subject = String.isNotBlank(transcriptRecord.Subject__c) ? transcriptRecord.Subject__c : '';
-        String caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByName().get(Label.TECH_LIVE_AGENT_RECORD_TYPE).getRecordTypeId();
+        String caseRecordTypeId = '';
 
         if(transcriptRecord.LiveChatButton.DeveloperName == Label.TECH_DKS_CHAT_BUTTON) {
             transcriptSiteId = Label.DKS_JP_EXTERNAL_SITE_ID;
             caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(Label.TECH_DKS_LIVE_AGENT_RECORD_TYPE).getRecordTypeId();
+        }else {
+            caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(Label.TECH_LIVE_AGENT_RECORD_TYPE).getRecordTypeId();
         }
 
         if(mBusinessHour.containsKey(transcriptSiteId)) {
@@ -41,6 +44,7 @@ public class Chatbot_GetSetTranscriptValues {
 
         caseObject.SuppliedName = webName;
         caseObject.SuppliedEmail = webEmail;
+        System.debug('SuppliedEmail: ' + caseObject.SuppliedEmail);
         caseObject.RecordTypeId = caseRecordTypeId;
         caseObject.Description = String.isNotBlank(transcriptInput.userMessage) ? transcriptInput.userMessage : '';
         caseObject.Subject = subject;

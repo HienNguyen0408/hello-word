@@ -3,8 +3,8 @@
     <actionCalls>
         <name>Send_DKS_Case_Creation_Response_Email</name>
         <label>Send DKS Case Creation Response Email</label>
-        <locationX>314</locationX>
-        <locationY>575</locationY>
+        <locationX>578</locationX>
+        <locationY>695</locationY>
         <actionName>Case.Send_DKS_SFCC_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -18,8 +18,8 @@
     <actionCalls>
         <name>Send_TBL_Case_Creation_Response_Email</name>
         <label>Send TBL Case Creation Response Email</label>
-        <locationX>50</locationX>
-        <locationY>575</locationY>
+        <locationX>138</locationX>
+        <locationY>695</locationY>
         <actionName>Case.Send_TBL_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -32,9 +32,31 @@
     </actionCalls>
     <apiVersion>55.0</apiVersion>
     <decisions>
+        <name>Copy_1_of_Is_Supplied_Email_Null</name>
+        <label>Is Supplied Email Null?</label>
+        <locationX>490</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Send_DKS_Case_Creation_Response_Email</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Is_Supplied_Email_Null_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SuppliedEmail</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Is_Live_Agent_Record_Type</name>
         <label>Is Live Agent Record Type</label>
-        <locationX>380</locationX>
+        <locationX>556</locationX>
         <locationY>335</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -68,12 +90,34 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Is_Supplied_Email_Null</name>
+        <label>Is Supplied Email Null?</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Send_TBL_Case_Creation_Response_Email</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Supplied_Email_Not_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SuppliedEmail</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Is_TBL_Case</name>
         <label>Is TBL Case?</label>
-        <locationX>182</locationX>
+        <locationX>270</locationX>
         <locationY>455</locationY>
         <defaultConnector>
-            <targetReference>Send_DKS_Case_Creation_Response_Email</targetReference>
+            <targetReference>Copy_1_of_Is_Supplied_Email_Null</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -87,7 +131,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Send_TBL_Case_Creation_Response_Email</targetReference>
+                <targetReference>Is_Supplied_Email_Null</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -115,7 +159,7 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <start>
-        <locationX>254</locationX>
+        <locationX>430</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Is_Live_Agent_Record_Type</targetReference>
