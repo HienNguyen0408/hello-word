@@ -6,7 +6,7 @@
         <ruleEntry>
             <assignedTo>Timberland_Japan</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <booleanFilter>(1 OR 2) AND 3 AND (4 OR 5)</booleanFilter>
+            <booleanFilter>(1 OR 2 OR 7) AND 3 AND (4 OR 5 OR 6)</booleanFilter>
             <criteriaItems>
                 <field>Case.Origin</field>
                 <operation>equals</operation>
@@ -25,18 +25,28 @@
             <criteriaItems>
                 <field>Case.RecordTypeId</field>
                 <operation>equals</operation>
-                <value>Email Case</value>
+                <value>TBL Email Case</value>
             </criteriaItems>
             <criteriaItems>
                 <field>Case.RecordTypeId</field>
                 <operation>equals</operation>
-                <value>Live Agent</value>
+                <value>TBL Live Agent</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>TBL Phone</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>電話</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Dickies_Japan</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <booleanFilter>(1 OR 2) AND 3 AND (4 OR 5)</booleanFilter>
+            <booleanFilter>(1 OR 2 OR 7) AND 3 AND (4 OR 5 OR 6)</booleanFilter>
             <criteriaItems>
                 <field>Case.Origin</field>
                 <operation>equals</operation>
@@ -61,6 +71,16 @@
                 <field>Case.RecordTypeId</field>
                 <operation>equals</operation>
                 <value>DKS - Live Agent</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>DKS - Phone</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>電話</value>
             </criteriaItems>
         </ruleEntry>
     </assignmentRule>
