@@ -37,6 +37,13 @@
                     <elementReference>$Label.TECH_DKS_EMAIL_CASE_RECORD_TYPE</elementReference>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.TECH_DKS_PHONE_RECORD_TYPE</elementReference>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Set_DKS_External_Site_Id</targetReference>
             </connector>
