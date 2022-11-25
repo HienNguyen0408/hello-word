@@ -5,6 +5,10 @@
 		<name>AssignmentRule</name>
 	</types>
 	<types>
+		<members>TECH_DKS_PHONE_RECORD_TYPE</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
 		<members>Set_DKS_External_Site_Id</members>
 		<name>Flow</name>
 	</types>

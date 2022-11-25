@@ -133,4 +133,11 @@
         <shortDescription>TECH_DKS_CHAT_BUTTON</shortDescription>
         <value>DKS_Chat_Button</value>
     </labels>
+    <labels>
+        <fullName>TECH_DKS_PHONE_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_DKS_PHONE_RECORD_TYPE</shortDescription>
+        <value>DKS_Phone</value>
+    </labels>
 </CustomLabels>
