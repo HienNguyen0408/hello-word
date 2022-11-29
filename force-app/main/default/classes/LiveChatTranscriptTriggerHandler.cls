@@ -44,15 +44,7 @@ public without sharing class LiveChatTranscriptTriggerHandler extends TriggerHan
             break;
         }
 
-        if(Test.isRunningTest()) {
-            listLiveChatButton = [select Id, DeveloperName
-                                    from LiveChatButton
-                                    where DeveloperName = :Label.TECH_DKS_CHAT_BUTTON limit 1];
-        }else {
-            listLiveChatButton = [select Id, DeveloperName
-                                from LiveChatButton
-                                where id = :liveChatButtonId limit 1];
-        }
+        listLiveChatButton = LiveChatTranscriptSelector.GetListLiveChatButton(liveChatButtonId);
         
         if(!listLiveChatButton.isEmpty()) {
             mapChatButton.put(listLiveChatButton[0].Id, listLiveChatButton[0].DeveloperName);
