@@ -11,5 +11,21 @@ public class LiveChatTranscriptSelector {
         return (transcriptRecords.isEmpty() ? null : transcriptRecords[0]);
     }
 
+    public static List<LiveChatButton> GetListLiveChatButton(String liveChatButtonId) {
+        List<LiveChatButton> listLiveChatButton = new List<LiveChatButton>();
+
+        if(Test.isRunningTest()) {
+            listLiveChatButton = [select Id, DeveloperName
+                                    from LiveChatButton
+                                    where DeveloperName = :Label.TECH_DKS_CHAT_BUTTON limit 1];
+        }else {
+            listLiveChatButton = [select Id, DeveloperName
+                                from LiveChatButton
+                                where id = :liveChatButtonId limit 1];
+        }
+
+        return listLiveChatButton;
+    }
+
     public class CustomException extends Exception {}
 }
