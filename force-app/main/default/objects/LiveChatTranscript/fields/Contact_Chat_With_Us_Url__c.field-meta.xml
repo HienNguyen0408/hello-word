@@ -2,9 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Contact_Chat_With_Us_Url__c</fullName>
     <externalId>false</externalId>
-    <formula>IF( $CustomMetadata.Url_In_Chat_Bot__mdt.tbl_jp.MasterLabel = $Label.TECH_TBL_JP_EXTERNAL_SITE_ID ,   
+    <formula>IF( External_Site_Id__c = $Label.TECH_TBL_JP_EXTERNAL_SITE_ID ,   
     $CustomMetadata.Url_In_Chat_Bot__mdt.tbl_jp.Chat_Email_Us_PrivacyPolicy__c  ,
-   &apos;&apos;)</formula>
+    $CustomMetadata.Url_In_Chat_Bot__mdt.dks_jp.Chat_Email_Us_PrivacyPolicy__c )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Contact/Chat With Us Url</label>
     <required>false</required>
