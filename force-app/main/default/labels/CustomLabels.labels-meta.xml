@@ -131,7 +131,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>TECH_DKS_CHAT_BUTTON</shortDescription>
-        <value>DKS_Chat_Button</value>
+        <value>DKS_Live_Chat_Support</value>
     </labels>
     <labels>
         <fullName>TECH_DKS_PHONE_RECORD_TYPE</fullName>
