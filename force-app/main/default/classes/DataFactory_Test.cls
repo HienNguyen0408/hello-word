@@ -19,5 +19,33 @@ global without sharing class DataFactory_Test{
 
         insert transcript;
         return transcript;
-    } 
+    }
+
+    public static List<Case> createCases() {
+        List<Case> listCase = new List<Case>();
+        Case tmpCase = new Case(
+            Subject = 'Case 001'
+        );
+
+        Case tmpCase2 = new Case(
+            Subject = 'Case 002'
+        );
+
+        listCase.Add(tmpCase);
+        listCase.Add(tmpCase2);
+        insert listCase;
+        return listCase;
+    }
+
+    // public static List<EmailMessage> createEmailMessages(Id caseId) {
+    //     List<EmailMessage> listEmailMessage = new List<EmailMessage>();
+    //     EmailMessage em = new EmailMessage(
+    //         Subject = 'Case 001',
+    //         Incoming = true,
+    //         ParentId = caseId
+    //     );
+    //     listEmailMessage.Add(em);
+    //     insert listEmailMessage;
+    //     return listEmailMessage;
+    // }
 }

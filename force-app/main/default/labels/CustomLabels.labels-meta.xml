@@ -140,4 +140,11 @@
         <shortDescription>TECH_DKS_PHONE_RECORD_TYPE</shortDescription>
         <value>DKS_Phone</value>
     </labels>
+    <labels>
+        <fullName>CUSTOMER_LABEL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CUSTOMER LABEL</shortDescription>
+        <value>Customer</value>
+    </labels>
 </CustomLabels>

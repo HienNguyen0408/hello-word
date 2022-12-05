@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>CaseSelector</members>
+		<members>CaseTriggerHandler</members>
+		<members>CaseTriggerHandler_Test</members>
+		<members>CheckRecursive</members>
+		<members>DataFactory_Test</members>
+		<members>EmailMessageTriggerHandler</members>
+		<members>EmailMessageTriggerHandler_Test</members>
+		<members>TriggerHandler</members>
+		<members>TriggerHandler_Test</members>
+		<members>UserSelector</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>CaseTrigger</members>
+		<members>EmailMessageTrigger</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>Case.Last_Modified_By__c</members>
+		<members>Case.Last_Modified_Date__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>CUSTOM_LABEL</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>Case-ケース フィードのページレイアウト</members>
+		<name>Layout</name>
+	</types>
+	<version>55.0</version>
+</Package>
