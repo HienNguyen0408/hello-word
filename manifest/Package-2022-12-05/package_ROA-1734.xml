@@ -8,8 +8,6 @@
 		<members>DataFactory_Test</members>
 		<members>EmailMessageTriggerHandler</members>
 		<members>EmailMessageTriggerHandler_Test</members>
-		<members>TriggerHandler</members>
-		<members>TriggerHandler_Test</members>
 		<members>UserSelector</members>
 		<name>ApexClass</name>
 	</types>
