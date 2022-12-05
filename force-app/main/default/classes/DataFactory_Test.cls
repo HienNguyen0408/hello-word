@@ -36,16 +36,4 @@ global without sharing class DataFactory_Test{
         insert listCase;
         return listCase;
     }
-
-    // public static List<EmailMessage> createEmailMessages(Id caseId) {
-    //     List<EmailMessage> listEmailMessage = new List<EmailMessage>();
-    //     EmailMessage em = new EmailMessage(
-    //         Subject = 'Case 001',
-    //         Incoming = true,
-    //         ParentId = caseId
-    //     );
-    //     listEmailMessage.Add(em);
-    //     insert listEmailMessage;
-    //     return listEmailMessage;
-    // }
 }
