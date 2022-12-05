@@ -15,12 +15,9 @@ public class CaseTriggerHandler extends TriggerHandler {
     }
 
     public static void updateLastModified () {
-        System.System.debug('CheckRecusise: ' + CheckRecursive.isUpdatedCase);
         List<User> listUser = new List<User>();
         String caseId = '';
         List<Id> listCaseId = new List<Id>();
-        List<Case> listExistingCase = new List<Case>();
-        List<EmailMessage> listEmailMessage = new List<EmailMessage>();
         String userId = UserInfo.getUserId();
 
         for(Case tmpCase : (List<Case>)Trigger.New) {
