@@ -8,6 +8,8 @@
     <columns>CASES.PRIORITY</columns>
     <columns>CASES.CREATED_DATE</columns>
     <columns>CORE.USERS.ALIAS</columns>
+    <columns>Last_Modified_By__c</columns>
+    <columns>Last_Modified_Date__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>External_Site_Id__c</field>

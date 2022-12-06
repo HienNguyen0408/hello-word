@@ -30,7 +30,13 @@ public class CaseTriggerHandler extends TriggerHandler {
             for(Case tmpCase : (List<Case>)Trigger.New) {
                 if(CheckRecursive.isUpdatedCase == false) {
                     tmpCase.Last_Modified_Date__c = System.now();
-                    tmpCase.Last_Modified_By__c = listUser[0].LastName + ' ' + listUser[0].FirstName;
+                    if(listUser[0].LastName != null && listUser[0].FirstName == null) {
+                        tmpCase.Last_Modified_By__c = listUser[0].LastName;
+                    }else if(listUser[0].LastName == null && listUser[0].FirstName != null) {
+                        tmpCase.Last_Modified_By__c = listUser[0].FirstName;
+                    }else {
+                        tmpCase.Last_Modified_By__c = listUser[0].LastName + ' ' + listUser[0].FirstName;
+                    }
                 }
             }
         }

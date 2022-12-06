@@ -36,7 +36,13 @@ public without sharing class EmailMessageTriggerHandler extends TriggerHandler{
                 if(!listCaseUpdating.isEmpty()) {
                     for(Case tmpCase: listCaseUpdating) {
                         if(CheckRecursive.isUpdatedCase == false) {
-                            tmpCase.Last_Modified_By__c = listUser[0].LastName + ' ' + listUser[0].FirstName;
+                            if(listUser[0].LastName != null && listUser[0].FirstName == null) {
+                                tmpCase.Last_Modified_By__c = listUser[0].LastName;
+                            }else if(listUser[0].LastName == null && listUser[0].FirstName != null) {
+                                tmpCase.Last_Modified_By__c = listUser[0].FirstName;
+                            }else {
+                                tmpCase.Last_Modified_By__c = listUser[0].LastName + ' ' + listUser[0].FirstName;
+                            }
                         }else{
                             tmpCase.Last_Modified_By__c = Label.CUSTOMER_LABEL; 
                         }
