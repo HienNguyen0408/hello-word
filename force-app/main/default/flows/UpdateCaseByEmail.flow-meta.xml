@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
-        <name>Send_DKS_Case_Creation_Response_Email</name>
+        <name>Copy_1_of_Send_DKS_Case_Creation_Response_Email</name>
         <label>Send DKS Case Creation Response Email</label>
         <locationX>314</locationX>
         <locationY>1271</locationY>
@@ -19,9 +19,27 @@
         </inputParameters>
     </actionCalls>
     <actionCalls>
+        <name>Send_DKS_Case_Creation_Response_Email</name>
+        <label>Send DKS Case Creation Response Email</label>
+        <locationX>842</locationX>
+        <locationY>1391</locationY>
+        <actionName>Case.Send_DKS_SFCC_Case_Creation_Response_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Update_the_flag_to_track_send_email_response</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>getCase.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
         <name>Send_Rakuten_Case_Creation_Response_Email</name>
         <label>Send Rakuten Case Creation Response Email</label>
-        <locationX>1018</locationX>
+        <locationX>1546</locationX>
         <locationY>1055</locationY>
         <actionName>Case.Send_Rakuten_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
@@ -38,6 +56,24 @@
     </actionCalls>
     <actionCalls>
         <name>Send_TBL_Case_Creation_Response_Email</name>
+        <label>Send TBL Case Creation Response Email</label>
+        <locationX>578</locationX>
+        <locationY>1271</locationY>
+        <actionName>Case.Send_TBL_Case_Creation_Response_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Update_the_flag_to_track_send_email_response</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>getCase.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_TBL_DKS_Case_Creation_Response_Email</name>
         <label>Send TBL Case Creation Response Email</label>
         <locationX>50</locationX>
         <locationY>1271</locationY>
@@ -58,7 +94,7 @@
     <assignments>
         <name>Assign_DKS_SFCC_Case_Subject</name>
         <label>Assign DKS SFCC Case Subject</label>
-        <locationX>699</locationX>
+        <locationX>1012</locationX>
         <locationY>695</locationY>
         <assignmentItems>
             <assignToReference>getCase.Subject</assignToReference>
@@ -88,7 +124,7 @@
     <assignments>
         <name>Assign_TBL_SFCC_Case_Subject</name>
         <label>Assign TBL SFCC Case Subject</label>
-        <locationX>435</locationX>
+        <locationX>748</locationX>
         <locationY>695</locationY>
         <assignmentItems>
             <assignToReference>getCase.Subject</assignToReference>
@@ -118,7 +154,7 @@
     <assignments>
         <name>AssignCaseSubjectForRakuten</name>
         <label>AssignCaseSubjectForRakuten</label>
-        <locationX>1304</locationX>
+        <locationX>1832</locationX>
         <locationY>695</locationY>
         <assignmentItems>
             <assignToReference>GetCaseRakuten.Subject</assignToReference>
@@ -148,7 +184,7 @@
     <assignments>
         <name>Rakuten_Update_the_flag_to_track_send_email_response</name>
         <label>Update the flag to track send email response</label>
-        <locationX>1150</locationX>
+        <locationX>1678</locationX>
         <locationY>1271</locationY>
         <assignmentItems>
             <assignToReference>GetCaseRakuten.Is_Email_To_Case__c</assignToReference>
@@ -164,8 +200,8 @@
     <assignments>
         <name>Update_the_flag_to_track_send_email_response</name>
         <label>Update the flag to track send email response</label>
-        <locationX>380</locationX>
-        <locationY>1583</locationY>
+        <locationX>479</locationX>
+        <locationY>1799</locationY>
         <assignmentItems>
             <assignToReference>getCase.Is_Email_To_Case__c</assignToReference>
             <operator>Assign</operator>
@@ -180,7 +216,7 @@
     <decisions>
         <name>CheckEmailMessage</name>
         <label>CheckEmailMessage</label>
-        <locationX>1040</locationX>
+        <locationX>1460</locationX>
         <locationY>335</locationY>
         <defaultConnector>
             <targetReference>isRakutenEmail</targetReference>
@@ -217,39 +253,84 @@
         </rules>
     </decisions>
     <decisions>
-        <name>Does_receive_the_first_email_from_sender</name>
-        <label>Does receive the first email from sender?</label>
-        <locationX>567</locationX>
-        <locationY>911</locationY>
+        <name>Copy_1_of_Is_Enable_DKS_Response_Email</name>
+        <label>Is Enable DKS Response Email</label>
+        <locationX>974</locationX>
+        <locationY>1271</locationY>
+        <defaultConnector>
+            <targetReference>Update_the_flag_to_track_send_email_response</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>TBL_New_Email</name>
+            <name>Copy_3_of_Yes</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>getCase.Is_Email_To_Case__c</leftValueReference>
+                <leftValueReference>IsEnableEmailResponse</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>IsDKS</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IsTBL</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>getCase.External_Site_Id__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.DKS_JP_EXTERNAL_SITE_ID</elementReference>
+                </rightValue>
+            </conditions>
             <connector>
-                <targetReference>Is_Enable_Response_Email</targetReference>
+                <targetReference>Send_DKS_Case_Creation_Response_Email</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
     </decisions>
     <decisions>
-        <name>If_TBL_Case_SendAlertEmail</name>
-        <label>If TBL Case</label>
-        <locationX>182</locationX>
+        <name>Copy_1_of_Is_Enable_TBL_Response_Email</name>
+        <label>Is Enable TBL Response Email</label>
+        <locationX>776</locationX>
         <locationY>1151</locationY>
         <defaultConnector>
-            <targetReference>Send_DKS_Case_Creation_Response_Email</targetReference>
+            <targetReference>Copy_1_of_Is_Enable_DKS_Response_Email</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>If_TBL_Case_SendAlertEmail_Yes</name>
+            <name>Copy_2_of_Yes</name>
             <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsEnableEmailResponse</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IsTBL</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IsDKS</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
             <conditions>
                 <leftValueReference>getCase.External_Site_Id__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -264,16 +345,63 @@
         </rules>
     </decisions>
     <decisions>
-        <name>Is_Enable_Response_Email</name>
-        <label>Is Enable Response Email</label>
-        <locationX>380</locationX>
-        <locationY>1031</locationY>
+        <name>Does_receive_the_first_email_from_sender</name>
+        <label>Does receive the first email from sender?</label>
+        <locationX>880</locationX>
+        <locationY>911</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>TBL_New_Email</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>getCase.Is_Email_To_Case__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Enable_TBL_AND_DKS_Response_Email</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Enable_TBL</name>
+        <label>Is Enable TBL</label>
+        <locationX>182</locationX>
+        <locationY>1151</locationY>
         <defaultConnector>
-            <targetReference>Update_the_flag_to_track_send_email_response</targetReference>
+            <targetReference>Copy_1_of_Send_DKS_Case_Creation_Response_Email</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>IsEnableResponseEmail_Yes</name>
+            <name>Is_TBL_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>getCase.External_Site_Id__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.TECH_TBL_JP_EXTERNAL_SITE_ID</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_TBL_DKS_Case_Creation_Response_Email</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Enable_TBL_AND_DKS_Response_Email</name>
+        <label>Is Enable TBL AND DKS Response Email</label>
+        <locationX>479</locationX>
+        <locationY>1031</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Is_Enable_TBL_Response_Email</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Enable_TBL_AND_DKS_Response_Email_Yes</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>IsEnableEmailResponse</leftValueReference>
@@ -282,8 +410,22 @@
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>IsDKS</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IsTBL</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
             <connector>
-                <targetReference>If_TBL_Case_SendAlertEmail</targetReference>
+                <targetReference>Is_Enable_TBL</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -291,7 +433,7 @@
     <decisions>
         <name>Is_TBL_Case</name>
         <label>Is TBL Case?</label>
-        <locationX>567</locationX>
+        <locationX>880</locationX>
         <locationY>575</locationY>
         <defaultConnector>
             <targetReference>Assign_DKS_SFCC_Case_Subject</targetReference>
@@ -316,7 +458,7 @@
     <decisions>
         <name>isRakutenEmail</name>
         <label>isRakutenEmail</label>
-        <locationX>1513</locationX>
+        <locationX>2041</locationX>
         <locationY>455</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -345,7 +487,7 @@
     <decisions>
         <name>Rakuten_Is_Enable_Response_Email</name>
         <label>Is Enable Response Email</label>
-        <locationX>1150</locationX>
+        <locationX>1678</locationX>
         <locationY>935</locationY>
         <defaultConnector>
             <targetReference>Rakuten_Update_the_flag_to_track_send_email_response</targetReference>
@@ -370,7 +512,7 @@
     <decisions>
         <name>Raukten_Does_receive_the_first_email_from_sender</name>
         <label>Does receive the first email from sender</label>
-        <locationX>1304</locationX>
+        <locationX>1832</locationX>
         <locationY>815</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -391,9 +533,19 @@
     </decisions>
     <environments>Default</environments>
     <formulas>
+        <name>IsDKS</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Setup.Email_Response__c.DKS__c}</expression>
+    </formulas>
+    <formulas>
         <name>IsEnableEmailResponse</name>
         <dataType>Boolean</dataType>
         <expression>{!$Setup.Email_Response__c.Is_Enable__c}=true</expression>
+    </formulas>
+    <formulas>
+        <name>IsTBL</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Setup.Email_Response__c.TBL__c}</expression>
     </formulas>
     <interviewLabel>UpdateCaseByEmail {!$Flow.CurrentDateTime}</interviewLabel>
     <label>UpdateCaseByEmail</label>
@@ -419,7 +571,7 @@
     <recordLookups>
         <name>getCase</name>
         <label>getCase</label>
-        <locationX>567</locationX>
+        <locationX>880</locationX>
         <locationY>455</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -440,7 +592,7 @@
     <recordLookups>
         <name>GetCaseRakuten</name>
         <label>GetCaseRakuten</label>
-        <locationX>1304</locationX>
+        <locationX>1832</locationX>
         <locationY>575</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -461,19 +613,19 @@
     <recordUpdates>
         <name>UpdateCase</name>
         <label>UpdateCase</label>
-        <locationX>380</locationX>
-        <locationY>1703</locationY>
+        <locationX>479</locationX>
+        <locationY>1919</locationY>
         <inputReference>getCase</inputReference>
     </recordUpdates>
     <recordUpdates>
         <name>UpdateCaseRakuten</name>
         <label>UpdateCaseRakuten</label>
-        <locationX>1150</locationX>
+        <locationX>1678</locationX>
         <locationY>1391</locationY>
         <inputReference>GetCaseRakuten</inputReference>
     </recordUpdates>
     <start>
-        <locationX>914</locationX>
+        <locationX>1334</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>CheckEmailMessage</targetReference>
@@ -512,6 +664,13 @@
         <value>
             <stringValue>[Dickies JP]</stringValue>
         </value>
+    </variables>
+    <variables>
+        <name>HasBeenSentTBLResponseEmail</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
     </variables>
     <variables>
         <name>RakutenValue</name>
