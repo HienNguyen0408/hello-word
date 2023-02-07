@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>VNS_Customer_Service</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>Case.VNS_Email_Case</members>
+		<members>Case.VNS_Live_Agent</members>
+		<members>Case.VNS_Phone</members>
+		<name>RecordType</name>
+	</types>
+	<types>
+		<members>VNS_Japan_Team</members>
+		<name>Role</name>
+	</types>
+	<types>
+		<members>Case</members>
+		<name>SharingRules</name>
+	</types>
+	<version>55.0</version>
+</Package>
