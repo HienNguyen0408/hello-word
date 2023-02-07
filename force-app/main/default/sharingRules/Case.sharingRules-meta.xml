@@ -7,7 +7,7 @@
         <sharedTo>
             <roleAndSubordinates>DKS_Japan_Team</roleAndSubordinates>
         </sharedTo>
-        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
         <criteriaItems>
             <field>External_Site_Id__c</field>
             <operation>equals</operation>
@@ -23,16 +23,21 @@
             <operation>equals</operation>
             <value>DKS - Live Agent</value>
         </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>DKS - Phone</value>
+        </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
         <fullName>TBL_JP_Customer_Service</fullName>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Edit</accessLevel>
         <label>TBL JP Customer Service</label>
         <sharedTo>
-            <roleAndSubordinates>TBL_Japan_Team</roleAndSubordinates>
+            <role>TBL_Japan_Team</role>
         </sharedTo>
-        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
         <criteriaItems>
             <field>External_Site_Id__c</field>
             <operation>equals</operation>
@@ -41,26 +46,50 @@
         <criteriaItems>
             <field>RecordTypeId</field>
             <operation>equals</operation>
-            <value>Email Case</value>
+            <value>TBL Email Case</value>
         </criteriaItems>
         <criteriaItems>
             <field>RecordTypeId</field>
             <operation>equals</operation>
-            <value>Live Agent</value>
+            <value>TBL Live Agent</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>TBL Phone</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
-    <sharingOwnerRules>
-        <fullName>Cases_Sharing_AJP_Team_Role</fullName>
+    <sharingCriteriaRules>
+        <fullName>VNS_JP_Customer_Service</fullName>
         <accessLevel>Edit</accessLevel>
-        <label>Cases Sharing AJP Team Role</label>
+        <label>VNS JP Customer Service</label>
         <sharedTo>
-            <role>TBL_Japan_Team</role>
+            <roleAndSubordinates>VNS_Japan_Team</roleAndSubordinates>
         </sharedTo>
-        <sharedFrom>
-            <role>TBL_Japan_Team</role>
-        </sharedFrom>
-    </sharingOwnerRules>
+        <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <field>External_Site_Id__c</field>
+            <operation>equals</operation>
+            <value>vns-jp</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>VNS - Email Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>VNS - Live Agent</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>VNS - Phone</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
     <sharingOwnerRules>
         <fullName>Cases_Sharing_DKS_Team_Role</fullName>
         <accessLevel>Edit</accessLevel>
@@ -70,6 +99,28 @@
         </sharedTo>
         <sharedFrom>
             <role>DKS_Japan_Team</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Cases_Sharing_TBL_Team_Role</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Cases Sharing TBL Team Role</label>
+        <sharedTo>
+            <role>TBL_Japan_Team</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>TBL_Japan_Team</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Cases_Sharing_VNS_Team_Role</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Cases Sharing VNS Team Role</label>
+        <sharedTo>
+            <role>VNS_Japan_Team</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>VNS_Japan_Team</role>
         </sharedFrom>
     </sharingOwnerRules>
 </SharingRules>
