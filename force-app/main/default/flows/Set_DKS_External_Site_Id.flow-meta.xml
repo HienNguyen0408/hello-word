@@ -14,10 +14,23 @@
             </value>
         </assignmentItems>
     </assignments>
+    <assignments>
+        <name>Set_VNS_External_Site_Id</name>
+        <label>Set VNS External Site Id</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.External_Site_Id__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Label.VNS_JP_EXTERNAL_SITE_ID</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
     <decisions>
-        <name>Is_DKS_Case</name>
-        <label>Is DKS Case?</label>
-        <locationX>182</locationX>
+        <name>Check_Record_Type_For_Case</name>
+        <label>Check Record Type For Case ?</label>
+        <locationX>314</locationX>
         <locationY>311</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -47,7 +60,36 @@
             <connector>
                 <targetReference>Set_DKS_External_Site_Id</targetReference>
             </connector>
-            <label>Yes</label>
+            <label>DKS</label>
+        </rules>
+        <rules>
+            <name>Is_VNS_Case_Yes</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.TECH_VNS_EMAIL_CASE_RECORD_TYPE</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.TECH_VNS_LIVE_AGENT_RECORD_TYPE</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.TECH_VNS_PHONE_RECORD_TYPE</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_VNS_External_Site_Id</targetReference>
+            </connector>
+            <label>VNS</label>
         </rules>
     </decisions>
     <environments>Default</environments>
@@ -73,10 +115,10 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <start>
-        <locationX>56</locationX>
+        <locationX>188</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Is_DKS_Case</targetReference>
+            <targetReference>Check_Record_Type_For_Case</targetReference>
         </connector>
         <object>Case</object>
         <recordTriggerType>Create</recordTriggerType>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Case.サンプル割り当てルール</members>
+		<name>AssignmentRule</name>
+	</types>
+	<types>
+		<members>TECH_VNS_EMAIL_CASE_RECORD_TYPE</members>
+		<members>TECH_VNS_LIVE_AGENT_RECORD_TYPE</members>
+		<members>TECH_VNS_PHONE_RECORD_TYPE</members>
+		<members>VNS_JP_EXTERNAL_SITE_ID</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>Set_DKS_External_Site_Id</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Case-VNS - Phone Page Layout</members>
+		<name>Layout</name>
+	</types>
+	<version>55.0</version>
+</Package>
