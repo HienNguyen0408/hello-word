@@ -147,4 +147,32 @@
         <shortDescription>CUSTOMER LABEL</shortDescription>
         <value>Customer</value>
     </labels>
+    <labels>
+        <fullName>TECH_VNS_EMAIL_CASE_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH VNS EMAIL CASE RECORD TYPE</shortDescription>
+        <value>VNS_Email_Case</value>
+    </labels>
+    <labels>
+        <fullName>TECH_VNS_LIVE_AGENT_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH VNS LIVE AGENT RECORD TYPE</shortDescription>
+        <value>VNS_Live_Agent</value>
+    </labels>
+    <labels>
+        <fullName>TECH_VNS_PHONE_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH VNS PHONE RECORD TYPE</shortDescription>
+        <value>VNS_Phone</value>
+    </labels>
+    <labels>
+        <fullName>VNS_JP_EXTERNAL_SITE_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VNS JP EXTERNAL SITE ID</shortDescription>
+        <value>vns-jp</value>
+    </labels>
 </CustomLabels>
