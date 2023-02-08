@@ -12,6 +12,10 @@
 		<name>CustomLabel</name>
 	</types>
 	<types>
+		<members>unfiled$public/Support_Vans_case_creation</members>
+		<name>EmailTemplate</name>
+	</types>
+	<types>
 		<members>Set_DKS_External_Site_Id</members>
 		<name>Flow</name>
 	</types>
