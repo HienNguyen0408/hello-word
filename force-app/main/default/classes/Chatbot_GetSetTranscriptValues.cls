@@ -30,13 +30,16 @@ public class Chatbot_GetSetTranscriptValues {
         if(transcriptRecord.LiveChatButton.DeveloperName == Label.TECH_DKS_CHAT_BUTTON) {
             transcriptSiteId = Label.DKS_JP_EXTERNAL_SITE_ID;
             caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(Label.TECH_DKS_LIVE_AGENT_RECORD_TYPE).getRecordTypeId();
-        }else {
+        } else if(transcriptRecord.LiveChatButton.DeveloperName == Label.TECH_VNS_CHAT_BUTTON) {
+            transcriptSiteId = Label.VNS_JP_EXTERNAL_SITE_ID;
+            caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(Label.TECH_VNS_LIVE_AGENT_RECORD_TYPE).getRecordTypeId();
+        } else {
             caseRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(Label.TECH_LIVE_AGENT_RECORD_TYPE).getRecordTypeId();
         }
 
         if(mBusinessHour.containsKey(transcriptSiteId)) {
             for(BusinessHours tmpBH : mBusinessHour.get(transcriptSiteId)) {
-                if(tmpBH.Name == Label.TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME || tmpBH.Name == Label.TECH_DKS_JP_BUSINESS_HOUR_NAME) {
+                if(tmpBH.Name == Label.TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME || tmpBH.Name == Label.TECH_DKS_JP_BUSINESS_HOUR_NAME || Label.TECH_VNS_JP_BUSINESS_HOUR_NAME) {
                     caseObject.BusinessHoursId = tmpBH.Id;
                 }
             }

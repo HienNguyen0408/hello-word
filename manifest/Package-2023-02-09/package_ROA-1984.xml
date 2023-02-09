@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>VNS</members>
+		<name>Bot</name>
+	</types>
+	<types>
+		<members>TECH_VNS_CHAT_BUTTON</members>
+		<members>TECH_VNS_JP_BUSINESS_HOUR_NAME</members>
+		<members>TECH_VNS_JP_EXTERNAL_SITE_ID</members>
+		<members>VNS_JP_EXTERNAL_SITE_ID</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>Send_Email_Response_For_Case_Created_By_Live_Chat</members>
+		<name>Flow</name>
+	</types>
+	<version>55.0</version>
+</Package>

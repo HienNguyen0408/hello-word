@@ -3,7 +3,7 @@
     <actionCalls>
         <name>Send_DKS_Case_Creation_Response_Email</name>
         <label>Send DKS Case Creation Response Email</label>
-        <locationX>578</locationX>
+        <locationX>1150</locationX>
         <locationY>695</locationY>
         <actionName>Case.Send_DKS_SFCC_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
@@ -18,7 +18,22 @@
     <actionCalls>
         <name>Send_TBL_Case_Creation_Response_Email</name>
         <label>Send TBL Case Creation Response Email</label>
-        <locationX>138</locationX>
+        <locationX>182</locationX>
+        <locationY>695</locationY>
+        <actionName>Case.Send_TBL_Case_Creation_Response_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_VNS_Case_Creation_Response_Email</name>
+        <label>Send VNS Case Creation Response Email</label>
+        <locationX>622</locationX>
         <locationY>695</locationY>
         <actionName>Case.Send_TBL_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
@@ -34,7 +49,7 @@
     <decisions>
         <name>Copy_1_of_Is_Supplied_Email_Null</name>
         <label>Is Supplied Email Null?</label>
-        <locationX>490</locationX>
+        <locationX>1018</locationX>
         <locationY>575</locationY>
         <defaultConnector>
             <targetReference>Send_DKS_Case_Creation_Response_Email</targetReference>
@@ -56,12 +71,12 @@
     <decisions>
         <name>Is_Live_Agent_Record_Type</name>
         <label>Is Live Agent Record Type</label>
-        <locationX>556</locationX>
+        <locationX>974</locationX>
         <locationY>335</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes</name>
-            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
+            <conditionLogic>(1 OR 3 OR 4) AND 2</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.RecordType.Name</leftValueReference>
                 <operator>EqualTo</operator>
@@ -81,6 +96,13 @@
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>$Label.TECH_DKS_LIVE_AGENT_RECORD_TYPE</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.TECH_VNS_LIVE_AGENT_RECORD_TYPE</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -112,9 +134,31 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Is_Supplied_Email_Null_1</name>
+        <label>Is Supplied Email Null?</label>
+        <locationX>534</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Send_VNS_Case_Creation_Response_Email</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Supplied_Email_Not_Yes_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SuppliedEmail</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Is_TBL_Case</name>
         <label>Is TBL Case?</label>
-        <locationX>270</locationX>
+        <locationX>534</locationX>
         <locationY>455</locationY>
         <defaultConnector>
             <targetReference>Copy_1_of_Is_Supplied_Email_Null</targetReference>
@@ -132,6 +176,21 @@
             </conditions>
             <connector>
                 <targetReference>Is_Supplied_Email_Null</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+        <rules>
+            <name>Is_VNS_Case_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.External_Site_Id__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.TECH_VNS_JP_EXTERNAL_SITE_ID</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Supplied_Email_Null_1</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -159,7 +218,7 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <start>
-        <locationX>430</locationX>
+        <locationX>848</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Is_Live_Agent_Record_Type</targetReference>
@@ -168,5 +227,5 @@
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
 </Flow>

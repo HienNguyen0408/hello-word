@@ -20,7 +20,7 @@ public class Chatbot_CheckWithinBusinessHours {
 
         if(mBusinessHour.containsKey(transcriptSiteId)) {
             for(BusinessHours tmpBH : mBusinessHour.get(transcriptSiteId)) {
-                if(tmpBH.Name == Label.TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME || tmpBH.Name == Label.TECH_DKS_JP_BUSINESS_HOUR_NAME) {
+                if(tmpBH.Name == Label.TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME || tmpBH.Name == Label.TECH_DKS_JP_BUSINESS_HOUR_NAME || Label.TECH_VNS_JP_BUSINESS_HOUR_NAME) {
                     isWithin = BusinessHours.isWithin(tmpBH.Id, targetTime);
                 }
             }
