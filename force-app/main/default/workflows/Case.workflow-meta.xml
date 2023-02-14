@@ -11,4 +11,26 @@
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/Support_VF_Case_Created</template>
     </alerts>
+    <alerts>
+        <fullName>Send_VNS_Rakuten_Case_Creation_Response_Email</fullName>
+        <description>Send VNS Rakuten Case Creation Response Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Support_Vans_case_creation</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_VNS_SFCC_Case_Creation_Response_Email</fullName>
+        <description>Send VNS SFCC Case Creation Response Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Support_Vans_case_creation</template>
+    </alerts>
 </Workflow>
