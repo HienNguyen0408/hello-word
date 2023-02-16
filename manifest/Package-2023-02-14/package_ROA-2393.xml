@@ -13,5 +13,13 @@
 		<members>Case.Send_VNS_SFCC_Case_Creation_Response_Email</members>
 		<name>WorkflowAlert</name>
 	</types>
+	<types>
+		<members>Email_Response__c.VNS__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>TECH_VANS_EMAIL_ADDRESS</members>
+		<name>CustomLabel</name>
+	</types>
 	<version>55.0</version>
 </Package>
