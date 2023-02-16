@@ -175,4 +175,11 @@
         <shortDescription>VNS JP EXTERNAL SITE ID</shortDescription>
         <value>vns-jp</value>
     </labels>
+    <labels>
+        <fullName>TECH_VANS_EMAIL_ADDRESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH VANS EMAIL ADDRESS</shortDescription>
+        <value>tri.tranvns@gmail.com</value>
+    </labels>
 </CustomLabels>
