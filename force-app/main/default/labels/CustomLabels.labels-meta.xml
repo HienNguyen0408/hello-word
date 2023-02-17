@@ -182,4 +182,11 @@
         <shortDescription>TECH VANS EMAIL ADDRESS</shortDescription>
         <value>tri.tranvns@gmail.com</value>
     </labels>
+    <labels>
+        <fullName>TECH_VNS_JP_EXTERNAL_SITE_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH VNS JP EXTERNAL SITE ID</shortDescription>
+        <value>vns-jp</value>
+    </labels>
 </CustomLabels>
