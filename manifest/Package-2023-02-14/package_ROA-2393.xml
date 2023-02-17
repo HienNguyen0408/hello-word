@@ -18,6 +18,7 @@
 	</types>
 	<types>
 		<members>TECH_VANS_EMAIL_ADDRESS</members>
+		<members>TECH_VNS_JP_EXTERNAL_SITE_ID</members>
 		<name>CustomLabel</name>
 	</types>
 	<version>55.0</version>
