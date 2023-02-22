@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bot xmlns="http://soap.sforce.com/2006/04/metadata">
     <botMlDomain>
-        <label>VNS</label>
+        <label>VANS</label>
         <mlIntents>
             <developerName>Delivery</developerName>
             <label>Delivery</label>
@@ -27,7 +27,7 @@ So if your order has only just shipped don&apos;t worry, it&apos;s totally norma
             <extractionType>Value</extractionType>
             <label>Re-input email address</label>
         </mlSlotClasses>
-        <name>VNS</name>
+        <name>VANS</name>
     </botMlDomain>
     <contextVariables>
         <contextVariableMappings>
@@ -230,7 +230,7 @@ So if your order has only just shipped don&apos;t worry, it&apos;s totally norma
         <label>Routable Id</label>
     </contextVariables>
     <conversationChannelProviders>
-        <agentRequired>false</agentRequired>
+        <agentRequired>true</agentRequired>
         <chatButtonName>VNS_Live_Chat_Support</chatButtonName>
     </conversationChannelProviders>
     <description>A bot from scratch.</description>

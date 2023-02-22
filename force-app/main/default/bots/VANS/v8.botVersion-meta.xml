@@ -18,6 +18,10 @@
         <label>Flow A</label>
     </botDialogGroups>
     <botDialogGroups>
+        <developerName>Introduce_Group</developerName>
+        <label>Introduce Group</label>
+    </botDialogGroups>
+    <botDialogGroups>
         <developerName>My_Account_Group</developerName>
         <label>My Account Group</label>
     </botDialogGroups>
@@ -38,22 +42,22 @@
         <botSteps>
             <botNavigation>
                 <botNavigationLinks>
-                    <targetBotDialog>About_Us</targetBotDialog>
+                    <targetBotDialog>Payments</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
-                    <targetBotDialog>Payments</targetBotDialog>
+                    <targetBotDialog>About_Us</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
                     <targetBotDialog>Go_back_to_main_Menu</targetBotDialog>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>692d3bae-180d-4b6d-903b-915710936c6f</stepIdentifier>
+            <stepIdentifier>f8965d0e-672c-4cb0-94cf-1c2f1235209d</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Other</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>その他</label>
+        <label>ご注文について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -62,6 +66,9 @@
             <botNavigation>
                 <botNavigationLinks>
                     <targetBotDialog>Delivery</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
+                    <targetBotDialog>Other</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
                     <targetBotDialog>Return</targetBotDialog>
@@ -73,14 +80,14 @@
                     <targetBotDialog>Product</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
-                    <targetBotDialog>Other</targetBotDialog>
+                    <targetBotDialog>Intro_Brand</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
                     <targetBotDialog>Chat_with_us</targetBotDialog>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>f68571a1-3d27-46ce-82d9-6ad2f2d93db8</stepIdentifier>
+            <stepIdentifier>7c69605e-5d12-420b-b85e-6a417be03ec2</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Main_Menu</developerName>
@@ -94,17 +101,17 @@
             <botMessages>
                 <message>ご注文いただきました商品は、全て佐川急便株式会社より発送いたします。
 配送地域によって異なりますがご注文後、通常2日～3日でのお届けとなります。</message>
-                <messageIdentifier>608fcdc9-0baa-408e-8476-65702adcf515</messageIdentifier>
+                <messageIdentifier>7dc7cd97-c9be-4802-9bac-13459b422583</messageIdentifier>
             </botMessages>
-            <stepIdentifier>62046344-96ac-4973-80c3-a2ee1fffb20b</stepIdentifier>
+            <stepIdentifier>6b472111-1ca3-4855-b8fa-7af56ebedca3</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
             <botMessages>
                 <message>ご注文の商品がすでに発送されている場合は、運送業者の追跡システムが更新するまでしばらくお待ちください。</message>
-                <messageIdentifier>e165cf41-b119-4d80-a137-b311bd718af7</messageIdentifier>
+                <messageIdentifier>0a627a90-8d75-41b7-8179-74aa75d93de2</messageIdentifier>
             </botMessages>
-            <stepIdentifier>50ef5d5e-6bfd-447e-bd89-23c4d2eccf05</stepIdentifier>
+            <stepIdentifier>e5a64594-50fa-42b3-b817-2e08c0aa5bad</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -119,23 +126,11 @@
                     <targetBotDialog>Delivery_menu_What_are_my_delivery_options</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
-                    <targetBotDialog>Delivery_menu_Where_is_my_nearest_Timberland_store</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
                     <targetBotDialog>Delivery_menu_How_much_is_Timberland_shipping</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>Delivery_menu_Can_I_cancel_my_order</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>Delivery_menu_Can_I_change_my_order</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>Go_back_to_main_Menu</targetBotDialog>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>b27aa32c-7ae8-4e45-a16a-589f303db596</stepIdentifier>
+            <stepIdentifier>f94e6014-0970-4c7f-9270-b7bc50581422</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery</developerName>
@@ -150,9 +145,9 @@
         <botSteps>
             <botMessages>
                 <message>お役に立ちましたか。</message>
-                <messageIdentifier>84a76623-abc7-4f44-a0ae-cc638408bae3</messageIdentifier>
+                <messageIdentifier>68a6646d-21d0-45f1-9396-d1b77d6a8e8f</messageIdentifier>
             </botMessages>
-            <stepIdentifier>b8e1dc60-727e-41c2-8afa-a169007ffd6a</stepIdentifier>
+            <stepIdentifier>e2d625a0-3ca9-4137-97c1-4b73e1eb73c0</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -165,7 +160,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>19d84b19-f1c4-4c37-94b7-96ecbf16521d</stepIdentifier>
+            <stepIdentifier>8b2b3b39-c4bd-46ac-8399-22148e937a07</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Did_this_answer_your_question</developerName>
@@ -177,10 +172,10 @@
         <botDialogGroup>Common_group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>こんにちは。ヴァンズバーチャルアシスタント。ご質問の内容を以下よりお選びください。</message>
-                <messageIdentifier>e77fbbaf-ee12-4f66-b520-2535195fafa6</messageIdentifier>
+                <message>こんにちは。ディッキーズ バーチャル アシスタントです。ご質問の内容を以下よりお選びください。</message>
+                <messageIdentifier>e2af8a65-16d2-4617-ab5a-23d7109193fb</messageIdentifier>
             </botMessages>
-            <stepIdentifier>74e14b41-4ca4-4033-a9e1-e0086b63f7f1</stepIdentifier>
+            <stepIdentifier>1ea39e24-b05b-46d8-8598-bd8825c0dcbc</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -190,7 +185,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>bd3c9b19-c08e-44b7-816a-f6428a473936</stepIdentifier>
+            <stepIdentifier>02585891-4f01-4ce9-9cdd-bcb7a1cc15b6</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Welcome</developerName>
@@ -228,7 +223,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>ce757e13-1416-45ca-a10b-d90dc70d1da6</stepIdentifier>
+            <stepIdentifier>d148f43c-62a5-46dc-8373-4bb456bd70a4</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product</developerName>
@@ -260,7 +255,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>4f373b7f-715b-4330-917d-0b5bbaf8ba87</stepIdentifier>
+            <stepIdentifier>0e54a55c-41ee-4788-a648-6e7bb9f25b3c</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account</developerName>
@@ -277,7 +272,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>1a2646c7-4f6a-483f-aafb-b8db74483a72</stepIdentifier>
+            <stepIdentifier>c07961a8-d1b4-4b15-9ce8-913c34a5ddf9</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_Where_s_my_order</developerName>
@@ -290,9 +285,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:続行することで、「&lt;a href={!$Context.Chatbot_Chat_With_Us_Url} target=&quot;_blank&quot;&gt;プライバシー ポリシー&lt;/a&gt;」に同意したものとみなされます。</message>
-                <messageIdentifier>511ed6a9-6ed8-4262-9e66-8e04cb6dd2cb</messageIdentifier>
+                <messageIdentifier>d5b4b3f5-7d80-47a4-97af-7fd021f1ef84</messageIdentifier>
             </botMessages>
-            <stepIdentifier>8f01aedb-a48d-48e3-8f0d-ada10aa64181</stepIdentifier>
+            <stepIdentifier>ee1011d1-152f-4910-8a4c-76297a33fb67</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -302,7 +297,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>99bd627f-1a0e-44d4-a45f-f43fc1c40ae0</stepIdentifier>
+            <stepIdentifier>439a03eb-faa4-45ff-a1d9-54ba0d288b76</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>By_proceeding_you_acknowledge_you_have_read_and_understood_our_Privacy_Policy</developerName>
@@ -319,7 +314,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>af51c416-0962-412a-a0d5-138c1627fb46</stepIdentifier>
+            <stepIdentifier>e9015ac5-24f3-4f48-a291-1593409f20fc</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <description>This option is reused for &quot;Have you received email confirmation&quot; and &quot;Is your order showing as delivered&quot;</description>
@@ -337,7 +332,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>4529ce35-6b9a-42d3-91bc-dff2b8b38418</stepIdentifier>
+            <stepIdentifier>f8080515-ad96-4d9b-8671-745aea03d145</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_How_do_I_clean_my_Timberland_boots</developerName>
@@ -354,7 +349,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>f7c8857e-b30f-420e-bceb-f5758847112e</stepIdentifier>
+            <stepIdentifier>94b18a2c-209d-4382-82ff-15163b95b073</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>MyAccount_How_to_create_an_account</developerName>
@@ -370,9 +365,6 @@
                     <targetBotDialog>Returns_How_do_I_return_an_item</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
-                    <targetBotDialog>Returns_Can_I_return_in_store</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
                     <targetBotDialog>Returns_Can_I_exchange_my_item</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
@@ -382,11 +374,14 @@
                     <targetBotDialog>Returns_What_is_your_returns_policy</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
+                    <targetBotDialog>Return_And_Exchanges_Of_Product_Purchased</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
                     <targetBotDialog>Go_back_to_main_Menu</targetBotDialog>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>a5b7045d-1da6-422f-819b-1bcc989aa3b6</stepIdentifier>
+            <stepIdentifier>f66799c0-da03-48fc-9f0e-1e7396ec3bcd</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Return</developerName>
@@ -398,10 +393,10 @@
         <botDialogGroup>Chat_With_Team_Member_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>パーソナライズしたサポートを受けるために、メールアドレスを入力しますか。</message>
-                <messageIdentifier>fc6d37df-8523-469b-a3e3-0509517f35f6</messageIdentifier>
+                <message>よりパーソナライズされたサポートを受けるために、メールアドレスを入力しますか。</message>
+                <messageIdentifier>44682e9b-fc9e-4d41-b333-7eb788f099f3</messageIdentifier>
             </botMessages>
-            <stepIdentifier>1edb00d0-7a47-45b5-a0d3-2b760f936643</stepIdentifier>
+            <stepIdentifier>83a9df92-30a3-439f-9a6e-7ab0bdde45d7</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -414,7 +409,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>6a6a5171-cf65-4f1f-b5fb-5005019c212e</stepIdentifier>
+            <stepIdentifier>e06fc155-5c6f-4fa6-83f9-ed77dbb2836b</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_team_member_Would_you_like_to_provide_your_account</developerName>
@@ -431,7 +426,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>a397774c-f2f2-409e-bcf0-fc3075f782dd</stepIdentifier>
+            <stepIdentifier>d45b541b-8762-4de7-a590-1b6838ff37db</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>About_Us</developerName>
@@ -448,7 +443,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>0d370b2a-d939-4722-8606-f9f255ee2f9c</stepIdentifier>
+            <stepIdentifier>26bdca51-d722-47b5-bb1e-67aaa9ec541c</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>MyAccount_Forgotten_Password</developerName>
@@ -465,7 +460,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>682094ca-c61b-46c7-85f3-cef0a2f9ef83</stepIdentifier>
+            <stepIdentifier>1bf09afa-5cb9-44e0-9e66-2fa3341ed733</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Is_your_order_in_transit_Did_this_answer_your_question_No</developerName>
@@ -482,7 +477,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>ef6af41c-a0e8-48af-a282-8d86915ba00d</stepIdentifier>
+            <stepIdentifier>001c3d45-7453-464e-afc7-597484786aa2</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_Which_shoes_boots_are_waterproof</developerName>
@@ -499,7 +494,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>65c2d144-0797-41dd-950e-13dc0c03a56d</stepIdentifier>
+            <stepIdentifier>edec946c-8e26-4c71-b3ca-88f223826458</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_How_do_I_return_an_item</developerName>
@@ -512,9 +507,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:商品の返品・交換については&lt;a href={!$Context.Chatbot_Returns_DeliveryItems_ExchangePolicy_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
-                <messageIdentifier>db4773d3-c7d1-4ba9-bfdc-57c32b744cb1</messageIdentifier>
+                <messageIdentifier>5955f1c1-dd19-4f75-81ce-96962c51e5ac</messageIdentifier>
             </botMessages>
-            <stepIdentifier>eaff0b48-134f-4764-b697-0f0fb043fd8f</stepIdentifier>
+            <stepIdentifier>c9788afb-09d2-4670-bed7-07a5b7ee2716</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -524,7 +519,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>ea2f72d5-addf-461d-bf50-63a5b46d0038</stepIdentifier>
+            <stepIdentifier>c10de792-4f40-49c3-bdd8-b40d7156ac66</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_You_may_check_return_and_exchange_policy_from_here</developerName>
@@ -537,9 +532,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:商品の返品・交換についてについては&lt;a href={!$Context.Chatbot_Returns_ReturnPolicy_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
-                <messageIdentifier>6b61648e-c9c9-4378-b5e7-255e5f0dfea7</messageIdentifier>
+                <messageIdentifier>5161d22a-5bef-4378-9a1f-41463ce5c070</messageIdentifier>
             </botMessages>
-            <stepIdentifier>217f7d60-1212-4226-b1e3-954e937b097c</stepIdentifier>
+            <stepIdentifier>410ccf68-c511-4f6a-b6ca-35d12bd1a08f</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -549,7 +544,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>9b261077-a7d5-4240-9a65-3f2c2f946d85</stepIdentifier>
+            <stepIdentifier>b1eac3ed-9954-4f7b-a1f6-40160c6f5d39</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_You_may_check_2</developerName>
@@ -566,7 +561,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>41625cad-528d-4820-a424-740c408396c8</stepIdentifier>
+            <stepIdentifier>6645b326-a2bf-4b2f-9667-8631f7f6c9e5</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Payments</developerName>
@@ -583,7 +578,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>f1f6fe1a-db35-40a2-a6bb-d15bdec89165</stepIdentifier>
+            <stepIdentifier>dd41e622-63fa-4b44-a8b8-524eef5975c7</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_With_Team_Member_Yes</developerName>
@@ -600,7 +595,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>c153575c-a7ad-492b-b351-69f8302a50d9</stepIdentifier>
+            <stepIdentifier>52deb60d-0861-4d4d-88ec-afd45292e7ba</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Can_I_return_in_store</developerName>
@@ -613,9 +608,9 @@
         <botSteps>
             <botMessages>
                 <message>ありがとうございます。他にご不明な点はございますか。</message>
-                <messageIdentifier>8c2c843d-bd15-463a-bef9-a241e62faa4b</messageIdentifier>
+                <messageIdentifier>ed965222-c184-4cd4-a085-97b916380a92</messageIdentifier>
             </botMessages>
-            <stepIdentifier>bc87a821-288c-4242-901c-f120ac5624db</stepIdentifier>
+            <stepIdentifier>66cb8061-8ca5-44fa-87bd-c64642c43e65</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -628,7 +623,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>21fd2501-f188-4afd-b67a-ae27ff56bb56</stepIdentifier>
+            <stepIdentifier>59d80d9d-b6f0-4356-a172-6cc8316f52ed</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <description>This is the common Diaglog that can be reused.</description>
@@ -646,7 +641,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>69b61641-f09b-4f4e-a0ad-99b557c7349b</stepIdentifier>
+            <stepIdentifier>b7050fd0-5ca8-4af8-bcd9-4cb6f8b47b40</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>MyAccount_Sign_up_for_Newsletter</developerName>
@@ -663,7 +658,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>e750f264-cc27-4125-8f6a-b3137cd2f22c</stepIdentifier>
+            <stepIdentifier>137c896e-f560-4203-96fd-60e0a77e6910</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_team_member_No</developerName>
@@ -676,9 +671,9 @@
         <botSteps>
             <botMessages>
                 <message>申し訳ございません。公式オンラインショップでご購入の商品は、店舗での返品はお受けできません。</message>
-                <messageIdentifier>627041fb-289b-4175-9461-40b2311d3585</messageIdentifier>
+                <messageIdentifier>2d2a5182-fc9f-4f20-9a87-c68d584cd304</messageIdentifier>
             </botMessages>
-            <stepIdentifier>841fe667-f15b-42c7-9a6b-ff6e948ce0e9</stepIdentifier>
+            <stepIdentifier>55de6dd6-2281-4440-a91d-1bf14b009a9e</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -688,7 +683,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>77d27824-0cb7-4731-8ccd-8032564daadc</stepIdentifier>
+            <stepIdentifier>d5f9556e-e9c4-466f-8d32-3ccfecdc6aaa</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Timberland_Retail_Stores_are_unable_to_accept_the_return_of_items</developerName>
@@ -701,9 +696,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:商品の返品・交換については&lt;a href={!$Context.Chatbot_Returns_ReturnPolicy_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
-                <messageIdentifier>54e64465-6741-4c50-a326-9b3e66445f53</messageIdentifier>
+                <messageIdentifier>38ca59d9-1148-4774-8744-865749cbf2b6</messageIdentifier>
             </botMessages>
-            <stepIdentifier>92847c98-6c50-45cc-8abb-245c8bb89d2d</stepIdentifier>
+            <stepIdentifier>106885a6-284b-4f4a-a02a-5fec5952fd77</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -713,7 +708,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>4929ffac-213c-4117-af6f-9f4c7faf7824</stepIdentifier>
+            <stepIdentifier>9552b461-21b7-4be2-a2bb-b59057f768ba</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Please_send_your_item_back_to_us_following_our_Return_Policy_here</developerName>
@@ -730,7 +725,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>c038f3c6-eeb6-4ff0-bdd0-ae90f8df7a50</stepIdentifier>
+            <stepIdentifier>2b633382-6150-4661-a12d-23626ba8eee2</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Can_I_exchange_my_item</developerName>
@@ -747,7 +742,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>1c6175fe-76ba-4772-a565-de74672ccc02</stepIdentifier>
+            <stepIdentifier>5326a043-ec0b-47f5-ad6f-c71468982111</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Sustainability</developerName>
@@ -764,7 +759,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>9cecda44-6b4e-4a36-9a38-e57f24587caf</stepIdentifier>
+            <stepIdentifier>404fdef1-2b3a-4241-bb19-d9158956f335</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_What_size_do_I_need</developerName>
@@ -777,9 +772,9 @@
         <botSteps>
             <botMessages>
                 <message>「配送完了メール」は、届いていますか？</message>
-                <messageIdentifier>e05d126b-95cd-4f9a-b10c-405de9fdd669</messageIdentifier>
+                <messageIdentifier>198ecc1f-3f73-4356-a87d-9f8ccd5e3432</messageIdentifier>
             </botMessages>
-            <stepIdentifier>b3fa4863-fbb7-446c-bdbb-1275eb72c8c4</stepIdentifier>
+            <stepIdentifier>59123718-1797-4109-a180-858516c4d1dd</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -792,7 +787,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>bfb76970-3675-4ead-9872-5d37d580bdc5</stepIdentifier>
+            <stepIdentifier>ed5e44f2-c12a-424e-9249-bdbb3ac55429</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Where_is_my_order_Have_you_received_email_confirmation</developerName>
@@ -811,7 +806,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>4fc57dac-d2e0-4680-8293-362ccfad0349</stepIdentifier>
+            <stepIdentifier>bee23fde-7a44-411e-b0d4-fa2bf072967d</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <description>This option is reused for &quot;Have you received email information&quot; and &quot;Is your order showing as delivered&quot;</description>
@@ -829,7 +824,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>dfa223e9-c982-44b8-9dff-f33d7bfb2659</stepIdentifier>
+            <stepIdentifier>ec86667f-5f57-42df-9a9c-95e0c52dce7e</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_When_will_I_be_refunded</developerName>
@@ -846,7 +841,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>ac93dc8f-67fa-48f7-b5c0-bfa73108607f</stepIdentifier>
+            <stepIdentifier>a4634df5-1bbd-47ed-841f-8691a1969b98</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_Can_I_buy_spare_or_replacement_laces</developerName>
@@ -863,7 +858,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>0f73e203-f158-453f-9d62-a85cce4b49bb</stepIdentifier>
+            <stepIdentifier>cf37b5f0-9732-47f1-aad5-c84897172220</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <description>This option is reused for &quot;Have you received email information&quot; and &quot;Is your order showing as delivered&quot;</description>
@@ -877,9 +872,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:ありがとうございます。ディッキーズの事をもっと知りたい方は&lt;a href={!$Context.Chatbot_Other_AboutUs_Doing_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
-                <messageIdentifier>3fe205bb-b727-4110-981a-894ef6b722de</messageIdentifier>
+                <messageIdentifier>4e28b1cc-59b9-4c61-b37d-e68e15f71fce</messageIdentifier>
             </botMessages>
-            <stepIdentifier>0e289772-bf8f-4157-8028-c07b8b1b8f59</stepIdentifier>
+            <stepIdentifier>4f6255ee-2e72-4c4f-ab72-f5983ef609d0</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -889,7 +884,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>77d29373-4522-4704-ac82-2daf9fde4ba7</stepIdentifier>
+            <stepIdentifier>09a368d8-06fb-4fd9-a9fc-3b9a9de4bb95</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Other_It_s_great_that_you_d_like_to_find_out_more_about_Timberland</developerName>
@@ -902,9 +897,9 @@
         <botSteps>
             <botMessages>
                 <message>配送地域によって異なりますがご注文後、通常2日～3日でのお届けとなります。運送業者の追跡システムが更新されるのに時間がかかる場合がございます。</message>
-                <messageIdentifier>37bdae0f-c0d5-4589-9de5-b6a2200329f7</messageIdentifier>
+                <messageIdentifier>dc1f507a-929e-4627-849f-a5b0bb624942</messageIdentifier>
             </botMessages>
-            <stepIdentifier>82797614-bb67-4eee-929f-34af897ba40d</stepIdentifier>
+            <stepIdentifier>76c55d46-dc33-4cad-a0a1-398add47b2ba</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -914,7 +909,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>1cf810ce-4bb6-417c-a899-cb42b74810e2</stepIdentifier>
+            <stepIdentifier>37cc1475-b2f1-4939-a482-d90e5e11fa63</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Yes_Delivers_can_take_5_7_working_days</developerName>
@@ -929,9 +924,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:お支払方法についての詳細は&lt;a href={!$Context.Chatbot_Other_Payments_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご覧ください。</message>
-                <messageIdentifier>d98a3112-99a9-4bc9-8dc9-e7b96f8ad717</messageIdentifier>
+                <messageIdentifier>2b62cc29-7109-4052-b492-f01deb0f9993</messageIdentifier>
             </botMessages>
-            <stepIdentifier>a8a683d0-7c6b-4d0c-a2a9-068bf225f81b</stepIdentifier>
+            <stepIdentifier>ba872929-8401-4b8a-99ac-cbd92902412f</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -941,7 +936,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>5ccc5e51-beba-427b-956d-cdff38fc1739</stepIdentifier>
+            <stepIdentifier>774fa7ff-e56c-4408-a98d-bc32cd5e34f7</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Other_Payment_Please_click_here_for_the_payment_methos_we_accept_currently</developerName>
@@ -953,11 +948,11 @@
         <botDialogGroup>Delivery_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:月～土朝10:30までのご注文分は、「即日出荷」しております。(日曜・祝日を除く)
+                <message>RICH_TEXT:月～土曜日の午前11時までのご注文分は、即日出荷しております。(祝日を除く)
 配送条件と配送時間については&lt;a href={!$Context.Chatbot_Delivery_MyOrder_No_Delivery_Page_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
-                <messageIdentifier>bd7048bf-8a95-457e-96f8-76f14fb781fd</messageIdentifier>
+                <messageIdentifier>9012d812-aec5-481c-a97c-ea6ff6f8991c</messageIdentifier>
             </botMessages>
-            <stepIdentifier>34b9ea4e-0d12-400c-b182-0ad6fa2f837e</stepIdentifier>
+            <stepIdentifier>720f3075-168c-409f-9205-8acfc33acd17</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -967,7 +962,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>ac43939e-9bc1-4692-9590-89080845f866</stepIdentifier>
+            <stepIdentifier>8586b191-a169-42f4-b6eb-9dbc2b7eb364</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Is_your_order_in_trainsit_No_Depending_on_what_time_you_placed</developerName>
@@ -984,7 +979,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>b0153054-f9ab-4440-8ecb-deba15f2f722</stepIdentifier>
+            <stepIdentifier>9bca311f-f1be-480e-be72-86a12eff89fd</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_Faulty_product</developerName>
@@ -1008,10 +1003,10 @@
                     </botNavigationLinks>
                     <type>Redirect</type>
                 </botNavigation>
-                <stepIdentifier>c5d816b2-e54a-4efa-b24f-cf3e83ec6f9f</stepIdentifier>
+                <stepIdentifier>920351fb-0990-4760-ba35-b878db9303fa</stepIdentifier>
                 <type>Navigation</type>
             </botSteps>
-            <stepIdentifier>c6507f94-e41d-48b4-bde6-8f505af77df7</stepIdentifier>
+            <stepIdentifier>993f1ff3-c50e-494c-bec3-9ee190f24e20</stepIdentifier>
             <type>Group</type>
         </botSteps>
         <botSteps>
@@ -1028,14 +1023,14 @@
                     </botNavigationLinks>
                     <type>Redirect</type>
                 </botNavigation>
-                <stepIdentifier>265ce253-5b30-4dcc-9286-c4dac47cfccd</stepIdentifier>
+                <stepIdentifier>7535eb5c-ab63-485b-b16b-a858cc691061</stepIdentifier>
                 <type>Navigation</type>
             </botSteps>
-            <stepIdentifier>79e620d2-a8f8-4c96-a243-ea6b4a45239b</stepIdentifier>
+            <stepIdentifier>5bbb1604-0133-4712-bb3f-4bd25af6f917</stepIdentifier>
             <type>Group</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>0765e580-55d8-45c2-81e4-513dcfc18870</stepIdentifier>
+            <stepIdentifier>f5f3b781-2975-4081-8e50-0a79e5ab2505</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Is_your_order_in_transit_Great_Is_there_anything_else_Yes</developerName>
@@ -1048,9 +1043,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:支払い方法によって、返金の手順が異なります。詳細は&lt;a href={!$Context.Chatbot_Returns_ReturnPolicy_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
-                <messageIdentifier>5eb65bde-1bbd-4a9f-b6e7-184a8773d6e1</messageIdentifier>
+                <messageIdentifier>ec944ed3-91db-4419-b651-d410522a4c88</messageIdentifier>
             </botMessages>
-            <stepIdentifier>2d640459-29bb-4867-aff4-9f0069e42352</stepIdentifier>
+            <stepIdentifier>16b6a9ca-6de5-4c6c-99c4-1bd3895b95e4</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1060,7 +1055,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>b39235eb-2c3a-415b-9de5-81a4d012d309</stepIdentifier>
+            <stepIdentifier>943506b2-fb3a-49db-aad3-51631c20ee4f</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Depending_on_the_payment_method_you_have_chosed_while_placing_an_order</developerName>
@@ -1077,7 +1072,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>c85c79f0-93c4-4296-b52e-eac0ef155596</stepIdentifier>
+            <stepIdentifier>9b03bbd7-f5d4-4d8f-84c8-22351acdcd38</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_What_is_your_returns_policy</developerName>
@@ -1094,7 +1089,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>f7eae945-a9a3-4990-a339-06657eb1d67e</stepIdentifier>
+            <stepIdentifier>72f67cb2-d0bf-4c70-9c94-f2656483960f</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_Product_is_out_of_stock</developerName>
@@ -1107,9 +1102,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:私たちサステナビリティへの取り組みに関する詳細は&lt;a href={!$Context.Chatbot_Other_Sustainability_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご覧ください。</message>
-                <messageIdentifier>20398f09-2165-4ca9-8f39-0550d191a200</messageIdentifier>
+                <messageIdentifier>e939040b-a806-48de-834c-b765927e3e70</messageIdentifier>
             </botMessages>
-            <stepIdentifier>88243ebe-ce9a-4467-8177-2e93179ca545</stepIdentifier>
+            <stepIdentifier>a93c9d09-1b07-4edb-8db3-4d5567745532</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1119,7 +1114,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>34644752-093f-4499-8ae5-46d2dbad2665</stepIdentifier>
+            <stepIdentifier>1963c13e-af52-4dcd-9924-dba464535169</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Other_To_learn_more_about_our_approach_to_sustainability_just_click_here</developerName>
@@ -1136,12 +1131,12 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>efe51ec1-c01a-4ac1-94b0-413ba4f26485</stepIdentifier>
+            <stepIdentifier>b53aed18-10ca-45a6-83bf-5ad1b88235a3</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>MyAccount_Unsubscribe_from_Newsletter</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>メルマガ配信の停止について</label>
+        <label>ニュースレター配信の停止について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -1153,7 +1148,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>89aa19f0-2e9d-49f5-9f71-25ae995e7803</stepIdentifier>
+            <stepIdentifier>a3a3948f-63d0-48f9-ae29-371ac367fbf0</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Is_your_order_in_transit_Great_Is_there_anything_else_No</developerName>
@@ -1166,9 +1161,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:日々のお手入れはアイテムを良い状態に保ってくれます。お手入れ方法は&lt;a href={!$Context.Chatbot_Product_TBLBoots_Guide_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
-                <messageIdentifier>abc1b4a6-3166-4205-8279-b8b513cec53e</messageIdentifier>
+                <messageIdentifier>28940cf7-7b5c-4965-88b0-2ee227650dc4</messageIdentifier>
             </botMessages>
-            <stepIdentifier>ff8d13a1-f776-4f94-abfc-02903b08a927</stepIdentifier>
+            <stepIdentifier>2d993546-f21b-4ee2-8469-1d0802056de5</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1178,7 +1173,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>71c869b4-3cc5-41bd-9fe3-b4c4cf173f69</stepIdentifier>
+            <stepIdentifier>79267c16-c084-4bdb-b7d3-dc3902f66023</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_To_help_you_keep_your_Timberland_shoes_and_boots_looking_great</developerName>
@@ -1193,7 +1188,7 @@
                 <askCollectIfSet>false</askCollectIfSet>
                 <botMessages>
                     <message>メールアドレスを入力してください。</message>
-                    <messageIdentifier>5457224d-1b80-48e5-8541-cb31cecb1358</messageIdentifier>
+                    <messageIdentifier>0558f714-1dba-41a4-8c5c-9af721764235</messageIdentifier>
                 </botMessages>
                 <botVariableOperands>
                     <disableAutoFill>false</disableAutoFill>
@@ -1206,12 +1201,12 @@
                 <quickReplyWidgetType>Buttons</quickReplyWidgetType>
                 <retryMessages>
                     <message>メールアドレスが正しい形式ではありません。メールアドレスを修正のうえ再度お試しください。</message>
-                    <messageIdentifier>d62f9af8-1eca-448b-b32d-bcc22460eb79</messageIdentifier>
+                    <messageIdentifier>a040ef36-e84d-4792-9a0b-9c50a72efce9</messageIdentifier>
                 </retryMessages>
                 <type>Collect</type>
-                <variableOperationIdentifier>3e1c19a7-3e88-44aa-925f-68d0839d8268</variableOperationIdentifier>
+                <variableOperationIdentifier>eacedbda-961d-4ec3-bdbb-10133f133675</variableOperationIdentifier>
             </botVariableOperation>
-            <stepIdentifier>4deeeedd-5933-4e9b-9409-0d7760a854d5</stepIdentifier>
+            <stepIdentifier>e7dd6e21-437e-4a03-85c4-21ab5caf8a9f</stepIdentifier>
             <type>VariableOperation</type>
         </botSteps>
         <botSteps>
@@ -1221,7 +1216,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>4e8ba005-6785-40b6-a84b-44782433e4ef</stepIdentifier>
+            <stepIdentifier>4c79e3c0-6f98-435b-b697-d790fc398a7c</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_team_member_Please_insert_your_email_address</developerName>
@@ -1234,9 +1229,9 @@
         <botSteps>
             <botMessages>
                 <message>ありがとうございました。</message>
-                <messageIdentifier>20b679ba-c10e-4f3f-8e0f-7e5688c283dc</messageIdentifier>
+                <messageIdentifier>7f19bb0a-0ac3-4c62-9364-7a3aa0510479</messageIdentifier>
             </botMessages>
-            <stepIdentifier>2e0dd058-cea2-4d99-9d1d-7f3aea59e6c2</stepIdentifier>
+            <stepIdentifier>caab4154-0bcf-40ff-b7aa-99e742bd80f4</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1246,7 +1241,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>649bace7-dd53-411a-a559-51ce6fc13aa7</stepIdentifier>
+            <stepIdentifier>5b42b750-709a-4559-a868-6cecf079b605</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Awesome_Have_a_great_day</developerName>
@@ -1259,9 +1254,9 @@
         <botSteps>
             <botMessages>
                 <message>エージェントが内容を伺います。しばらくお待ちください。</message>
-                <messageIdentifier>3f4f1002-3f76-4c70-b2af-cda7a19f7c6e</messageIdentifier>
+                <messageIdentifier>adcc5ffe-848b-45d0-b7ef-963ca7105f91</messageIdentifier>
             </botMessages>
-            <stepIdentifier>5f23e813-d685-4458-b739-d1c7728e9517</stepIdentifier>
+            <stepIdentifier>4a33c43b-273f-4c90-94fa-60020e9b7453</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1271,7 +1266,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>f24bf8d5-fc3a-496c-a3ad-a7a2d021928f</stepIdentifier>
+            <stepIdentifier>f0c7c6e4-5734-4125-8c19-3fa445853e92</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_team_member_Thank_you_for_contacting_us</developerName>
@@ -1284,9 +1279,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:商品の返品・交換については&lt;a href={!$Context.Chatbot_Returns_ReturnPolicy_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
-                <messageIdentifier>058512ed-b61b-4cab-af49-37e929c99d73</messageIdentifier>
+                <messageIdentifier>1bd69e01-0c2f-4558-acd8-2b90cfbd8e4e</messageIdentifier>
             </botMessages>
-            <stepIdentifier>487bdd56-4bd2-4b4f-b77e-4ebf62d72f4d</stepIdentifier>
+            <stepIdentifier>f92ebdef-ec59-4780-baa5-ab63181cb775</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1296,7 +1291,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>c8f034e4-5d8b-4bce-a055-19e11add556b</stepIdentifier>
+            <stepIdentifier>bdae3987-3b4e-4916-bc19-687c35476f77</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Any_item_returned_to_us_must_be_unused_and_within_30_days</developerName>
@@ -1313,7 +1308,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>3d5cf17f-c5bc-4760-acb0-447f012a8f20</stepIdentifier>
+            <stepIdentifier>5afa78ce-83f7-4e7d-a379-8c994b15eb48</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>MyAccount_What_is_your_Privacy_Policy</developerName>
@@ -1326,9 +1321,9 @@
         <botSteps>
             <botMessages>
                 <message>申し訳ございません。内容を以下よりお選びください。</message>
-                <messageIdentifier>622d8e3e-b746-4f69-b9ed-4666ac99e392</messageIdentifier>
+                <messageIdentifier>630fd9d1-541b-4e9c-b7ae-fd828118b131</messageIdentifier>
             </botMessages>
-            <stepIdentifier>f73b1c44-37cf-4421-b690-92d9e3485b25</stepIdentifier>
+            <stepIdentifier>32400bf0-0dd1-415c-bade-e7c85ad1b9c6</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1345,10 +1340,10 @@
                     </botNavigationLinks>
                     <type>Redirect</type>
                 </botNavigation>
-                <stepIdentifier>6a0d3048-9d54-4111-a583-bf44c84f0ef3</stepIdentifier>
+                <stepIdentifier>88c63dae-d754-43c8-a550-d5f2b56288ee</stepIdentifier>
                 <type>Navigation</type>
             </botSteps>
-            <stepIdentifier>785c24f2-ac0e-49fb-a214-9683a4ab0c41</stepIdentifier>
+            <stepIdentifier>5e177da5-aeff-466e-b757-14a7798048f1</stepIdentifier>
             <type>Group</type>
         </botSteps>
         <botSteps>
@@ -1365,14 +1360,14 @@
                     </botNavigationLinks>
                     <type>Redirect</type>
                 </botNavigation>
-                <stepIdentifier>40ebd443-ce5c-467e-8d68-d43be35cecb6</stepIdentifier>
+                <stepIdentifier>238f00ad-8918-45ea-a6f2-c945e023bb9d</stepIdentifier>
                 <type>Navigation</type>
             </botSteps>
-            <stepIdentifier>40567cd6-2553-4903-b888-4ba348dabcc9</stepIdentifier>
+            <stepIdentifier>916744c5-9630-44d8-98dd-4a87a82e3237</stepIdentifier>
             <type>Group</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>10719b90-c62c-4ce1-b5ca-e11a0b3a5fed</stepIdentifier>
+            <stepIdentifier>85342936-ef86-4014-9abf-c751f4866b00</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <description>This is the common Diaglog that can be reused.</description>
@@ -1390,7 +1385,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>7e6d7424-de1d-4ca2-8abb-496e7feefb41</stepIdentifier>
+            <stepIdentifier>b08c2942-ef32-4ade-8a4b-58068f259dbb</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Go_back_to_main_Menu</developerName>
@@ -1403,9 +1398,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:ウォータープルーフのフットウェアは幅広く取り扱っております。&lt;a href={!$Context.Chatbot_Product_TBLBoots_Guide_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;よりご覧ください。</message>
-                <messageIdentifier>9f5ee7ce-fcea-49dd-86d4-31a74921b715</messageIdentifier>
+                <messageIdentifier>eb90862f-27de-4e77-b8f5-e5d12fd58142</messageIdentifier>
             </botMessages>
-            <stepIdentifier>d8bb39ad-f032-4316-8dd2-8b3ae170e492</stepIdentifier>
+            <stepIdentifier>4e7cf64b-752e-4991-9ede-f22b28e0ccf9</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1415,7 +1410,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>d02823d7-13cc-4e9b-aaf7-7131dcc368bf</stepIdentifier>
+            <stepIdentifier>622be26e-f400-4902-88d5-cc5fbe3ebecc</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_We_sell_a_wide_range_of_waterproof_shoes_and_boots</developerName>
@@ -1428,9 +1423,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:ありがとうございます。&lt;a href={!$Context.Chatbot_MyAccount_CreateAC_Clicking_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より新規アカウントを作成できます。</message>
-                <messageIdentifier>4f497133-032c-40e8-b8ce-e5aceb1aac4f</messageIdentifier>
+                <messageIdentifier>db80ac61-067c-4d27-a089-adf92e6965e7</messageIdentifier>
             </botMessages>
-            <stepIdentifier>91b5b250-3397-4bac-a377-d34456671493</stepIdentifier>
+            <stepIdentifier>137b0a9d-1a57-4b93-9147-7cb3726e96e7</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1440,7 +1435,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>7c934654-dfb3-478b-ba18-3c953d4da63b</stepIdentifier>
+            <stepIdentifier>d83e9c04-9dc4-4b42-9f2c-e1b0419df751</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account_It_s_great_to_hear_you_want_to_sign_up</developerName>
@@ -1460,7 +1455,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>c3b01a58-48e1-4d98-aa82-5051c5264c68</stepIdentifier>
+            <stepIdentifier>0cef18e2-d6e0-4fb3-a896-c20344b06390</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_us_Dialog</developerName>
@@ -1480,7 +1475,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>210dbae4-85ad-49f7-8b4f-0ed2c21f6715</stepIdentifier>
+            <stepIdentifier>f709600d-563d-47d9-8933-7e778c702f04</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Email_Us_Dialog</developerName>
@@ -1507,14 +1502,14 @@
                     <variableType>ConversationVariable</variableType>
                 </invocationMappings>
             </botInvocation>
-            <stepIdentifier>4484d0c5-bf25-4922-ab6f-2e9ded95c47e</stepIdentifier>
+            <stepIdentifier>784db24e-e944-495c-9f1d-02ff6414078f</stepIdentifier>
             <type>Invocation</type>
         </botSteps>
         <botSteps>
             <conversationSystemMessage>
                 <type>Transfer</type>
             </conversationSystemMessage>
-            <stepIdentifier>72d55865-5079-40b5-9eda-ea6236f3d2f7</stepIdentifier>
+            <stepIdentifier>ed020210-3904-4cb4-b18c-119ffea96830</stepIdentifier>
             <type>SystemMessage</type>
         </botSteps>
         <developerName>Transfer_To_Agent</developerName>
@@ -1531,7 +1526,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>b984d33b-0a3c-4fbb-978b-8e45033854fe</stepIdentifier>
+            <stepIdentifier>cc810ccc-09b6-4087-9897-48ef8f7556ab</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Email_Us</developerName>
@@ -1544,9 +1539,9 @@
         <botSteps>
             <botMessages>
                 <message>メールアドレスはこちらでお間違いないでしょうか？ {!Email_Address}</message>
-                <messageIdentifier>df5ad64b-cb36-4591-b693-4a8cd59e8879</messageIdentifier>
+                <messageIdentifier>2c596205-09f3-47c8-bd23-e32fce337f2f</messageIdentifier>
             </botMessages>
-            <stepIdentifier>4309e67e-3999-494b-9606-b2766c11ea0a</stepIdentifier>
+            <stepIdentifier>2810384a-ba92-44a6-9e2e-76570938d11b</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1559,7 +1554,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>ad4cb758-6ffb-4cec-bb02-5581d5a2401a</stepIdentifier>
+            <stepIdentifier>4f188af0-11ed-47e6-b5c6-05db302fcd3a</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Email_us_Do_you_confirm_this_is_the_correct_email_address</developerName>
@@ -1572,9 +1567,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:「&lt;a href={!$Context.Chatbot_Product_Size_Guide_Url} target=&quot;_blank&quot;&gt;サイズチャート&lt;/a&gt;」にてご自身に合うサイズをご確認ください。</message>
-                <messageIdentifier>bacef39b-d2d0-425b-810a-25343e627f3a</messageIdentifier>
+                <messageIdentifier>cc7c55d2-61bf-43da-acf5-824d6f1dcc28</messageIdentifier>
             </botMessages>
-            <stepIdentifier>b7b803b9-eff1-404c-82ac-0bf755cd8953</stepIdentifier>
+            <stepIdentifier>3731d9e7-29c8-430b-9bd0-0ae651bbb94f</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1584,7 +1579,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>5ef6859a-49ed-42a9-877f-ac10b815f80a</stepIdentifier>
+            <stepIdentifier>84701afd-f600-4a3d-8fd0-fc3e677653fd</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_Our_Size_Charts_are_a_great_tool_to_help_you_decide_which_size_is_best</developerName>
@@ -1601,23 +1596,23 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>38973e92-c859-414a-a72b-3e499b3a1f95</stepIdentifier>
+            <stepIdentifier>f998c779-360b-4569-a7ac-2135f04b2eb7</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_How_do_I_track_my_order</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>商品配送状況について</label>
+        <label>配送状況について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
         <botDialogGroup>Delivery_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:商品配送状況は、佐川急便株式会社　「&lt;a href={!$Context.Chatbot_Deleivery_TrackMyOrder_Click_Url} target=&quot;_blank&quot;&gt;お荷物お問い合わせサービス&lt;/a&gt;」よりリアルタイムにご確認いただくことが可能です。
-確認の際は、商品発送後にお送りするメール「配送完了メール」記載の「お荷物お問い合わせ番号」をご用意ください。</message>
-                <messageIdentifier>4d773b41-336b-4450-9be3-1d6cf351f8f3</messageIdentifier>
+                <message>RICH_TEXT:商品配送状況は、佐川急便株式会社　「&lt;a href={!$Context.Chatbot_Deleivery_TrackMyOrder_Click_Url} target=&quot;_blank&quot;&gt;お荷物お問い合わせサービス&lt;/a&gt;」よりご確認いただけます。
+配送完了メールに記載されている「お荷物お問い合わせ番号」をご用意ください。</message>
+                <messageIdentifier>21718db3-f9f3-468a-8f59-fcfdade55bae</messageIdentifier>
             </botMessages>
-            <stepIdentifier>a5474f04-273e-49f7-a0f7-24e02e28ecda</stepIdentifier>
+            <stepIdentifier>dd6f0792-2b4c-4a3f-9a30-f29c1632dc01</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1627,7 +1622,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>f126d091-c880-48cf-801f-d7b747684f20</stepIdentifier>
+            <stepIdentifier>b0322761-28c0-4619-a766-36c500212325</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>To_track_your_order_head_to_Track_My_Order_and_enter_your_order_number</developerName>
@@ -1639,13 +1634,13 @@
         <botSteps>
             <botMessages>
                 <message>入力に不備があります。質問内容を以下よりお選びください。</message>
-                <messageIdentifier>0c82c8d7-7631-438f-9d92-486d0205a135</messageIdentifier>
+                <messageIdentifier>02b8282e-d67d-49ac-991e-2fcb7605c10b</messageIdentifier>
             </botMessages>
-            <stepIdentifier>2558f32f-5601-4a28-ae54-49cc76211e70</stepIdentifier>
+            <stepIdentifier>8291a99c-ed1a-4031-88f1-83b73ca072c7</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>020b2aaf-8906-491c-ae13-12c25e041d28</stepIdentifier>
+            <stepIdentifier>810a80e3-eecc-429a-87ec-f21e3f5d75ea</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Confused</developerName>
@@ -1658,9 +1653,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:パスワードをお忘れの方は、&lt;a href={!$Context.Chatbot_MyAccount_Newsletter_Clicking_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より再設定できます。</message>
-                <messageIdentifier>98546b8d-0b0f-42e1-9a75-bb503de0ef5b</messageIdentifier>
+                <messageIdentifier>83485b63-bed4-41ac-bde9-158dafd9c6f8</messageIdentifier>
             </botMessages>
-            <stepIdentifier>745121ae-d9a3-4f9c-b246-859de570f8e7</stepIdentifier>
+            <stepIdentifier>5c727b85-a5a1-4f3a-859b-9bcc599f8baa</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1670,7 +1665,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>e41d49bb-74de-4885-b464-a89babf9a502</stepIdentifier>
+            <stepIdentifier>3d1cfa7b-349a-455a-9d48-77ce0107105e</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account_If_you_can_t_remember_your_password</developerName>
@@ -1687,7 +1682,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>fc781267-ab3b-43c6-9827-51e57e34fad5</stepIdentifier>
+            <stepIdentifier>3ec8d3a6-d5f8-4459-823e-154eaac69a4c</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_What_are_my_delivery_options</developerName>
@@ -1699,9 +1694,9 @@
         <botSteps>
             <botMessages>
                 <message>大変申し訳ございません、現在対応できるスタッフが降りません。</message>
-                <messageIdentifier>073d9df4-e249-422d-8515-c24035c98dfd</messageIdentifier>
+                <messageIdentifier>058c5cd4-dbcc-479c-9fda-57d8ead891c9</messageIdentifier>
             </botMessages>
-            <stepIdentifier>63703c79-0221-43b5-8c3c-81826f4c68ba</stepIdentifier>
+            <stepIdentifier>044d8c3e-773e-4ce3-9e45-07b41f24ea59</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1711,7 +1706,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>40dc7a9f-160a-4146-ade6-b7d45284c60d</stepIdentifier>
+            <stepIdentifier>2cfd8934-3489-49ec-bb26-49c19b2b4ae4</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>No_Agent_Available</developerName>
@@ -1724,9 +1719,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:配送条件と配送時間については&lt;a href={!$Context.Chatbot_DeliveryOptions_DeliveryPage_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
-                <messageIdentifier>de046a8e-2be5-4473-9350-4435a4fdc876</messageIdentifier>
+                <messageIdentifier>d89b964a-f23b-43d2-b6e5-592241e0dc80</messageIdentifier>
             </botMessages>
-            <stepIdentifier>bbc629b5-e7e5-4d6d-be15-81e7b15b2b66</stepIdentifier>
+            <stepIdentifier>d521e7db-992e-47cb-8e2e-88afeb645bc5</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1736,7 +1731,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>ed6cf932-c4fe-402d-b8e9-39ad299a34dc</stepIdentifier>
+            <stepIdentifier>fe6f9645-d569-42a8-821b-f12f02487dd2</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Find_out_more_about_our_delivery_options</developerName>
@@ -1748,16 +1743,16 @@
         <botSteps>
             <botMessages>
                 <message>大変申し訳ございません、現在対応できるスタッフが降りません。</message>
-                <messageIdentifier>9e37239b-00fc-4123-b15a-26ee883e357a</messageIdentifier>
+                <messageIdentifier>5c77fccf-2f56-4749-8e46-c7fad4adc3d9</messageIdentifier>
             </botMessages>
-            <stepIdentifier>51acdfe7-c5b6-42a6-b03b-99fc7d0f928e</stepIdentifier>
+            <stepIdentifier>f5b3e514-9cb2-4ccb-8b5e-b971e33ee368</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
             <conversationSystemMessage>
                 <type>Transfer</type>
             </conversationSystemMessage>
-            <stepIdentifier>8032f4ae-fbfc-414d-8c71-ad0573af6d07</stepIdentifier>
+            <stepIdentifier>6fce5e9a-ddde-437e-ad57-9ff8f3a0a889</stepIdentifier>
             <type>SystemMessage</type>
         </botSteps>
         <developerName>Error_Handling</developerName>
@@ -1774,7 +1769,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>fe084ba8-d5db-4495-9f2f-9cd4b5a90b90</stepIdentifier>
+            <stepIdentifier>e0d15f89-175d-4f3b-8efd-11585c39d3c5</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_Where_is_my_nearest_Timberland_store</developerName>
@@ -1787,9 +1782,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:こちらの「&lt;a href={!$Context.Chatbot_Delivery_StoreLocator_Url} target=&quot;_blank&quot;&gt;ストア検索&lt;/a&gt;」より、最寄りのティンバーランドストアをご確認ください。</message>
-                <messageIdentifier>0313c7fc-7e16-4c45-b058-1082023a2994</messageIdentifier>
+                <messageIdentifier>c39af2dc-e75f-499b-a6bc-1356d191f98b</messageIdentifier>
             </botMessages>
-            <stepIdentifier>eedb8be2-b028-4b9c-b5ce-f227a6d3ea48</stepIdentifier>
+            <stepIdentifier>5a03ca86-1095-4ad2-a581-91ac001517c6</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1799,7 +1794,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>18187355-34fe-4c8d-b3d9-fa10b445403a</stepIdentifier>
+            <stepIdentifier>36de5f82-5c91-4767-8b24-95fa41f15a97</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>We_d_love_to_see_you_You_can_find_your_nearest_Timberland_store_by_using_our_S</developerName>
@@ -1812,9 +1807,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:ありがとうございます。&lt;a href={!$Context.Chatbot_MyAccount_Newsletter_Clicking_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より登録できます。</message>
-                <messageIdentifier>1f1b9224-88e8-46e5-a049-6e1ba36cab1d</messageIdentifier>
+                <messageIdentifier>6b017666-b6bd-4018-b5ca-3e0a14b0788d</messageIdentifier>
             </botMessages>
-            <stepIdentifier>d1e2b8fb-6d7f-4c62-b8af-f0fd3014be6f</stepIdentifier>
+            <stepIdentifier>12bdff9f-4a0b-42df-bd24-744cf720a456</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1824,7 +1819,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>31861e41-30ac-40b5-93fe-d77f536e2b34</stepIdentifier>
+            <stepIdentifier>4725b823-f6b9-43ff-be4f-e821f44f03b3</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account_It_s_great_to_hear_that_you_d_like_to_sign_up_to_our_newsletter</developerName>
@@ -1837,9 +1832,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:替えのシューレースは&lt;a href={!$Context.Chatbot_Product_ReplacementLaces_Them_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
-                <messageIdentifier>02aa418c-8084-423d-a1f9-84edca1ad03e</messageIdentifier>
+                <messageIdentifier>3502470b-e3be-47c2-8fb7-9c0ecb73d5e0</messageIdentifier>
             </botMessages>
-            <stepIdentifier>37116b12-6c27-4d5e-bdf2-1ad1ad055bfa</stepIdentifier>
+            <stepIdentifier>1b577d8b-9e73-4e20-82be-a813047724f1</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1849,7 +1844,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>9b260dd5-78fa-432c-b45b-69031ba1c6ac</stepIdentifier>
+            <stepIdentifier>9568f8c3-41e1-48f6-93d4-4da9312e4dc8</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_We_sell_a_wide_range_of_replacement_laces_for_both_shoes_and_boots</developerName>
@@ -1866,7 +1861,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>ed8c02a1-77cc-45ad-87e8-ec22de4c373c</stepIdentifier>
+            <stepIdentifier>1c8c587e-b23a-48df-bfa0-6248adbed27e</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_How_much_is_Timberland_shipping</developerName>
@@ -1878,11 +1873,14 @@
         <botDialogGroup>Delivery_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>全国一律　550円（税込）
-1配送につき、商品代金XXXX円（税込）以上ご購入のお客様は無料となります。</message>
-                <messageIdentifier>184c7a22-f262-4ace-be0e-cdd4157aba43</messageIdentifier>
+                <message>メンバーの送料は一律無料です。
+
+ゲストの方の送料は11,000円（税込）以上のご購入で無料となります。
+
+送料についての詳細は&lt;a href=&quot;#&quot; targer=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご覧ください。</message>
+                <messageIdentifier>881f55d7-0661-45b1-be3f-efe883ded8e1</messageIdentifier>
             </botMessages>
-            <stepIdentifier>7fdb3961-4544-4696-8556-faeaa108a10b</stepIdentifier>
+            <stepIdentifier>a7ba100c-47c2-4fd8-8fc3-fd86eba6dde1</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1892,7 +1890,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>65c60bf4-0b55-4a62-aaac-74af27405b5b</stepIdentifier>
+            <stepIdentifier>6eb90735-b5bf-4df2-ba86-17195858da7d</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>If_your_order_is_under_50_then_a_standard_charge_of_3_95_is_applied</developerName>
@@ -1905,9 +1903,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:ご迷惑をおかけして大変申し訳ございませんでした。購入より14日間は返品を承っております。商品の返品・交換についてについては&lt;a href={!$Context.Chatbot_Product_FaultyProduct_Refer_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
-                <messageIdentifier>4351f414-7671-4519-b2d0-572d0e1e6b62</messageIdentifier>
+                <messageIdentifier>4cf29edc-4c62-446b-ae9f-204acace6b20</messageIdentifier>
             </botMessages>
-            <stepIdentifier>4634791f-2936-418f-bf67-4bbfac0f32d5</stepIdentifier>
+            <stepIdentifier>4e349b2f-7345-47dd-a08e-d035238c173c</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1917,7 +1915,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>bd116812-bc94-4103-8a23-06a12b2df43c</stepIdentifier>
+            <stepIdentifier>6198be57-7043-4504-9068-20c3fd9a3038</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_The_good_news_you_may_return_a_faulty_product_within_14_days</developerName>
@@ -1934,7 +1932,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>66b22fed-1951-4a97-ad14-55e02665f97a</stepIdentifier>
+            <stepIdentifier>6f3e6a44-8a20-4757-88ad-4809ffeae40a</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_Can_I_cancel_my_order</developerName>
@@ -1946,10 +1944,10 @@
         <botDialogGroup>My_Account_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:メルマガ配信の停止は&lt;a href={!$Context.Chatbot_MyAccount_Newsletter_Clicking_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より設定できます。</message>
-                <messageIdentifier>b1b5af3b-bc38-4f3e-9f66-a89e114bdb52</messageIdentifier>
+                <message>RICH_TEXT:ニュースレター配信の停止は&lt;a href={!$Context.Chatbot_MyAccount_Newsletter_Clicking_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より設定できます。</message>
+                <messageIdentifier>f4cadf42-7205-4b6b-9e50-7a60413e7c1c</messageIdentifier>
             </botMessages>
-            <stepIdentifier>3169b805-c462-49fc-bc27-4d4f82937251</stepIdentifier>
+            <stepIdentifier>af59d5da-e03d-4db6-ac3b-bb2c48dd63dd</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1959,7 +1957,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>10959e54-4dbd-437e-8c55-636e49506e61</stepIdentifier>
+            <stepIdentifier>9ec30b06-b732-4989-8a74-5bbceb216958</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account_We_re_sorry_to_see_you_go_Unsubscribing_is_quick_and_easy</developerName>
@@ -1972,9 +1970,9 @@
         <botSteps>
             <botMessages>
                 <message>商品の在庫を店舗等と共有している為、ご注文時に在庫有りと表示されていた商品でも品切れとなる場合があります。その際は別途Eメールにてご連絡いたします。</message>
-                <messageIdentifier>10201c22-b6d5-4433-8aa1-6a26ba5ad428</messageIdentifier>
+                <messageIdentifier>0240d352-61a4-4f3f-a143-775c82bae054</messageIdentifier>
             </botMessages>
-            <stepIdentifier>c99ed876-6a0a-402c-be23-58fcaad33414</stepIdentifier>
+            <stepIdentifier>2ffdf59c-c5ec-4891-b8c3-fb99e9f6074e</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -1984,7 +1982,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>f0e084af-6ee7-4d4a-a8f6-e1466f919264</stepIdentifier>
+            <stepIdentifier>f32df2c0-7d0a-40b0-9318-2cee0604f98a</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_We_are_sorry_to_hear_this_The_good_news_is_we_can_update_you_when_the</developerName>
@@ -2001,7 +1999,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>5dff71b0-131d-45d2-8648-85877885e4f0</stepIdentifier>
+            <stepIdentifier>fe8c42eb-26dd-4d79-a368-c1d6212e47f0</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_Can_I_change_my_order</developerName>
@@ -2014,9 +2012,9 @@
         <botSteps>
             <botMessages>
                 <message>申し訳ございません。ご注文完了後のキャンセル・変更はできません。ご注文完了の前にサイズ・カラー等、届け先など、間違いないか必ずご確認ください。</message>
-                <messageIdentifier>987dbadd-f295-476d-a6eb-08871b69f792</messageIdentifier>
+                <messageIdentifier>91ced380-252d-4030-bb5a-195a2ea7fbe2</messageIdentifier>
             </botMessages>
-            <stepIdentifier>f18fe719-baf2-47a8-8236-e8e74d984617</stepIdentifier>
+            <stepIdentifier>bdd5d0f1-f4e5-4228-b7d6-fb9651b22df2</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -2026,7 +2024,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>216a3bf1-4b61-4469-a733-e3bf595962c6</stepIdentifier>
+            <stepIdentifier>c817256a-93ee-4750-8833-7bc222010423</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>We_are_sorry_once_your_order_is_placed_it_s_not_possible_to_cancel_or_change_it</developerName>
@@ -2039,9 +2037,9 @@
         <botSteps>
             <botMessages>
                 <message>RICH_TEXT:お客様の個人情報につきましては、「&lt;a href={!$Context.Chatbot_Chat_With_Us_Url} target=&quot;_blank&quot;&gt;プライバシーポリシー&lt;/a&gt;」に基づき、 お客様の個人情報を慎重にお取り扱いしております。</message>
-                <messageIdentifier>041f1947-d6dc-4a74-8a1e-355761d0f08a</messageIdentifier>
+                <messageIdentifier>199b7094-a206-4aa7-a917-838b3b4aac41</messageIdentifier>
             </botMessages>
-            <stepIdentifier>ccc1d141-1118-4153-a11d-6ea47159199d</stepIdentifier>
+            <stepIdentifier>9e2ee8b9-483c-4232-ae6e-ff35286c21f0</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -2051,7 +2049,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>3066e8fa-37df-46d6-a912-5216165de1c1</stepIdentifier>
+            <stepIdentifier>3201a464-7b44-4960-b2f6-8f3bb32ba611</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account_Your_privacy_is_important_to_us_and_we_will_not_disclose_or_sell</developerName>
@@ -2068,7 +2066,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>f099c6a5-3ad6-4fef-a876-00bbbbbf9040</stepIdentifier>
+            <stepIdentifier>4b6bfa3a-58ad-4a37-8ebe-a44085a3d091</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Confirm_Correct_Mail_Yes</developerName>
@@ -2084,7 +2082,7 @@
                 <botMessages>
                     <message>RICH_TEXT:メールアドレスを入力
 登録することで、「&lt;a href={!$Context.Chatbot_Chat_With_Us_Url} target=&quot;_blank&quot;&gt;プライバシー ポリシー&lt;/a&gt;」に同意したものとみなされます。</message>
-                    <messageIdentifier>014f828b-afa1-4c20-b657-3273c2919515</messageIdentifier>
+                    <messageIdentifier>11c07cf0-dbf9-41ec-9e7e-d080e4223fb9</messageIdentifier>
                 </botMessages>
                 <botVariableOperands>
                     <disableAutoFill>true</disableAutoFill>
@@ -2096,9 +2094,9 @@
                 <optionalCollect>false</optionalCollect>
                 <quickReplyWidgetType>Buttons</quickReplyWidgetType>
                 <type>Collect</type>
-                <variableOperationIdentifier>3a942342-d848-47ed-bd3a-5f5c9085b5be</variableOperationIdentifier>
+                <variableOperationIdentifier>c571afc0-92f7-415a-87ab-5e59dd9c7421</variableOperationIdentifier>
             </botVariableOperation>
-            <stepIdentifier>b18e3e92-d4a7-4bd7-bba9-66047f4e986d</stepIdentifier>
+            <stepIdentifier>818b4637-eeb1-473b-8b41-701077e7ebf4</stepIdentifier>
             <type>VariableOperation</type>
         </botSteps>
         <botSteps>
@@ -2108,7 +2106,7 @@
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>94f939ed-9879-4515-a1e4-0a1ca9017102</stepIdentifier>
+            <stepIdentifier>558e123e-5da7-41c1-b87d-d622aebcfaf6</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Confirm_Correct_Mail_No</developerName>
@@ -2124,7 +2122,7 @@
                 <botMessages>
                     <message>RICH_TEXT:メールアドレスを入力
 登録することで、&lt;a href=&quot;https://www.timberland.co.jp&quot; target=&quot;_blank&quot;&gt;「プライバシー ポリシー」&lt;/a&gt;同意したものとみなされます。</message>
-                    <messageIdentifier>9f7ae3fe-bc05-47a1-b630-9c4c95284c4b</messageIdentifier>
+                    <messageIdentifier>67bb6826-db0d-435a-9320-095844e57a48</messageIdentifier>
                 </botMessages>
                 <botVariableOperands>
                     <disableAutoFill>true</disableAutoFill>
@@ -2137,16 +2135,16 @@
                 <quickReplyWidgetType>Buttons</quickReplyWidgetType>
                 <retryMessages>
                     <message>メールアドレスが正しい形式ではありません。メールアドレスを修正のうえ再度お試しください。</message>
-                    <messageIdentifier>8da670b5-c1fc-45f0-adcd-5f6e5d4652eb</messageIdentifier>
+                    <messageIdentifier>6cca110b-22ae-46e8-bc60-de957828365b</messageIdentifier>
                 </retryMessages>
                 <type>Collect</type>
-                <variableOperationIdentifier>6878cf29-a726-41b5-bd86-3298330e1d45</variableOperationIdentifier>
+                <variableOperationIdentifier>52a808a3-73ca-4f3b-907f-b6bd7225850b</variableOperationIdentifier>
             </botVariableOperation>
-            <stepIdentifier>1ad0a029-83b6-4d21-b25b-ff4def3e891b</stepIdentifier>
+            <stepIdentifier>3e4aa90a-0cf3-489b-9405-562b0da8343c</stepIdentifier>
             <type>VariableOperation</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>a97b4aec-3fb5-4b6d-a369-c172c5e7ec66</stepIdentifier>
+            <stepIdentifier>30bcc335-0ea7-45cf-bd17-ebd16cda8299</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Re_input_email</developerName>
@@ -2164,7 +2162,7 @@
 登録することで、「&lt;a href={!$Context.Chatbot_Chat_With_Us_Url} target=&quot;_blank&quot;&gt;プライバシー ポリシー&lt;/a&gt;」に同意したものとみなされます。
 電話によるお問い合わせの場合：
 TEL: 0000-000-000　受付時間（要確認)</message>
-                    <messageIdentifier>6418c4c0-2ac5-4cc6-965d-c9c796c7e60d</messageIdentifier>
+                    <messageIdentifier>7934049a-632a-44d6-957a-d7fc94410aec</messageIdentifier>
                 </botMessages>
                 <botVariableOperands>
                     <disableAutoFill>false</disableAutoFill>
@@ -2177,12 +2175,12 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 <quickReplyWidgetType>Buttons</quickReplyWidgetType>
                 <retryMessages>
                     <message>メールアドレスが正しい形式ではありません。メールアドレスを修正のうえ再度お試しください。</message>
-                    <messageIdentifier>1bd29f9e-aa5e-44dd-9d7a-6d0571baeddf</messageIdentifier>
+                    <messageIdentifier>ab79486f-60fe-43bb-80a1-34e11e1657c5</messageIdentifier>
                 </retryMessages>
                 <type>Collect</type>
-                <variableOperationIdentifier>b0594462-527d-4cd4-b2a4-9367842b12dd</variableOperationIdentifier>
+                <variableOperationIdentifier>8fd18d9f-08ce-4b23-860b-f0ee9c5a4962</variableOperationIdentifier>
             </botVariableOperation>
-            <stepIdentifier>0f60bb94-8c59-4ffc-86c2-02ea341b0f33</stepIdentifier>
+            <stepIdentifier>379c8c6d-57e5-447c-a7f6-a365eda4a6dc</stepIdentifier>
             <type>VariableOperation</type>
         </botSteps>
         <botSteps>
@@ -2192,7 +2190,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>9f3890b9-31b3-426a-9bfe-84f1eb6c1775</stepIdentifier>
+            <stepIdentifier>721c807a-aa6d-4515-a490-3bc2e3c14be7</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Please_insert_your_email_address</developerName>
@@ -2209,7 +2207,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 <askCollectIfSet>false</askCollectIfSet>
                 <botMessages>
                     <message>下のテキストボックスにお問い合わせ内容を記入してENTERを押してください。カスタマーサービスより2営業日以内に返信させていただきます。</message>
-                    <messageIdentifier>abcf3481-97cd-43b8-b72f-4f2d88aaef3e</messageIdentifier>
+                    <messageIdentifier>63b0b1a6-970f-4d21-af65-02b548f57b15</messageIdentifier>
                 </botMessages>
                 <botVariableOperands>
                     <disableAutoFill>true</disableAutoFill>
@@ -2221,9 +2219,9 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 <optionalCollect>false</optionalCollect>
                 <quickReplyWidgetType>Buttons</quickReplyWidgetType>
                 <type>Collect</type>
-                <variableOperationIdentifier>829e31b7-faca-4d5f-912e-5b3edf149899</variableOperationIdentifier>
+                <variableOperationIdentifier>01939aa7-52e7-417b-8269-63ef21302c5e</variableOperationIdentifier>
             </botVariableOperation>
-            <stepIdentifier>9b0a5477-73e4-485a-8dba-a95de2168308</stepIdentifier>
+            <stepIdentifier>3eec6e02-4233-40ad-a602-5eff9d9d956e</stepIdentifier>
             <type>VariableOperation</type>
         </botSteps>
         <botSteps>
@@ -2233,7 +2231,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>79f691ae-4917-4ec0-bd36-2caa7e908bb0</stepIdentifier>
+            <stepIdentifier>1309eb64-c7d1-4425-a31f-3d1daaf4189f</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Write_us_a_message_in_the_text_box_below_Pressing_ENTER_will_send_the_message</developerName>
@@ -2250,7 +2248,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>7b9227a1-0ff5-4c8e-9904-e26d9ad70287</stepIdentifier>
+            <stepIdentifier>6206c646-ff78-4524-ae6d-15ac616a47eb</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_us</developerName>
@@ -2283,14 +2281,14 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                     <variableType>ConversationVariable</variableType>
                 </invocationMappings>
             </botInvocation>
-            <stepIdentifier>2021840b-2404-44ea-ba1e-e5dd79773a75</stepIdentifier>
+            <stepIdentifier>5da7ed55-3fc1-4fa2-a812-f1c4e14261dd</stepIdentifier>
             <type>Invocation</type>
         </botSteps>
         <botSteps>
             <conversationSystemMessage>
                 <type>Transfer</type>
             </conversationSystemMessage>
-            <stepIdentifier>e2cfe83f-1cc4-4f21-af2c-2bd27c36a347</stepIdentifier>
+            <stepIdentifier>d6c994f6-e085-4954-84d0-4b4b641be54d</stepIdentifier>
             <type>SystemMessage</type>
         </botSteps>
         <developerName>CWU_Create_case_to_SFSC</developerName>
@@ -2318,9 +2316,9 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                     </invocationMappings>
                 </botInvocation>
                 <type>Set</type>
-                <variableOperationIdentifier>f02c1e6b-2892-4376-ae9a-cf017585ffbe</variableOperationIdentifier>
+                <variableOperationIdentifier>47290689-e180-4544-a2fc-02c268d8192f</variableOperationIdentifier>
             </botVariableOperation>
-            <stepIdentifier>798b95c0-3831-41da-8ce1-f5ad7377f819</stepIdentifier>
+            <stepIdentifier>15d28f4f-cb14-477c-9392-aa6a939f2199</stepIdentifier>
             <type>VariableOperation</type>
         </botSteps>
         <botSteps>
@@ -2330,7 +2328,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>19565f53-cec4-4094-84dc-3851b15a8b96</stepIdentifier>
+            <stepIdentifier>5a1fbd39-2315-4bd3-92a4-ea3b37ae3908</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Get_Value_isWithInBusinessHours</developerName>
@@ -2362,7 +2360,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>450afdc2-7cbf-437d-9f9c-a2d19701f878</stepIdentifier>
+            <stepIdentifier>baf804a9-7353-4248-aa5a-e3e2caddbadd</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Main_Menu_Agent_Offline</developerName>
@@ -2395,7 +2393,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                     <variableType>ConversationVariable</variableType>
                 </invocationMappings>
             </botInvocation>
-            <stepIdentifier>eacb7bf3-5c5d-4660-bc5a-2e440b75400f</stepIdentifier>
+            <stepIdentifier>1df6c72c-562a-4365-b810-dc856342f856</stepIdentifier>
             <type>Invocation</type>
         </botSteps>
         <botSteps>
@@ -2405,7 +2403,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>ed49171d-5351-48b1-973d-13f06881b134</stepIdentifier>
+            <stepIdentifier>601d3962-1a01-46ce-86cc-cc69f84365a3</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Create_a_case_to_SFSC</developerName>
@@ -2425,12 +2423,12 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                         <targetType>ConversationVariable</targetType>
                     </botVariableOperands>
                     <type>Set</type>
-                    <variableOperationIdentifier>3148293c-57e1-4073-994c-4d8f07f8dab9</variableOperationIdentifier>
+                    <variableOperationIdentifier>adf8b16f-7d70-4283-a8fc-2c778bfb13a9</variableOperationIdentifier>
                 </botVariableOperation>
-                <stepIdentifier>16ffca86-a26a-43af-9687-fb37366728a3</stepIdentifier>
+                <stepIdentifier>66a4337f-3e9f-42ee-a177-85e72ff3dc23</stepIdentifier>
                 <type>VariableOperation</type>
             </botSteps>
-            <stepIdentifier>ac70328f-70d5-4b29-a76f-c30d28994237</stepIdentifier>
+            <stepIdentifier>c2e1c820-1a1b-4254-8d4c-31a4718c0c80</stepIdentifier>
             <type>Group</type>
         </botSteps>
         <botSteps>
@@ -2440,7 +2438,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>5275d538-9e42-4343-b0ec-2290b604857f</stepIdentifier>
+            <stepIdentifier>e11f6c09-31ba-4f22-af2d-2f1f202c65ab</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Check_Agent_Is_Online_Or_Offline</developerName>
@@ -2453,9 +2451,9 @@ TEL: 0000-000-000　受付時間（要確認)</message>
         <botSteps>
             <botMessages>
                 <message>ありがとうございました。</message>
-                <messageIdentifier>ea6fdde7-6917-49d0-93f8-34f9556860d1</messageIdentifier>
+                <messageIdentifier>8b1a829d-8f5a-44e8-a053-4b6d94da0baf</messageIdentifier>
             </botMessages>
-            <stepIdentifier>7af7e0ab-ca00-462c-869e-f615f1df873b</stepIdentifier>
+            <stepIdentifier>6735f633-8955-4e80-9fd7-b252b7cd49f0</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -2465,7 +2463,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>bea27599-9390-41ef-a848-acab2b9a1b1a</stepIdentifier>
+            <stepIdentifier>7a82189b-38b1-4844-bdb9-f0f416a8335b</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Thank_you_Have_a_great_day</developerName>
@@ -2488,10 +2486,10 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                     </botNavigationLinks>
                     <type>Redirect</type>
                 </botNavigation>
-                <stepIdentifier>b53b2511-06d8-4ed5-8253-2a210b8aa8df</stepIdentifier>
+                <stepIdentifier>7ac8afdf-2e91-4c54-9cc5-ba82940ae628</stepIdentifier>
                 <type>Navigation</type>
             </botSteps>
-            <stepIdentifier>4f1473a7-11a7-4a79-99fb-0b3310306c67</stepIdentifier>
+            <stepIdentifier>f8742e35-6bfe-4b24-9545-fb992fbf1748</stepIdentifier>
             <type>Group</type>
         </botSteps>
         <botSteps>
@@ -2508,14 +2506,14 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                     </botNavigationLinks>
                     <type>Redirect</type>
                 </botNavigation>
-                <stepIdentifier>b939f1c9-306c-442f-8f3b-8cf6b4296766</stepIdentifier>
+                <stepIdentifier>3513a7d5-ceab-43a9-9c53-967c10cfb1dd</stepIdentifier>
                 <type>Navigation</type>
             </botSteps>
-            <stepIdentifier>88afe143-26bd-4df4-84b1-bfd68243d30a</stepIdentifier>
+            <stepIdentifier>1d701abc-8e12-4031-831d-9bc261cbc73a</stepIdentifier>
             <type>Group</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>33f7fca2-2d58-40f0-994e-e5199172f1a9</stepIdentifier>
+            <stepIdentifier>5cc279bb-7c46-4314-9cc0-2a04275c394f</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Show_Email_Us_Or_Chat_With_Us_In_Main_Menu</developerName>
@@ -2530,14 +2528,14 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 <conversationSystemMessage>
                     <type>EndChat</type>
                 </conversationSystemMessage>
-                <stepIdentifier>478692c2-9864-4cbe-8811-0641885a6214</stepIdentifier>
+                <stepIdentifier>14419cb9-9548-49df-b14a-80f21334fff2</stepIdentifier>
                 <type>SystemMessage</type>
             </botSteps>
-            <stepIdentifier>7a2d9b40-00d6-44d7-9136-0c3903282e29</stepIdentifier>
+            <stepIdentifier>83455a48-ecd1-414e-b8b8-9331350e5a81</stepIdentifier>
             <type>Group</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>909bcaae-11db-4c67-9f15-dc3524360118</stepIdentifier>
+            <stepIdentifier>7a8f4ef9-c7d8-46af-9e03-0f55d97ee7f7</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>End_Chat_By_Bot</developerName>
@@ -2550,9 +2548,9 @@ TEL: 0000-000-000　受付時間（要確認)</message>
         <botSteps>
             <botMessages>
                 <message>申し訳ございません.ご注文完了後のキャンセル・変更はできません。ご注文完了の前にサイズ・カラー等、届け先など、間違いないか必ずご確認ください。</message>
-                <messageIdentifier>76cd92c8-0385-475c-946f-8fab4dea6925</messageIdentifier>
+                <messageIdentifier>4c209b49-c490-4e98-8f29-c6dfd3da44d7</messageIdentifier>
             </botMessages>
-            <stepIdentifier>de18a309-ed4a-4c02-ad80-da7b24cafc81</stepIdentifier>
+            <stepIdentifier>108501aa-face-4f4a-93af-06caa0eb10e6</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -2562,7 +2560,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>849e461a-dcf2-46e1-af43-753487e7544e</stepIdentifier>
+            <stepIdentifier>9b7e3e98-1a8d-44be-b02b-644e96c234f3</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Can_I_change_my_order_We_are_sorry_once_your_order_is_placed</developerName>
@@ -2575,9 +2573,9 @@ TEL: 0000-000-000　受付時間（要確認)</message>
         <botSteps>
             <botMessages>
                 <message>商品の付属品（ボタン等）の代替品の対応は承っておりませんのでご了承ください。</message>
-                <messageIdentifier>b7213c81-0e3f-4065-8583-290d21e1c30e</messageIdentifier>
+                <messageIdentifier>de5a7fa7-dd77-4d0c-8e42-8ff5b740184b</messageIdentifier>
             </botMessages>
-            <stepIdentifier>00c40908-a6db-4537-ac1a-e246a479670c</stepIdentifier>
+            <stepIdentifier>a9512a62-4f3d-43eb-be00-29608ac18d03</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -2587,7 +2585,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>6f8c60ec-31e2-41ee-a091-2a6bc496309c</stepIdentifier>
+            <stepIdentifier>9f63d010-da5f-40dd-93b9-48730400813f</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>Xd11585ae_dc36_1e34_dc57_6ddb8182f157</developerName>
@@ -2600,9 +2598,9 @@ TEL: 0000-000-000　受付時間（要確認)</message>
         <botSteps>
             <botMessages>
                 <message>色味についてはPCやスマホ、モニターなどお客様がご利用されている環境によって実際の色味と多少異なる場合がありますので、その点ご了承ください。</message>
-                <messageIdentifier>d0f619e0-a223-4c70-a179-8f73d97da9a9</messageIdentifier>
+                <messageIdentifier>38a27924-e337-4c7a-b1bc-7aea64f54f06</messageIdentifier>
             </botMessages>
-            <stepIdentifier>108ac9ae-db42-481a-afbd-56bd2563d293</stepIdentifier>
+            <stepIdentifier>378d130f-efcc-47b5-a17d-3e8dfc55bee6</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -2612,7 +2610,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>65f626eb-8518-4855-b20a-d1178c2a0eff</stepIdentifier>
+            <stepIdentifier>390dc6b2-30bc-4e73-92ca-0cf7074d34c0</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>X47194eed_ee35_aeb5_a406_8a8697c95fd3</developerName>
@@ -2625,9 +2623,9 @@ TEL: 0000-000-000　受付時間（要確認)</message>
         <botSteps>
             <botMessages>
                 <message>一部輸入商品について、生産時期・減算国によって色ぶれがある場合がございますので、その点ご了承ください。</message>
-                <messageIdentifier>b9868498-3aa2-4c7c-921c-e49ebe179e5b</messageIdentifier>
+                <messageIdentifier>922e741f-064b-4b97-8613-f8dc9592d7a8</messageIdentifier>
             </botMessages>
-            <stepIdentifier>66d32974-0b85-4072-ae51-3f1bead69a9b</stepIdentifier>
+            <stepIdentifier>9ed64206-70fe-4ec2-b834-073e4b592e40</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -2637,12 +2635,178 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>b83f992a-4557-4377-9f64-01d5d58f9b75</stepIdentifier>
+            <stepIdentifier>5538c4f8-ec79-4497-8076-8ebff479c888</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
         <developerName>X27416c6c_2fb0_549d_192f_fe39be1f9520</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>色ぶれについて</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Other_Group</botDialogGroup>
+        <botSteps>
+            <botMessages>
+                <message>RICH_TEXT:ご注文の変更はできませんが、ご注文完了より約1時間以内であれば、アカウントの&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;注文履歴&lt;/a&gt;よりキャンセル手続きが可能です。
+
+キャンセルボタンが表示されない場合、ご注文から1時間以上経過しておりキャンセルできませんが、返品期間内であれば、返品が可能です（一部商品除く）。
+
+なお、キャンセルはメンバーのみ、マイアカウントより操作が可能です。</message>
+                <messageIdentifier>4c7df52c-a880-7062-663d-52730143ba32</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>0b5aceb5-176a-4280-a9d9-cb03b01e1aac</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Did_this_answer_your_question</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>7d91b3ea-89c8-4825-bc0a-828907ba78f6</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Other_Cancel_Or_Change_My_Order</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>注文をキャンセルまたは変更したい</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Returns_Group</botDialogGroup>
+        <botSteps>
+            <botMessages>
+                <message>恐れ入りますが、店舗で購入した商品のオンラインでの返品・交換は承っておりません。購入元の店舗にお問い合わせくださいませ。</message>
+                <messageIdentifier>b0c81d83-4e30-dd89-1b1a-f8513dca837e</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>0526259d-95de-4684-a323-b03b98c8c3a3</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>3fee3571-88de-4fd1-adbf-c3ac4e23ce12</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Return_And_Exchanges_Of_Product_Purchased</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>店舗で購入した商品の返品および交換について</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Introduce_Group</botDialogGroup>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Intro_About_Vans</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
+                    <targetBotDialog>Intro_Commitment_Sustainability</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
+                    <targetBotDialog>Intro_About_Near_Stores</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
+                    <targetBotDialog>Intro_Back_Main_Menu</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>2ce99ada-0edf-4e54-9dea-e3e1adb92870</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Intro_Brand</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>VANSについて</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Introduce_Group</botDialogGroup>
+        <botSteps>
+            <botMessages>
+                <message>RICH_TEXT:ありがとうございます。ヴァンズについてもっと知りたい方は&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
+                <messageIdentifier>021d5d67-5b5a-562a-5cf2-b0694dd1f1a7</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>595aecd4-a599-4015-9527-1c43d96d6e09</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Did_this_answer_your_question</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>63242e83-9762-4de7-80be-68f70e75c839</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Intro_About_Vans</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>ヴァンズについて知りたい</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Introduce_Group</botDialogGroup>
+        <botSteps>
+            <botMessages>
+                <message>RICH_TEXT:サステナビリティへの取り組みは&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご覧ください。</message>
+                <messageIdentifier>522a76b7-07bd-79cc-3b62-97285dd90552</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>863aceed-3c3d-41b6-b50e-fc07604c7624</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Did_this_answer_your_question</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>fa9e70a5-1f95-4507-a03e-d7a1920b3def</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Intro_Commitment_Sustainability</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>サステナビリティへの取り組みについて</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Introduce_Group</botDialogGroup>
+        <botSteps>
+            <botMessages>
+                <message>RICH_TEXT:&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;ストア検索&lt;/a&gt;より、最寄りのヴァンズストアをご確認ください。</message>
+                <messageIdentifier>91ee4088-9a9c-24cd-934c-18bc876adb7f</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>a7eda087-a6a7-4172-a4ea-230595bcc301</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Did_this_answer_your_question</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>90ba2e74-0d99-477e-9f19-ea9c4bc9fa39</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Intro_About_Near_Stores</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>近くの店舗を知りたい</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Introduce_Group</botDialogGroup>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Main_Menu</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>10a2dc66-5151-494d-aa3a-dbdb21ac671c</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Intro_Back_Main_Menu</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>メインメニューへ</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <conversationSystemDialogs>
