@@ -175,32 +175,4 @@
         <shortDescription>VNS JP EXTERNAL SITE ID</shortDescription>
         <value>vns-jp</value>
     </labels>
-    <labels>
-        <fullName>TECH_VNS_CHAT_BUTTON</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>TECH_VNS_CHAT_BUTTON</shortDescription>
-        <value>VNS_Live_Chat_Support</value>
-    </labels>
-    <labels>
-        <fullName>TECH_VNS_JP_BUSINESS_HOUR_NAME</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>TECH_VNS_JP_BUSINESS_HOUR_NAME</shortDescription>
-        <value>VNS JP</value>
-    </labels>
-    <labels>
-        <fullName>TECH_VNS_JP_EXTERNAL_SITE_ID</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>TECH VNS JP EXTERNAL SITE ID</shortDescription>
-        <value>vns-jp</value>
-    </labels>
-    <labels>
-        <fullName>VNS_JP_EXTERNAL_SITE_ID</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>VNS JP EXTERNAL SITE ID</shortDescription>
-        <value>vns-jp</value>
-    </labels>
 </CustomLabels>
