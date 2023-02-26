@@ -39,7 +39,9 @@ public class Chatbot_GetSetTranscriptValues {
 
         if(mBusinessHour.containsKey(transcriptSiteId)) {
             for(BusinessHours tmpBH : mBusinessHour.get(transcriptSiteId)) {
-                if(tmpBH.Name == Label.TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME || tmpBH.Name == Label.TECH_DKS_JP_BUSINESS_HOUR_NAME || Label.TECH_VNS_JP_BUSINESS_HOUR_NAME) {
+                if(tmpBH.Name == Label.TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME ||
+                   tmpBH.Name == Label.TECH_DKS_JP_BUSINESS_HOUR_NAME ||
+                   tmpBH.Name == Label.TECH_VNS_JP_BUSINESS_HOUR_NAME) {
                     caseObject.BusinessHoursId = tmpBH.Id;
                 }
             }

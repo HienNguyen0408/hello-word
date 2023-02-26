@@ -4,6 +4,7 @@ public class Chatbot_Helper {
         List<String> lstBusinessHourTBLJP = Label.BUSINESS_HOUR_TBL_JP.split(',');
         
         List<BusinessHours> lstBH = [SELECT Id, Name, MondayStartTime, MondayEndTime, IsActive FROM BusinessHours WHERE IsActive = true];
+
         if(!lstBH.isEmpty()) {
             for(BusinessHours bh : lstBH) {
                 if(bh.Name == Label.TECH_TIMBERLAND_JP_BUSINESS_HOUR_NAME) {

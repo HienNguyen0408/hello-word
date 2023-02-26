@@ -230,7 +230,7 @@ So if your order has only just shipped don&apos;t worry, it&apos;s totally norma
         <label>Routable Id</label>
     </contextVariables>
     <conversationChannelProviders>
-        <agentRequired>true</agentRequired>
+        <agentRequired>false</agentRequired>
         <chatButtonName>VNS_Live_Chat_Support</chatButtonName>
     </conversationChannelProviders>
     <description>A bot from scratch.</description>

@@ -45,7 +45,7 @@
                     <targetBotDialog>Payments</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
-                    <targetBotDialog>About_Us</targetBotDialog>
+                    <targetBotDialog>Other_Cancel_Or_Change_My_Order</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
                     <targetBotDialog>Go_back_to_main_Menu</targetBotDialog>
@@ -172,7 +172,7 @@
         <botDialogGroup>Common_group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>こんにちは。ディッキーズ バーチャル アシスタントです。ご質問の内容を以下よりお選びください。</message>
+                <message>こんにちは。 ヴァンズ バーチャルアシスタント。ご質問の内容を以下よりお選びください。</message>
                 <messageIdentifier>e2af8a65-16d2-4617-ab5a-23d7109193fb</messageIdentifier>
             </botMessages>
             <stepIdentifier>1ea39e24-b05b-46d8-8598-bd8825c0dcbc</stepIdentifier>
@@ -198,25 +198,10 @@
         <botSteps>
             <botNavigation>
                 <botNavigationLinks>
-                    <targetBotDialog>Product_How_do_I_clean_my_Timberland_boots</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
                     <targetBotDialog>Product_What_size_do_I_need</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
                     <targetBotDialog>Product_Faulty_product</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>Product_Product_is_out_of_stock</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>Xd11585ae_dc36_1e34_dc57_6ddb8182f157</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>X47194eed_ee35_aeb5_a406_8a8697c95fd3</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>X27416c6c_2fb0_549d_192f_fe39be1f9520</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
                     <targetBotDialog>Go_back_to_main_Menu</targetBotDialog>
@@ -764,7 +749,7 @@
         </botSteps>
         <developerName>Product_What_size_do_I_need</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>商品のフィット感を知りたい。</label>
+        <label>自分のサイズを知りたい</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -1608,7 +1593,7 @@
         <botDialogGroup>Delivery_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:商品配送状況は、佐川急便株式会社　「&lt;a href={!$Context.Chatbot_Deleivery_TrackMyOrder_Click_Url} target=&quot;_blank&quot;&gt;お荷物お問い合わせサービス&lt;/a&gt;」よりご確認いただけます。
+                <message>RICH_TEXT:商品配送状況は、佐川急便株式会社　「&lt;a href=&quot;https://k3k.sagawa-exp.co.jp/&quot; target=&quot;_blank&quot;&gt;お荷物お問い合わせサービス&lt;/a&gt;」よりご確認いただけます。
 配送完了メールに記載されている「お荷物お問い合わせ番号」をご用意ください。</message>
                 <messageIdentifier>21718db3-f9f3-468a-8f59-fcfdade55bae</messageIdentifier>
             </botMessages>
@@ -1718,7 +1703,7 @@
         <botDialogGroup>Delivery_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:配送条件と配送時間については&lt;a href={!$Context.Chatbot_DeliveryOptions_DeliveryPage_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
+                <message>RICH_TEXT:配送条件と配送時間については&lt;a href={!$Context.Chatbot_Delivery_MyOrder_No_Delivery_Page_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
                 <messageIdentifier>d89b964a-f23b-43d2-b6e5-592241e0dc80</messageIdentifier>
             </botMessages>
             <stepIdentifier>d521e7db-992e-47cb-8e2e-88afeb645bc5</stepIdentifier>
@@ -1806,7 +1791,7 @@
         <botDialogGroup>My_Account_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:ありがとうございます。&lt;a href={!$Context.Chatbot_MyAccount_Newsletter_Clicking_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より登録できます。</message>
+                <message>RICH_TEXT:ありがとうございます。&lt;a href={!$Context.Info_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より登録できます。</message>
                 <messageIdentifier>6b017666-b6bd-4018-b5ca-3e0a14b0788d</messageIdentifier>
             </botMessages>
             <stepIdentifier>12bdff9f-4a0b-42df-bd24-744cf720a456</stepIdentifier>
@@ -1877,7 +1862,7 @@
 
 ゲストの方の送料は11,000円（税込）以上のご購入で無料となります。
 
-送料についての詳細は&lt;a href=&quot;#&quot; targer=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご覧ください。</message>
+送料についての詳細は&lt;a href={!$Context.Chatbot_Other_Payments_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご覧ください。</message>
                 <messageIdentifier>881f55d7-0661-45b1-be3f-efe883ded8e1</messageIdentifier>
             </botMessages>
             <stepIdentifier>a7ba100c-47c2-4fd8-8fc3-fd86eba6dde1</stepIdentifier>
@@ -2344,6 +2329,9 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                     <targetBotDialog>Delivery</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
+                    <targetBotDialog>Other</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
                     <targetBotDialog>Return</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
@@ -2353,10 +2341,10 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                     <targetBotDialog>Product</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
-                    <targetBotDialog>Other</targetBotDialog>
+                    <targetBotDialog>Intro_Brand</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
-                    <targetBotDialog>Email_Us</targetBotDialog>
+                    <targetBotDialog>Chat_with_us</targetBotDialog>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
@@ -2647,7 +2635,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
         <botDialogGroup>Other_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:ご注文の変更はできませんが、ご注文完了より約1時間以内であれば、アカウントの&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;注文履歴&lt;/a&gt;よりキャンセル手続きが可能です。
+                <message>RICH_TEXT:ご注文の変更はできませんが、ご注文完了より約1時間以内であれば、アカウントの&lt;a href={!$Context.Chatbot_Other_AboutUs_Doing_Url} target=&quot;_blank&quot;&gt;注文履歴&lt;/a&gt;よりキャンセル手続きが可能です。
 
 キャンセルボタンが表示されない場合、ご注文から1時間以上経過しておりキャンセルできませんが、返品期間内であれば、返品が可能です（一部商品除く）。
 
@@ -2683,8 +2671,14 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Message</type>
         </botSteps>
         <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Did_this_answer_your_question</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
             <stepIdentifier>3fee3571-88de-4fd1-adbf-c3ac4e23ce12</stepIdentifier>
-            <type>Wait</type>
+            <type>Navigation</type>
         </botSteps>
         <developerName>Return_And_Exchanges_Of_Product_Purchased</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
@@ -2721,7 +2715,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
         <botDialogGroup>Introduce_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:ありがとうございます。ヴァンズについてもっと知りたい方は&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
+                <message>RICH_TEXT:ありがとうございます。ヴァンズについてもっと知りたい方は&lt;a href={!$Context.Chatbot_Other_AboutUs_Doing_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご確認ください。</message>
                 <messageIdentifier>021d5d67-5b5a-562a-5cf2-b0694dd1f1a7</messageIdentifier>
             </botMessages>
             <stepIdentifier>595aecd4-a599-4015-9527-1c43d96d6e09</stepIdentifier>
@@ -2746,7 +2740,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
         <botDialogGroup>Introduce_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:サステナビリティへの取り組みは&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご覧ください。</message>
+                <message>RICH_TEXT:サステナビリティへの取り組みは&lt;a href={!$Context.Chatbot_Other_Sustainability_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;をご覧ください。</message>
                 <messageIdentifier>522a76b7-07bd-79cc-3b62-97285dd90552</messageIdentifier>
             </botMessages>
             <stepIdentifier>863aceed-3c3d-41b6-b50e-fc07604c7624</stepIdentifier>
@@ -2771,7 +2765,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
         <botDialogGroup>Introduce_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;ストア検索&lt;/a&gt;より、最寄りのヴァンズストアをご確認ください。</message>
+                <message>RICH_TEXT:&lt;a href={!$Context.Chatbot_Delivery_StoreLocator_Url} target=&quot;_blank&quot;&gt;ストア検索&lt;/a&gt;より、最寄りのヴァンズストアをご確認ください。</message>
                 <messageIdentifier>91ee4088-9a9c-24cd-934c-18bc876adb7f</messageIdentifier>
             </botMessages>
             <stepIdentifier>a7eda087-a6a7-4172-a4ea-230595bcc301</stepIdentifier>
