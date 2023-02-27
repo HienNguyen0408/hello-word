@@ -3,7 +3,7 @@
     <actionCalls>
         <name>Send_DKS_Case_Creation_Response_Email</name>
         <label>Send DKS Case Creation Response Email</label>
-        <locationX>1150</locationX>
+        <locationX>1238</locationX>
         <locationY>695</locationY>
         <actionName>Case.Send_DKS_SFCC_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
@@ -31,11 +31,11 @@
         </inputParameters>
     </actionCalls>
     <actionCalls>
-        <name>Send_VNS_Case_Creation_Response_Email</name>
-        <label>Send VNS Case Creation Response Email</label>
-        <locationX>622</locationX>
+        <name>Send_VNS_SFCC_Case_Creation_Response_Email</name>
+        <label>Send VNS SFCC Case Creation Response Email</label>
+        <locationX>710</locationX>
         <locationY>695</locationY>
-        <actionName>Case.Send_TBL_Case_Creation_Response_Email</actionName>
+        <actionName>Case.Send_VNS_SFCC_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
@@ -49,7 +49,7 @@
     <decisions>
         <name>Copy_1_of_Is_Supplied_Email_Null</name>
         <label>Is Supplied Email Null?</label>
-        <locationX>1018</locationX>
+        <locationX>1106</locationX>
         <locationY>575</locationY>
         <defaultConnector>
             <targetReference>Send_DKS_Case_Creation_Response_Email</targetReference>
@@ -71,7 +71,7 @@
     <decisions>
         <name>Is_Live_Agent_Record_Type</name>
         <label>Is Live Agent Record Type</label>
-        <locationX>974</locationX>
+        <locationX>1040</locationX>
         <locationY>335</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -136,10 +136,10 @@
     <decisions>
         <name>Is_Supplied_Email_Null_1</name>
         <label>Is Supplied Email Null?</label>
-        <locationX>534</locationX>
+        <locationX>578</locationX>
         <locationY>575</locationY>
         <defaultConnector>
-            <targetReference>Send_VNS_Case_Creation_Response_Email</targetReference>
+            <targetReference>Send_VNS_SFCC_Case_Creation_Response_Email</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -158,7 +158,7 @@
     <decisions>
         <name>Is_TBL_Case</name>
         <label>Is TBL Case?</label>
-        <locationX>534</locationX>
+        <locationX>578</locationX>
         <locationY>455</locationY>
         <defaultConnector>
             <targetReference>Copy_1_of_Is_Supplied_Email_Null</targetReference>
@@ -218,7 +218,7 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <start>
-        <locationX>848</locationX>
+        <locationX>914</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Is_Live_Agent_Record_Type</targetReference>
@@ -227,5 +227,5 @@
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>
