@@ -176,6 +176,20 @@
         <value>vns-jp</value>
     </labels>
     <labels>
+        <fullName>TECH_VNS_CHAT_BUTTON</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_VNS_CHAT_BUTTON</shortDescription>
+        <value>VNS_Live_Chat_Support</value>
+    </labels>
+    <labels>
+        <fullName>TECH_VNS_JP_BUSINESS_HOUR_NAME</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH_VNS_JP_BUSINESS_HOUR_NAME</shortDescription>
+        <value>VNS JP</value>
+    </labels>
+    <labels>
         <fullName>TECH_VANS_EMAIL_ADDRESS</fullName>
         <language>en_US</language>
         <protected>false</protected>

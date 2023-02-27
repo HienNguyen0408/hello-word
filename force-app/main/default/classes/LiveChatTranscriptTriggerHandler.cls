@@ -57,7 +57,9 @@ public without sharing class LiveChatTranscriptTriggerHandler extends TriggerHan
             if(mapChatButton.containsKey(chatTranscript.LiveChatButtonId)) {
                 if(mapChatButton.get(chatTranscript.LiveChatButtonId) == Label.TECH_DKS_CHAT_BUTTON) {
                     chatTranscript.External_Site_Id__c = Label.DKS_JP_EXTERNAL_SITE_ID;
-                }else {
+                } else if(mapChatButton.get(chatTranscript.LiveChatButtonId) == Label.TECH_VNS_CHAT_BUTTON) {
+                    chatTranscript.External_Site_Id__c = Label.VNS_JP_EXTERNAL_SITE_ID;
+                } else {
                     chatTranscript.External_Site_Id__c = Label.TECH_TBL_JP_EXTERNAL_SITE_ID;
                 }
             }

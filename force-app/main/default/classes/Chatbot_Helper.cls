@@ -12,7 +12,12 @@ public class Chatbot_Helper {
                         mapBH.put(Label.TECH_TBL_JP_EXTERNAL_SITE_ID, new List<BusinessHours>());
                     }
                     mapBH.get(Label.TECH_TBL_JP_EXTERNAL_SITE_ID).Add(bh);
-                }else {
+                } else if (bh.Name == Label.TECH_VNS_JP_BUSINESS_HOUR_NAME) { 
+                    if(!mapBH.containsKey(Label.TECH_VNS_JP_EXTERNAL_SITE_ID)) {
+                        mapBH.put(Label.TECH_VNS_JP_EXTERNAL_SITE_ID, new List<BusinessHours>());
+                    }
+                    mapBH.get(Label.TECH_VNS_JP_EXTERNAL_SITE_ID).Add(bh);
+                } else {
                     if(!mapBH.containsKey(Label.DKS_JP_EXTERNAL_SITE_ID)) {
                         mapBH.put(Label.DKS_JP_EXTERNAL_SITE_ID, new List<BusinessHours>());
                     }
