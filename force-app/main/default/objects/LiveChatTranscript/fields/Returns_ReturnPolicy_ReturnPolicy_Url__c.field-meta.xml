@@ -4,7 +4,9 @@
     <externalId>false</externalId>
     <formula>IF( External_Site_Id__c  = $Label.TECH_TBL_JP_EXTERNAL_SITE_ID ,
      $CustomMetadata.Url_In_Chat_Bot__mdt.tbl_jp.Returns_ReturnPolicy_ReturnPolicy__c   ,
-      $CustomMetadata.Url_In_Chat_Bot__mdt.dks_jp.Returns_ReturnPolicy_ReturnPolicy__c  )</formula>
+IF( External_Site_Id__c  = $Label.TECH_VNS_JP_EXTERNAL_SITE_ID ,
+      $CustomMetadata.Url_In_Chat_Bot__mdt.vns_jp.Returns_ReturnPolicy_ReturnPolicy__c  ,
+      $CustomMetadata.Url_In_Chat_Bot__mdt.dks_jp.Returns_ReturnPolicy_ReturnPolicy__c  ))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Returns-ReturnPolicy-ReturnPolicy-Url</label>
     <required>false</required>

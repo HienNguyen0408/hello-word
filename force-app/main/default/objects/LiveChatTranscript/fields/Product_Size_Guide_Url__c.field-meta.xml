@@ -4,7 +4,9 @@
     <externalId>false</externalId>
     <formula>IF( External_Site_Id__c  = $Label.TECH_TBL_JP_EXTERNAL_SITE_ID ,
     $CustomMetadata.Url_In_Chat_Bot__mdt.tbl_jp.Product_Size_Guide__c  ,
-    $CustomMetadata.Url_In_Chat_Bot__mdt.dks_jp.Product_Size_Guide__c )</formula>
+IF( External_Site_Id__c  = $Label.TECH_VNS_JP_EXTERNAL_SITE_ID ,
+    $CustomMetadata.Url_In_Chat_Bot__mdt.vns_jp.Product_Size_Guide__c ,
+    $CustomMetadata.Url_In_Chat_Bot__mdt.dks_jp.Product_Size_Guide__c ))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Product-Size-Guide-Url</label>
     <required>false</required>

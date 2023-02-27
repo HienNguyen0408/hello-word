@@ -4,7 +4,10 @@
     <externalId>false</externalId>
     <formula>IF( External_Site_Id__c  = $Label.TECH_TBL_JP_EXTERNAL_SITE_ID ,
      $CustomMetadata.Url_In_Chat_Bot__mdt.tbl_jp.Delivery_TrackMyOrder_Click__c   ,
-    $CustomMetadata.Url_In_Chat_Bot__mdt.dks_jp.Delivery_TrackMyOrder_Click__c )</formula>
+IF( External_Site_Id__c  = $Label.TECH_VNS_JP_EXTERNAL_SITE_ID ,
+    $CustomMetadata.Url_In_Chat_Bot__mdt.vns_jp.Delivery_TrackMyOrder_Click__c ,
+    $CustomMetadata.Url_In_Chat_Bot__mdt.dks_jp.Delivery_TrackMyOrder_Click__c
+))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Delivery-TrackMyOrder-Click-Url</label>
     <required>false</required>
