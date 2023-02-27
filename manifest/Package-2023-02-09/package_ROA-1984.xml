@@ -22,10 +22,6 @@
 		<members>Send_Email_Response_For_Case_Created_By_Live_Chat</members>
 		<name>Flow</name>
 	</types>
-		<types>
-		<members>LiveChatTranscript.Delivery_DeliveryOption_DeliveryPage_Url__c</members>
-		<name>CustomField</name>
-	</types>
 	<types>
 		<members>Url_In_Chat_Bot.vns_jp</members>
 		<name>CustomMetadata</name>
