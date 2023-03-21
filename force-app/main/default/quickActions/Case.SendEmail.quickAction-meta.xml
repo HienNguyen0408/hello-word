@@ -12,7 +12,13 @@
         <field>ValidatedFromAddress</field>
         <formula>IF( Case.External_Site_Id__c =  $Label.DKS_JP_EXTERNAL_SITE_ID , 
         $Label.TECH_DKS_SFCC_EMAIL_ADDRESS ,
-        $Label.TECH_TIMBERLAND_EMAIL_ADDRESS )</formula>
+        IF( Case.External_Site_Id__c =  $Label.VNS_JP_EXTERNAL_SITE_ID, 
+            $Label.TECH_VANS_EMAIL_ADDRESS,
+            IF( CONTAINS( Case.Subject ,  $Label.TECH_RAKUTEN_TXT ) , 
+                $Label.TECH_RAKUTEN_EMAIL_ADDRESS , 
+                $Label.TECH_TIMBERLAND_EMAIL_ADDRESS
+            )
+    ))</formula>
     </fieldOverrides>
     <optionsCreateFeedItem>true</optionsCreateFeedItem>
     <quickActionLayout>
