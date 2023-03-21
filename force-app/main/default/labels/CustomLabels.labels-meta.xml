@@ -50,6 +50,13 @@
         <value>Live Agent</value>
     </labels>
     <labels>
+        <fullName>TECH_RAKUTEN_TXT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TECH RAKUTEN TXT</shortDescription>
+        <value>Rakuten</value>
+    </labels>
+    <labels>
         <fullName>TECH_TBL_JP_EXTERNAL_SITE_ID</fullName>
         <language>en_US</language>
         <protected>false</protected>
