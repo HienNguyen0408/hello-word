@@ -2,8 +2,10 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Is_Enable__c</fullName>
     <defaultValue>false</defaultValue>
+    <description>This field is not used.</description>
     <externalId>false</externalId>
     <label>Is Enable</label>
+    <securityClassification>Confidential</securityClassification>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>
 </CustomField>
