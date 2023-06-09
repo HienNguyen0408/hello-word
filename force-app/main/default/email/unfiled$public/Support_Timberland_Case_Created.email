@@ -6,7 +6,7 @@
 
 
 お問い合わせ番号： {!Case.CaseNumber}
-お問い合わせ内容：
+お問い合わせ内容：{!Case.Description}
 
 
 
