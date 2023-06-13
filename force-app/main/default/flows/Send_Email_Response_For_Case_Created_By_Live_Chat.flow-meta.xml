@@ -4,7 +4,7 @@
         <name>Send_DKS_Case_Creation_Response_Email</name>
         <label>Send DKS Case Creation Response Email</label>
         <locationX>1238</locationX>
-        <locationY>695</locationY>
+        <locationY>647</locationY>
         <actionName>Case.Send_DKS_SFCC_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -19,7 +19,7 @@
         <name>Send_TBL_Case_Creation_Response_Email</name>
         <label>Send TBL Case Creation Response Email</label>
         <locationX>182</locationX>
-        <locationY>695</locationY>
+        <locationY>647</locationY>
         <actionName>Case.Send_TBL_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -32,9 +32,9 @@
     </actionCalls>
     <actionCalls>
         <name>Send_VNS_SFCC_Case_Creation_Response_Email</name>
-        <label>Send VNS SFCC Case Creation Response Email</label>
+        <label>Send_VNS_SFCC_Case_Creation_Response_Email</label>
         <locationX>710</locationX>
-        <locationY>695</locationY>
+        <locationY>647</locationY>
         <actionName>Case.Send_VNS_SFCC_Case_Creation_Response_Email</actionName>
         <actionType>emailAlert</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -50,7 +50,7 @@
         <name>Copy_1_of_Is_Supplied_Email_Null</name>
         <label>Is Supplied Email Null?</label>
         <locationX>1106</locationX>
-        <locationY>575</locationY>
+        <locationY>539</locationY>
         <defaultConnector>
             <targetReference>Send_DKS_Case_Creation_Response_Email</targetReference>
         </defaultConnector>
@@ -72,13 +72,13 @@
         <name>Is_Live_Agent_Record_Type</name>
         <label>Is Live Agent Record Type</label>
         <locationX>1040</locationX>
-        <locationY>335</locationY>
+        <locationY>323</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes</name>
             <conditionLogic>(1 OR 3 OR 4) AND 2</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>$Label.TECH_LIVE_AGENT_RECORD_TYPE</elementReference>
@@ -115,7 +115,7 @@
         <name>Is_Supplied_Email_Null</name>
         <label>Is Supplied Email Null?</label>
         <locationX>50</locationX>
-        <locationY>575</locationY>
+        <locationY>539</locationY>
         <defaultConnector>
             <targetReference>Send_TBL_Case_Creation_Response_Email</targetReference>
         </defaultConnector>
@@ -137,7 +137,7 @@
         <name>Is_Supplied_Email_Null_1</name>
         <label>Is Supplied Email Null?</label>
         <locationX>578</locationX>
-        <locationY>575</locationY>
+        <locationY>539</locationY>
         <defaultConnector>
             <targetReference>Send_VNS_SFCC_Case_Creation_Response_Email</targetReference>
         </defaultConnector>
@@ -159,7 +159,7 @@
         <name>Is_TBL_Case</name>
         <label>Is TBL Case?</label>
         <locationX>578</locationX>
-        <locationY>455</locationY>
+        <locationY>431</locationY>
         <defaultConnector>
             <targetReference>Copy_1_of_Is_Supplied_Email_Null</targetReference>
         </defaultConnector>
