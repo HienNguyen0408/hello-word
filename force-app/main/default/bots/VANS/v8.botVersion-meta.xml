@@ -56,7 +56,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Other</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>ご注文について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -91,7 +90,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Main_Menu</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Main Menu</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -134,7 +132,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>配送について</label>
         <mlIntent>Delivery</mlIntent>
         <mlIntentTrainingEnabled>true</mlIntentTrainingEnabled>
@@ -164,7 +161,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Did_this_answer_your_question</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Did this answer your question?</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -172,7 +168,7 @@
         <botDialogGroup>Common_group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>こんにちは。 ヴァンズ バーチャルアシスタント。ご質問の内容を以下よりお選びください。</message>
+                <message>こんにちは。ヴァンズ バーチャル アシスタントです。ご質問の内容を以下よりお選びください。</message>
                 <messageIdentifier>e2af8a65-16d2-4617-ab5a-23d7109193fb</messageIdentifier>
             </botMessages>
             <stepIdentifier>1ea39e24-b05b-46d8-8598-bd8825c0dcbc</stepIdentifier>
@@ -189,7 +185,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Welcome</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Welcome</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -212,7 +207,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>商品について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -244,7 +238,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>マイページについて</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -261,7 +254,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_Where_s_my_order</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>出荷状況について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -286,7 +278,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>By_proceeding_you_acknowledge_you_have_read_and_understood_our_Privacy_Policy</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>By proceeding, you acknowledge you have read and understood our Privacy Policy</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -304,7 +295,6 @@
         </botSteps>
         <description>This option is reused for &quot;Have you received email confirmation&quot; and &quot;Is your order showing as delivered&quot;</description>
         <developerName>Is_your_order_in_transit_Did_this_answer_your_question_Yes</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>はい</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -321,7 +311,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_How_do_I_clean_my_Timberland_boots</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>お手入れ方法について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -338,7 +327,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>MyAccount_How_to_create_an_account</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>新規アカウントを作成したい</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -370,7 +358,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Return</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>返品・交換について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -398,7 +385,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_team_member_Would_you_like_to_provide_your_account</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Would you like to provide your account</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -415,7 +401,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>About_Us</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>ディッキーズについて</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -432,7 +417,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>MyAccount_Forgotten_Password</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>パスワードを忘れた</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -449,7 +433,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Is_your_order_in_transit_Did_this_answer_your_question_No</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>いいえ</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -466,7 +449,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_Which_shoes_boots_are_waterproof</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>ウォータープルーフのフットウェアが欲しい。</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -483,7 +465,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_How_do_I_return_an_item</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>返品方法について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -508,7 +489,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_You_may_check_return_and_exchange_policy_from_here</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Returns - You may check return and exchange policy from here.</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -533,7 +513,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_You_may_check_2</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Returns - Exchange</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -550,7 +529,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Payments</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>支払い方法について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -567,7 +545,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_With_Team_Member_Yes</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>はい</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -584,7 +561,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Can_I_return_in_store</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>公式オンラインショップで購入した商品は店舗に返品できますか。</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -613,7 +589,6 @@
         </botSteps>
         <description>This is the common Diaglog that can be reused.</description>
         <developerName>Is_your_order_Did_this_answer_Yes_Great_Is_there_anything_else</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Great Is there anything else</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -630,7 +605,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>MyAccount_Sign_up_for_Newsletter</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>ニュースレター登録</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -647,7 +621,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_team_member_No</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>いいえ</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -672,7 +645,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Timberland_Retail_Stores_are_unable_to_accept_the_return_of_items</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Returns - Timberland Retail Stores are unable to accept the return of items</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -697,7 +669,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Please_send_your_item_back_to_us_following_our_Return_Policy_here</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Returns - Please send your item back to us following our &apos;Return Policy&apos;, here.</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -714,7 +685,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Can_I_exchange_my_item</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>交換方法について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -731,7 +701,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Sustainability</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>サステナビリティ</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -748,7 +717,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_What_size_do_I_need</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>自分のサイズを知りたい</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -776,7 +744,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Where_is_my_order_Have_you_received_email_confirmation</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Have you received email confirmation that your order has shipped?</label>
         <mlIntent>Where_is_my_order_Have_you_received_email_confirmation</mlIntent>
         <mlIntentTrainingEnabled>false</mlIntentTrainingEnabled>
@@ -796,7 +763,6 @@
         </botSteps>
         <description>This option is reused for &quot;Have you received email information&quot; and &quot;Is your order showing as delivered&quot;</description>
         <developerName>Is_your_order_in_transit_Yes</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>はい</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -813,7 +779,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_When_will_I_be_refunded</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>返金について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -830,7 +795,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_Can_I_buy_spare_or_replacement_laces</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>替えのシューレースが欲しい。</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -848,7 +812,6 @@
         </botSteps>
         <description>This option is reused for &quot;Have you received email information&quot; and &quot;Is your order showing as delivered&quot;</description>
         <developerName>Is_your_order_in_transit_No</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>いいえ</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -873,7 +836,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Other_It_s_great_that_you_d_like_to_find_out_more_about_Timberland</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Other - It&apos;s great that you&apos;d like to find out more about Timberland</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -898,7 +860,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Yes_Delivers_can_take_5_7_working_days</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Deliveries can take 2-3 working days. It can take some time for the carrier</label>
         <mlIntent>Yes_Delivers_can_take_5_7_working_days</mlIntent>
         <mlIntentTrainingEnabled>false</mlIntentTrainingEnabled>
@@ -925,7 +886,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Other_Payment_Please_click_here_for_the_payment_methos_we_accept_currently</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Other - Payment - Please click here for the payment methos we accept currently</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -951,7 +911,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Is_your_order_in_trainsit_No_Depending_on_what_time_you_placed</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Depending on what time you placed your order</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -968,7 +927,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_Faulty_product</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>不良品について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1019,7 +977,6 @@
             <type>Wait</type>
         </botSteps>
         <developerName>Is_your_order_in_transit_Great_Is_there_anything_else_Yes</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>はい</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1044,7 +1001,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Depending_on_the_payment_method_you_have_chosed_while_placing_an_order</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Returns - Depending on the payment method you have chosed while placing an order</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1061,7 +1017,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_What_is_your_returns_policy</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>返品条件について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1078,7 +1033,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_Product_is_out_of_stock</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>欠品について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1103,7 +1057,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Other_To_learn_more_about_our_approach_to_sustainability_just_click_here</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Other - To learn more about our approach to sustainability, just click here.</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1120,7 +1073,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>MyAccount_Unsubscribe_from_Newsletter</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>ニュースレター配信の停止について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1137,7 +1089,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Is_your_order_in_transit_Great_Is_there_anything_else_No</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>いいえ</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1162,7 +1113,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_To_help_you_keep_your_Timberland_shoes_and_boots_looking_great</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Product - To help you keep your Timberland shoes and boots looking great</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1205,7 +1155,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_team_member_Please_insert_your_email_address</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Please insert your email address</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1230,7 +1179,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Awesome_Have_a_great_day</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Awesome! Have a great day!</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1255,7 +1203,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_team_member_Thank_you_for_contacting_us</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Thank you for contacting us</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1280,7 +1227,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Returns_Any_item_returned_to_us_must_be_unused_and_within_30_days</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Returns - Any item returned to us must be unused and within 30 days</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1297,7 +1243,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>MyAccount_What_is_your_Privacy_Policy</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>プライバシーポリシーについて</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1357,7 +1302,6 @@
         </botSteps>
         <description>This is the common Diaglog that can be reused.</description>
         <developerName>Is_your_order_Did_this_answer_No_We_are_sorry_to_hear</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>We are sorry to hear</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1374,7 +1318,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Go_back_to_main_Menu</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>メインメニューへ</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1399,7 +1342,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_We_sell_a_wide_range_of_waterproof_shoes_and_boots</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Product - We sell a wide range of waterproof shoes and boots.</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1424,7 +1366,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account_It_s_great_to_hear_you_want_to_sign_up</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>My Account - It&apos;s great to hear you want to sign up</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1444,7 +1385,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_us_Dialog</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Chat with us - Dialog</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1464,7 +1404,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Email_Us_Dialog</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Email Us - Dialog</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1498,7 +1437,6 @@
             <type>SystemMessage</type>
         </botSteps>
         <developerName>Transfer_To_Agent</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Transfer To Agent</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1515,7 +1453,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Email_Us</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>メール・お電話によるお問い合わせ</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1543,7 +1480,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Email_us_Do_you_confirm_this_is_the_correct_email_address</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Email us - Do you confirm this is the correct email address?</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1568,7 +1504,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_Our_Size_Charts_are_a_great_tool_to_help_you_decide_which_size_is_best</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Product - Our Size Charts are a great tool to help you decide which size is best</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1585,7 +1520,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_How_do_I_track_my_order</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>配送状況について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1611,7 +1545,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>To_track_your_order_head_to_Track_My_Order_and_enter_your_order_number</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>To track your order</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1629,7 +1562,6 @@
             <type>Wait</type>
         </botSteps>
         <developerName>Confused</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Confused</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1654,7 +1586,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account_If_you_can_t_remember_your_password</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>My Account - If you can&apos;t remember your password</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1671,7 +1602,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_What_are_my_delivery_options</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>配送条件について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1695,7 +1625,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>No_Agent_Available</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>No Agent</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1720,7 +1649,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Find_out_more_about_our_delivery_options</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Find out more about our delivery options</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1741,7 +1669,6 @@
             <type>SystemMessage</type>
         </botSteps>
         <developerName>Error_Handling</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Error Handler</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1758,7 +1685,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_Where_is_my_nearest_Timberland_store</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>近くの店舗を知りたい。</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1783,7 +1709,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>We_d_love_to_see_you_You_can_find_your_nearest_Timberland_store_by_using_our_S</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>We&apos;d love to see you! You can find your nearest Timberland store by using</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1791,7 +1716,7 @@
         <botDialogGroup>My_Account_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:ありがとうございます。&lt;a href={!$Context.Info_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より登録できます。</message>
+                <message>RICH_TEXT:ありがとうございます。&lt;a href={!$Context.Chatbot_MyAccount_CreateAC_Clicking_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より登録できます。</message>
                 <messageIdentifier>6b017666-b6bd-4018-b5ca-3e0a14b0788d</messageIdentifier>
             </botMessages>
             <stepIdentifier>12bdff9f-4a0b-42df-bd24-744cf720a456</stepIdentifier>
@@ -1808,7 +1733,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account_It_s_great_to_hear_that_you_d_like_to_sign_up_to_our_newsletter</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>My Account - It&apos;s great to hear that you&apos;d like to sign up to our newsletter</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1833,7 +1757,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_We_sell_a_wide_range_of_replacement_laces_for_both_shoes_and_boots</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Product - We sell a wide range of replacement laces for both shoes and boots</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1850,7 +1773,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_How_much_is_Timberland_shipping</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>送料について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1858,7 +1780,7 @@
         <botDialogGroup>Delivery_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>メンバーの送料は一律無料です。
+                <message>RICH_TEXT:メンバーの送料は一律無料です。
 
 ゲストの方の送料は11,000円（税込）以上のご購入で無料となります。
 
@@ -1879,7 +1801,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>If_your_order_is_under_50_then_a_standard_charge_of_3_95_is_applied</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>If your order is under 5,500JPY then a standard charge of 550JPY is applied</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1904,7 +1825,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_The_good_news_you_may_return_a_faulty_product_within_14_days</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Product - The good news you may return a faulty product within 14 days</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1921,7 +1841,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_Can_I_cancel_my_order</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>注文をキャンセルしたい。</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1946,7 +1865,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account_We_re_sorry_to_see_you_go_Unsubscribing_is_quick_and_easy</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>My Account - We&apos;re sorry to see you go! Unsubscribing is quick and easy</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1971,7 +1889,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Product_We_are_sorry_to_hear_this_The_good_news_is_we_can_update_you_when_the</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Product - We are sorry to hear this. The good news is we can update you when the</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -1988,7 +1905,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Delivery_menu_Can_I_change_my_order</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>注文の変更がしたい。</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2013,7 +1929,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>We_are_sorry_once_your_order_is_placed_it_s_not_possible_to_cancel_or_change_it</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Can I cancel my order - We are sorry, once your order is placed</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2038,7 +1953,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>My_Account_Your_privacy_is_important_to_us_and_we_will_not_disclose_or_sell</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>My Account - Your privacy is important to us and we will not disclose or sell</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2055,7 +1969,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Confirm_Correct_Mail_Yes</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>はい</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2095,7 +2008,6 @@
             <type>Navigation</type>
         </botSteps>
         <developerName>Confirm_Correct_Mail_No</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>いいえ</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2133,7 +2045,6 @@
             <type>Wait</type>
         </botSteps>
         <developerName>Re_input_email</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Re-input email</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2144,9 +2055,9 @@
                 <askCollectIfSet>true</askCollectIfSet>
                 <botMessages>
                     <message>RICH_TEXT:メールアドレスを入力
-登録することで、「&lt;a href={!$Context.Chatbot_Chat_With_Us_Url} target=&quot;_blank&quot;&gt;プライバシー ポリシー&lt;/a&gt;」に同意したものとみなされます。
+登録することで、「&lt;a href={!$Context.Chatbot_Product_TBLBoots_Guide_Url} target=&quot;_blank&quot;&gt;プライバシー ポリシー&lt;/a&gt;」に同意したものとみなされます。
 電話によるお問い合わせの場合：
-TEL: 0000-000-000　受付時間（要確認)</message>
+TEL: XXXX-XXX-XXX　受付時間（月曜日～金曜日）： 10:00～18:00</message>
                     <messageIdentifier>7934049a-632a-44d6-957a-d7fc94410aec</messageIdentifier>
                 </botMessages>
                 <botVariableOperands>
@@ -2179,7 +2090,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Please_insert_your_email_address</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Email Us - Please insert your email address</label>
         <mlIntent>Please_insert_your_email_address</mlIntent>
         <mlIntentTrainingEnabled>false</mlIntentTrainingEnabled>
@@ -2220,7 +2130,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Write_us_a_message_in_the_text_box_below_Pressing_ENTER_will_send_the_message</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Write us a message in the text box below. Pressing ENTER will send the message</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2237,7 +2146,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Chat_with_us</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>チャットで問い合わせ</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2277,7 +2185,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>SystemMessage</type>
         </botSteps>
         <developerName>CWU_Create_case_to_SFSC</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>CWU- Create case to SFSC</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2317,7 +2224,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Get_Value_isWithInBusinessHours</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Get Value isWithInBusinessHours</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2344,7 +2250,7 @@ TEL: 0000-000-000　受付時間（要確認)</message>
                     <targetBotDialog>Intro_Brand</targetBotDialog>
                 </botNavigationLinks>
                 <botNavigationLinks>
-                    <targetBotDialog>Chat_with_us</targetBotDialog>
+                    <targetBotDialog>Email_Us</targetBotDialog>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
@@ -2352,7 +2258,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Main_Menu_Agent_Offline</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Main Menu - Agent Offline</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2395,7 +2300,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Create_a_case_to_SFSC</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Create a case to SFSC</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2430,7 +2334,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Check_Agent_Is_Online_Or_Offline</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Check Agent Is Online Or Offline</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2455,7 +2358,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Thank_you_Have_a_great_day</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Thank you ! Have a great day!</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2505,7 +2407,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Wait</type>
         </botSteps>
         <developerName>Show_Email_Us_Or_Chat_With_Us_In_Main_Menu</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Show Email Us Or Chat With Us In Main Menu</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2527,7 +2428,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Wait</type>
         </botSteps>
         <developerName>End_Chat_By_Bot</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>End Chat By Bot</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2552,7 +2452,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Can_I_change_my_order_We_are_sorry_once_your_order_is_placed</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Can I change my order - We are sorry, once your order is placed</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2577,7 +2476,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Xd11585ae_dc36_1e34_dc57_6ddb8182f157</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>付属品について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2602,7 +2500,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>X47194eed_ee35_aeb5_a406_8a8697c95fd3</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>色について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2627,7 +2524,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>X27416c6c_2fb0_549d_192f_fe39be1f9520</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>色ぶれについて</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2635,14 +2531,20 @@ TEL: 0000-000-000　受付時間（要確認)</message>
         <botDialogGroup>Other_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:ご注文の変更はできませんが、ご注文完了より約1時間以内であれば、アカウントの&lt;a href={!$Context.Chatbot_Other_AboutUs_Doing_Url} target=&quot;_blank&quot;&gt;注文履歴&lt;/a&gt;よりキャンセル手続きが可能です。
-
-キャンセルボタンが表示されない場合、ご注文から1時間以上経過しておりキャンセルできませんが、返品期間内であれば、返品が可能です（一部商品除く）。
-
-なお、キャンセルはメンバーのみ、マイアカウントより操作が可能です。</message>
+                <message>RICH_TEXT:ご注文の変更はできませんが、ご注文完了より約1時間以内であれば、アカウントの&lt;a href={!$Context.Chatbot_MyAccount_Newsletter_Clicking_Url} target=&quot;_blank&quot;&gt;注文履歴&lt;/a&gt;よりキャンセル手続きが可能です。</message>
                 <messageIdentifier>4c7df52c-a880-7062-663d-52730143ba32</messageIdentifier>
             </botMessages>
             <stepIdentifier>0b5aceb5-176a-4280-a9d9-cb03b01e1aac</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botMessages>
+                <message>キャンセルボタンが表示されない場合、ご注文から1時間以上経過しておりキャンセルできませんが、返品期間内であれば、返品が可能です（一部商品除く）。
+
+なお、キャンセルはメンバーのみ、マイアカウントより操作が可能です。</message>
+                <messageIdentifier>e8995edd-2749-2d06-ad21-354fa5e6a5c1</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>03a00720-3b96-0a14-09ca-3b65374e4a98</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
@@ -2656,7 +2558,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Other_Cancel_Or_Change_My_Order</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>注文をキャンセルまたは変更したい</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2681,7 +2582,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Return_And_Exchanges_Of_Product_Purchased</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>店舗で購入した商品の返品および交換について</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2707,7 +2607,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Intro_Brand</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>VANSについて</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2732,7 +2631,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Intro_About_Vans</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>ヴァンズについて知りたい</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2757,7 +2655,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Intro_Commitment_Sustainability</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>サステナビリティへの取り組みについて</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2782,7 +2679,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Intro_About_Near_Stores</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>近くの店舗を知りたい</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
@@ -2799,7 +2695,6 @@ TEL: 0000-000-000　受付時間（要確認)</message>
             <type>Navigation</type>
         </botSteps>
         <developerName>Intro_Back_Main_Menu</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>メインメニューへ</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>

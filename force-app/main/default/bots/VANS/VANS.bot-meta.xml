@@ -234,7 +234,7 @@ So if your order has only just shipped don&apos;t worry, it&apos;s totally norma
         <chatButtonName>VNS_Live_Chat_Support</chatButtonName>
     </conversationChannelProviders>
     <description>A bot from scratch.</description>
-    <label>VNS</label>
+    <label>ヴァンズ公式オンラインストア</label>
     <logPrivateConversationData>true</logPrivateConversationData>
     <richContentEnabled>false</richContentEnabled>
 </Bot>
