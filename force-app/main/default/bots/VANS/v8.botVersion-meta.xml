@@ -1716,7 +1716,7 @@
         <botDialogGroup>My_Account_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:ありがとうございます。&lt;a href={!$Context.Chatbot_MyAccount_CreateAC_Clicking_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より登録できます。</message>
+                <message>RICH_TEXT:ありがとうございます。&lt;a href={!$Context.Chatbot_Product_ReplacementLaces_Them_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より登録できます。</message>
                 <messageIdentifier>6b017666-b6bd-4018-b5ca-3e0a14b0788d</messageIdentifier>
             </botMessages>
             <stepIdentifier>12bdff9f-4a0b-42df-bd24-744cf720a456</stepIdentifier>
@@ -1848,7 +1848,7 @@
         <botDialogGroup>My_Account_Group</botDialogGroup>
         <botSteps>
             <botMessages>
-                <message>RICH_TEXT:ニュースレター配信の停止は&lt;a href={!$Context.Chatbot_MyAccount_Newsletter_Clicking_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より設定できます。</message>
+                <message>RICH_TEXT:ニュースレター配信の停止は&lt;a href={!$Context.Chatbot_Product_ReplacementLaces_Them_Url} target=&quot;_blank&quot;&gt;こちら&lt;/a&gt;より設定できます。</message>
                 <messageIdentifier>f4cadf42-7205-4b6b-9e50-7a60413e7c1c</messageIdentifier>
             </botMessages>
             <stepIdentifier>af59d5da-e03d-4db6-ac3b-bb2c48dd63dd</stepIdentifier>

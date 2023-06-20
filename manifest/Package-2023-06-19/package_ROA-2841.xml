@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>VANS</members>
+		<name>Bot</name>
+	</types>
+	<types>
+		<members>LiveChatTranscript.Product_Laces_SeeThem_Url__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Url_In_Chat_Bot.vns_jp</members>
+		<name>CustomMetadata</name>
+	</types>
+	<version>55.0</version>
+</Package>
