@@ -1,0 +1,24 @@
+<div>{!Case.SuppliedName} 様</div>
+
+
+
+<div style="padding-top: 50px">この度は、ヴァンズ公式オンラインショップにお問い合わせいただき誠にありがとうございます。</div>
+
+
+<div style="padding-top: 50px">お問い合わせ番号： {!Case.CaseNumber}</div>
+
+<div>お問い合わせ内容：{!Case.Description}</div>
+
+
+
+<div style="padding-top: 50px">上記の内容で承りました。</div>
+
+<div>カスタマーサービスよりご連絡いたしますので今しばらくお待ちくださいませ。</div>
+
+<footer style ="padding-top: 50px">
+<div>
+<a href="https://www.vans.co.jp">
+<img style="height: 100px; width:200px" src="vfsingapore--vfsit.sandbox.my.salesforce-sites.com/resource/1686296313000/VansLogoFooter?"/>
+</a>
+</div>
+</footer>
