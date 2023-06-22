@@ -120,6 +120,13 @@
         <value>dks-jp</value>
     </labels>
     <labels>
+        <fullName>LIVE_CHAT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LIVE_CHAT</shortDescription>
+        <value>Live Chat</value>
+    </labels>
+    <labels>
         <fullName>TECH_DKS_SFCC_EMAIL_ADDRESS</fullName>
         <language>en_US</language>
         <protected>false</protected>
