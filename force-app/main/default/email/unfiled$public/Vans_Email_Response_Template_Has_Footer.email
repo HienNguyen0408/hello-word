@@ -15,10 +15,15 @@
 
 <div>カスタマーサービスよりご連絡いたしますので今しばらくお待ちくださいませ。</div>
 
+<div>ヴァンズ カスタマーサポート {!IF(User.Name = "Platform Integration User", $Label.LIVE_CHAT, User.LastName)}</div>
+
+<div>0120-994-250</div>
+
+<div>9:00~18:00（土日・祝日を除く）</div>
+
+<div><a href="https://www.vans.co.jp">VANS.CO.JP</a></div>
+
 <footer style ="padding-top: 50px">
-<div>
-<a href="https://www.vans.co.jp">
-<img style="height: 100px; width:200px" src="vfsingapore--vfsit.sandbox.my.salesforce-sites.com/resource/1686296313000/VansLogoFooter?"/>
-</a>
+<div><img style="height: 100px; width:200px" src="vfsingapore--vfsit.sandbox.my.salesforce-sites.com/resource/1686296313000/VansLogoFooter?"/>
 </div>
 </footer>

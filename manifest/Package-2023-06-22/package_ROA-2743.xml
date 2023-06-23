@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>LIVE_CHAT</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>unfiled$public/Vans_Email_Response_Template_Has_Footer</members>
+		<name>EmailTemplate</name>
+	</types>
+	<version>55.0</version>
+</Package>
